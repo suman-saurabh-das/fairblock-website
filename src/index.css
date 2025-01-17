@@ -10,3 +10,23 @@
   font-style: normal;
 }
 /* Adding custom font - MarlideDisplay - END */
+
+/* Styles for light / dark mode - START */
+:root {
+  line-height: 1.5;
+
+  /* color-scheme: light dark; */
+  color: rgba(255, 255, 255, 0.87);
+  --background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--background-color);
+  overscroll-behavior: contain; /* Avoid scrolling bouncing effects */
+}
+/* Styles for light / dark mode - END */
