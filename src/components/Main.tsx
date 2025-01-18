@@ -1,6 +1,6 @@
 const Main = () => {
   return (
-    <div className="px-4 sm:px-8 lg:px-12">
+    <div>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ad inventore
       assumenda esse! Saepe facere fuga consequatur odit repellendus nisi sit
       ratione aliquam similique nostrum possimus nesciunt eius rem, enim ipsa

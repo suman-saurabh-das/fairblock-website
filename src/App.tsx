@@ -24,7 +24,9 @@ function App() {
     >
       <div className="App text-black dark:text-white">
         <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-        <Outlet />
+        <div className="px-4 sm:px-8 lg:px-20">
+          <Outlet />
+        </div>
       </div>
     </div>
   );
