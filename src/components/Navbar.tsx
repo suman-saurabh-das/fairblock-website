@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 // import { GiSuperMushroom } from "react-icons/gi";
+import { GiSun, GiMoon } from "react-icons/gi";
 import { IoMenu, IoCloseCircleOutline } from "react-icons/io5";
 import { FairblockLogo } from "../assets/svg/FairblockLogo";
 
@@ -59,20 +60,32 @@ const Navbar = ({ darkMode, setDarkMode }: HeaderProps) => {
   }, [isNavbarOpen]);
 
   return (
-    <div className="bg-white dark:bg-[#242424] flex items-center justify-between px-4 sm:px-8 lg:px-12 py-4 sticky top-0 shadow-xl z-10">
+    <div className="bg-[#FEFBEA] dark:bg-[#242424] flex items-center justify-between px-4 md:px-8 lg:px-20 py-4 sticky top-0 shadow-xl z-10">
       {/* Logo and Toggle */}
-      <div className="flex items-center justify-between w-full sm:w-fit">
+      <div className="flex items-center justify-between w-full md:w-fit">
         <Link to={"/"} className="flex gap-2 items-center">
-          <FairblockLogo className="dark:fill-white h-10 w-10 lg:h-14 lg:w-14" />
-          <h4 className="font-semibold text-3xl lg:text-4xl">Fairblock</h4>
+          <FairblockLogo className="dark:fill-white h-10 w-10 lg:h-12 lg:w-12" />
+          <h4 className="font-semibold font-marlide text-3xl lg:text-4xl">
+            Fairblock
+          </h4>
         </Link>
-        <button
-          aria-label="Open menu"
-          className="sm:hidden text-3xl"
-          onClick={() => setIsNavbarOpen(true)}
-        >
-          <IoMenu />
-        </button>
+
+        <div className="flex gap-2">
+          <button
+            aria-label="Open menu"
+            className="md:hidden text-3xl"
+            onClick={() => setIsNavbarOpen(true)}
+          >
+            <IoMenu />
+          </button>
+
+          <button
+            className="md:hidden text-3xl hover:scale-105 duration-300"
+            onClick={() => setDarkMode(!darkMode)}
+          >
+            {darkMode ? <GiSun /> : <GiMoon />}
+          </button>
+        </div>
       </div>
 
       {/* Overlay */}
@@ -85,48 +98,52 @@ const Navbar = ({ darkMode, setDarkMode }: HeaderProps) => {
 
       {/* Side Navbar */}
       <div
-        className={`bg-white dark:bg-[#242424] fixed top-0 right-0 z-20 h-full w-3/4 sm:w-auto transform transition-transform duration-300 sm:static sm:translate-x-0 ${
+        className={`bg-[#FEFBEA] dark:bg-[#242424] fixed top-0 right-0 z-20 h-full w-3/4 md:w-auto transform transition-transform duration-300 md:static md:translate-x-0 ${
           isNavbarOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <nav className="flex flex-col sm:flex-row items-start sm:items-center gap-4 p-4 sm:p-0">
+        <nav className="flex flex-col md:flex-row items-start md:items-center gap-6 p-4 md:p-0">
           {/* Close button for small screens */}
           <button
             aria-label="Close menu"
-            className="sm:hidden self-end mb-4 text-4xl"
+            className="md:hidden self-end mb-4 text-4xl"
             onClick={() => setIsNavbarOpen(false)}
           >
             <IoCloseCircleOutline />
           </button>
 
-          <div className="flex flex-col sm:flex-row gap-4">
-          {NavbarOptions.map((item, index) => {
-            if (item.type === "link") {
-              return (
-                <Link key={index} to={item.to ? item.to : "/"}>
-                  {item.label}
-                </Link>
-              );
-            } else if (item.type === "anchor") {
-              return (
-                <a
-                  key={index}
-                  href={item.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {item.label}
-                </a>
-              );
-            }
-          })}
+          <div className="fonts flex flex-col md:flex-row gap-6 md:gap-3 w-full text-lg">
+            {NavbarOptions.map((item, index) => {
+              if (item.type === "link") {
+                return (
+                  <Link
+                    className="bg-yellow-100 dark:bg-[#1D1D1D] md:bg-transparent dark:md:bg-transparent px-6 md:px-2 py-2 rounded-xl hover:underline underline-offset-8"
+                    key={index}
+                    to={item.to ? item.to : "/"}
+                  >
+                    {item.label}
+                  </Link>
+                );
+              } else if (item.type === "anchor") {
+                return (
+                  <a
+                    className="bg-yellow-100 dark:bg-[#1D1D1D] md:bg-transparent dark:md:bg-transparent px-6 md:px-2 py-2 rounded-xl hover:underline underline-offset-8"
+                    key={index}
+                    href={item.href}
+                    rel="noopener noreferrer"
+                  >
+                    {item.label}
+                  </a>
+                );
+              }
+            })}
           </div>
 
           <button
-            className="border px-3 py-1 rounded-xl"
+            className="hidden md:block text-3xl outline-none hover:scale-105 duration-300"
             onClick={() => setDarkMode(!darkMode)}
           >
-            {darkMode ? "Light" : "Dark"}
+            {darkMode ? <GiSun /> : <GiMoon />}
           </button>
         </nav>
       </div>

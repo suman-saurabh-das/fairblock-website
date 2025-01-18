@@ -12,13 +12,13 @@ function App() {
       ? document.documentElement.style.setProperty("--background-color", "#222")
       : document.documentElement.style.setProperty(
           "--background-color",
-          "#fff"
+          "#FEFBEA"
         );
   }, [darkMode]);
 
   return (
     <div
-      className={`App-wrapper font-marlide text-base sm:text-lg max-w-screen-2xl mx-auto ${
+      className={`App-wrapper font-eb_garamond text-base sm:text-lg max-w-screen-2xl mx-auto ${
         darkMode ? "dark" : ""
       }`}
     >
