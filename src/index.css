@@ -1,8 +1,11 @@
+/* Adding google font - EB Garamond (Body) */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Adding custom font - MarlideDisplay - START */
+/* Adding custom font - MarlideDisplay (Headers) - START */
 @font-face {
   font-family: 'Marlide Display';
   src: url('/src/assets/fonts/MarlideDisplay-Light.otf') format('opentype');

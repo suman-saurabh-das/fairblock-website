@@ -8,7 +8,8 @@ export default {
     extend: {
       fontFamily: {
         // Adding custom font MarlideDisplay
-        marlide: ['"Marlide Display"', ...defaultTheme.fontFamily.sans],
+        marlide: ["Marlide Display", ...defaultTheme.fontFamily.sans],
+        eb_garamond: ["EB Garamond"]
       },
     },
   },
