@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Outlet } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
 
@@ -23,6 +24,7 @@ function App() {
     >
       <div className="App text-black dark:text-white">
         <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+        <Outlet />
       </div>
     </div>
   );
