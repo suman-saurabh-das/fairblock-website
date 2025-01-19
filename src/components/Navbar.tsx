@@ -65,9 +65,9 @@ const Navbar = ({ darkMode, setDarkMode }: HeaderProps) => {
       <div className="flex items-center justify-between w-full md:w-fit">
         <Link to={"/"} className="flex gap-3 items-center">
           <LogoSvg className="dark:fill-white h-10 w-10 lg:h-12 lg:w-12" />
-          <h4 className="font-light font-marlide text-3xl lg:text-4xl">
+          <h3 className="font-light font-marlide text-3xl lg:text-4xl">
             Fairblock
-          </h4>
+          </h3>
         </Link>
 
         <div className="flex gap-2">
