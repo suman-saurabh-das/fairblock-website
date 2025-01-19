@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 // import { GiSuperMushroom } from "react-icons/gi";
 import { GiSun, GiMoon } from "react-icons/gi";
 import { IoMenu, IoCloseCircleOutline } from "react-icons/io5";
-import { FairblockLogo } from "../assets/svg/FairblockLogo";
+import { LogoSvg } from "../assets/svg/LogoSvg";
 
 type HeaderProps = {
   darkMode: boolean;
@@ -63,9 +63,9 @@ const Navbar = ({ darkMode, setDarkMode }: HeaderProps) => {
     <div className="bg-[#FEFBEA] dark:bg-[#242424] flex items-center justify-between px-4 md:px-8 lg:px-20 py-4 sticky top-0 shadow-xl z-10">
       {/* Logo and Toggle */}
       <div className="flex items-center justify-between w-full md:w-fit">
-        <Link to={"/"} className="flex gap-2 items-center">
-          <FairblockLogo className="dark:fill-white h-10 w-10 lg:h-12 lg:w-12" />
-          <h4 className="font-semibold font-marlide text-3xl lg:text-4xl">
+        <Link to={"/"} className="flex gap-3 items-center">
+          <LogoSvg className="dark:fill-white h-10 w-10 lg:h-12 lg:w-12" />
+          <h4 className="font-light font-marlide text-3xl lg:text-4xl">
             Fairblock
           </h4>
         </Link>
@@ -140,7 +140,7 @@ const Navbar = ({ darkMode, setDarkMode }: HeaderProps) => {
           </div>
 
           <button
-            className="hidden md:block text-3xl outline-none hover:scale-105 duration-300"
+            className="hidden md:block text-3xl outline-none hover:scale-110 hover:animate-pulse duration-300"
             onClick={() => setDarkMode(!darkMode)}
           >
             {darkMode ? <GiSun /> : <GiMoon />}

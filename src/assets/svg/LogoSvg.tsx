@@ -1,16 +1,13 @@
-type FairblockLogoProps = {
+type LogoSvgProps = {
   className?: string;
 };
 
-export const FairblockLogo = ({
-  className = "fill-black",
-}: FairblockLogoProps) => {
-  
+export const LogoSvg = ({ className = "fill-black" }: LogoSvgProps) => {
   return (
     <svg
       className={className}
-      width={80}
-      height={80}
+      width="80"
+      height="80"
       viewBox="0 0 80 80"
       xmlns="http://www.w3.org/2000/svg"
     >
