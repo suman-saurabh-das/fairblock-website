@@ -5,15 +5,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Adding custom font - MarlideDisplay (Headers) - START */
-@font-face {
-  font-family: 'Marlide Display';
-  src: url('/src/assets/fonts/MarlideDisplay-Light.otf') format('opentype');
-  font-weight: 300; /* Adjust weight based on the font file */
-  font-style: normal;
-}
-/* Adding custom font - MarlideDisplay - END */
-
 /* Styles for light / dark mode - START */
 :root {
   line-height: 1.5;

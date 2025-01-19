@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Outlet } from "react-router-dom";
 import "./App.css";
+import "../src/assets/fonts/fonts.css";
 import Navbar from "./components/Navbar";
 
 function App() {
