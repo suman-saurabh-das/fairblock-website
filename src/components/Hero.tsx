@@ -3,7 +3,7 @@ import { TfiAngleDoubleDown } from "react-icons/tfi";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col items-center my-20">
+    <div className="flex flex-col items-center mt-20">
       <div className="">
         <MasterSvg className="fill-black dark:fill-white h-52 md:h-72 lg:h-[23rem] w-full" />
       </div>

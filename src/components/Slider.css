@@ -1,0 +1,49 @@
+.slider {
+  height: var(--height);
+  mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 10%, #000 90%, transparent);
+}
+
+.slider .list {
+  width: 100%;
+  min-width: calc(var(--width) * (var(--quantity) - 0.5));
+}
+
+.slider .item {
+  width: var(--width);
+  height: var(--height);
+  left: 100%;
+  animation: autoRun 20s linear infinite;
+  animation-delay: calc((20s / var(--quantity)) * (var(--position) - 1) - 20s) !important;
+}
+
+.slider[data-reverse="true"] .item {
+  animation: reversePlay 20s linear infinite;
+}
+
+.slider:hover .item {
+  animation-play-state: paused !important;
+  filter: grayscale(1);
+}
+
+.slider .item:hover {
+  filter: grayscale(0);
+}
+
+@keyframes autoRun {
+  from {
+    left: 100%;
+  }
+  to {
+    left: calc(var(--width) * -1);
+  }
+}
+
+@keyframes reversePlay {
+  from {
+    left: calc(var(--width) * -1);
+  }
+  to {
+    left: 100%;
+  }
+}
