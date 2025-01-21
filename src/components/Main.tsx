@@ -2,6 +2,7 @@ import Hero from "./Hero";
 import About from "./About";
 import Slider from "./Slider";
 import HowItWorks from "./HowItWorks";
+import Developers from "./Developers";
 
 const cardsArray = [
   {
@@ -43,6 +44,7 @@ const Main = () => {
         quantity={cardsArray.length}
       />
       <HowItWorks />
+      <Developers />
     </div>
   );
 };
