@@ -1,6 +1,7 @@
 import Hero from "./Hero";
 import About from "./About";
 import Slider from "./Slider";
+import HowItWorks from "./HowItWorks";
 
 const cardsArray = [
   {
@@ -41,6 +42,7 @@ const Main = () => {
         height={410}
         quantity={cardsArray.length}
       />
+      <HowItWorks />
     </div>
   );
 };
