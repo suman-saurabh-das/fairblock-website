@@ -3,6 +3,7 @@ import About from "./About";
 import Slider from "./Slider";
 import HowItWorks from "./HowItWorks";
 import Developers from "./Developers";
+import Ecosystem from "./Ecosystem";
 
 const cardsArray = [
   {
@@ -45,6 +46,7 @@ const Main = () => {
       />
       <HowItWorks />
       <Developers />
+      <Ecosystem />
     </div>
   );
 };
