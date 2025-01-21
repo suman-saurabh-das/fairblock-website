@@ -102,7 +102,7 @@ const Navbar = ({ darkMode, setDarkMode }: HeaderProps) => {
           isNavbarOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <nav className="flex flex-col md:flex-row items-start md:items-center gap-6 p-4 md:p-0">
+        <nav className="flex flex-col md:flex-row items-start md:items-center gap-3 p-4 md:p-0">
           {/* Close button for small screens */}
           <button
             aria-label="Close menu"

@@ -20,8 +20,8 @@ const About = () => {
           applications. This unlocks Credible and Capital-Efficient DeFi
           mechanisms and AI models.
         </p>
-        <button className="border border-black dark:border-white bg-lime-300 font-medium p-2 rounded-2xl text-black w-fit min-w-48">
-          <Link to={"/applications"}>Try Fairy Ring</Link>
+        <button className="border border-black dark:border-white bg-lime-300 font-medium px-6 py-2 rounded-3xl text-black w-fit min-w-48">
+          <Link to={"/how-it-works"}>Try Fairy Ring</Link>
         </button>
       </div>
     </div>
