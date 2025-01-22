@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center mx-auto max-w-screen-lg">
       <h2 className="font-marlide font-normal mb-4 md:mb-6 text-4xl md:text-5xl">Unlock Credible Economies</h2>
       <div className="my-4 md:my-6">
         <p className="text-center">
