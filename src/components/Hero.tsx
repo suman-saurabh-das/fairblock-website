@@ -3,12 +3,12 @@ import { TfiAngleDoubleDown } from "react-icons/tfi";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col items-center mt-20">
+    <div className="flex flex-col items-center mt-16">
       <div className="">
         <MasterSvg className="fill-black dark:fill-white h-52 md:h-72 lg:h-[23rem] w-full" />
       </div>
       <div className="mt-8 md:mt-12">
-        <h1 className="font-marlide font-normal tracking-wider text-center text-2xl md:text-4xl max-w-72 sm:max-w-fit">
+        <h1 className="font-marlide font-normal tracking-wider text-center text-2xl md:text-5xl max-w-72 sm:max-w-fit">
           Build Farther with Web 3's Confidentiality Station
         </h1>
       </div>
