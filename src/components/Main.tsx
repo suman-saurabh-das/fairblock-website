@@ -6,6 +6,7 @@ import Developers from "./Developers";
 import Ecosystem from "./Ecosystem";
 import Backers from "./Backers";
 import News from "./News";
+import Footer from "./Footer";
 
 const cardsArray = [
   {
@@ -51,6 +52,7 @@ const Main = () => {
       <Ecosystem />
       <Backers />
       <News />
+      <Footer />
     </div>
   );
 };
