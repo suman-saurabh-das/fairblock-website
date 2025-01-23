@@ -36,6 +36,9 @@ const ecosystemsArray = [
     imageUrl: "src/assets/images/ecosystem/xai.png",
     link: "https://xai.games/",
   },
+];
+
+const ecosystemsArray2 = [
   {
     name: "Ritual",
     imageUrl: "src/assets/images/ecosystem/ritual.svg",
@@ -71,18 +74,30 @@ const ecosystemsArray = [
     imageUrl: "src/assets/images/ecosystem/fluent.png",
     link: "https://fluent.xyz/",
   },
-];
+]
+
+console.log(ecosystemsArray);
+
 
 const Ecosystem = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-4">
+    <div className="flex flex-col justify-center items-center gap-4 overflow-x-hidden">
       <h2 className="font-marlide font-normal mb-4 md:mb-6 text-4xl lg:text-5xl">Ecosystem</h2>
+      <div className="flex flex-col gap-8">
       <Slider
         imageWithLinks={ecosystemsArray}
-        width={140}
-        height={170}
+        width={100}
+        height={130}
         quantity={ecosystemsArray.length}
       />
+      <Slider
+        imageWithLinks={ecosystemsArray2}
+        width={100}
+        height={130}
+        quantity={ecosystemsArray2.length}
+        reverse={true}
+      />
+      </div>
     </div>
   );
 };
