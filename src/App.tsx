@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div
-      className={`App-wrapper font-eb_garamond text-lg md:text-xl max-w-screen-2xl mx-auto ${
+      className={`App-wrapper font-eb_garamond md:text-lg max-w-screen-2xl mx-auto ${
         darkMode ? "dark" : ""
       }`}
     >
