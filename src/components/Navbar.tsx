@@ -80,7 +80,7 @@ const Navbar = ({ darkMode, setDarkMode }: HeaderProps) => {
           </button>
 
           <button
-            className="md:hidden text-3xl hover:scale-105 duration-300"
+            className="duration-300 md:hidden px-1 hover:scale-105 text-3xl"
             onClick={() => setDarkMode(!darkMode)}
           >
             {darkMode ? <GiSun /> : <GiMoon />}
@@ -140,7 +140,7 @@ const Navbar = ({ darkMode, setDarkMode }: HeaderProps) => {
           </div>
 
           <button
-            className="hidden md:block text-3xl outline-none hover:scale-110 hover:animate-pulse duration-300"
+            className="hover:animate-pulse duration-300 hidden md:block px-1 hover:scale-110 text-3xl"
             onClick={() => setDarkMode(!darkMode)}
           >
             {darkMode ? <GiSun /> : <GiMoon />}

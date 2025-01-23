@@ -60,7 +60,7 @@ const News = () => {
       <h2 className="font-marlide font-normal mb-2 text-4xl md:text-5xl">
         News
       </h2>
-      <p className="mb-4 md:mb-6">News from the Fairblock ecosystem</p>
+      <p className="mb-4 md:mb-6">from the Fairblock ecosystem</p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
         {newsCardsArray.map((item, index) => (
           <NewsCard
