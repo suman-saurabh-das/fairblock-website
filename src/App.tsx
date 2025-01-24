@@ -19,13 +19,13 @@ function App() {
 
   return (
     <div
-      className={`App-wrapper font-eb_garamond md:text-lg max-w-screen-2xl mx-auto ${
+      className={`App-wrapper font-eb_garamond md:text-lg ${
         darkMode ? "dark" : ""
       }`}
     >
       <div className="App text-black dark:text-white">
         <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-        <div className="px-6 sm:px-8 lg:px-20">
+        <div className="">
           <Outlet />
         </div>
       </div>
