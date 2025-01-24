@@ -76,28 +76,27 @@ const ecosystemsArray2 = [
   },
 ]
 
-console.log(ecosystemsArray);
-
-
 const Ecosystem = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-4 overflow-x-hidden">
+    <div className="px-6 py-12 md:py-20">
+      <div className="flex flex-col justify-center items-center gap-4 overflow-x-hidden">
       <h2 className="font-marlide font-normal mb-4 md:mb-6 text-4xl lg:text-5xl">Ecosystem</h2>
       <div className="flex flex-col gap-8">
       <Slider
         imageWithLinks={ecosystemsArray}
-        width={100}
-        height={130}
+        width={110}
+        height={140}
         quantity={ecosystemsArray.length}
       />
       <Slider
         imageWithLinks={ecosystemsArray2}
-        width={100}
-        height={130}
+        width={110}
+        height={140}
         quantity={ecosystemsArray2.length}
         reverse={true}
       />
       </div>
+    </div>
     </div>
   );
 };
