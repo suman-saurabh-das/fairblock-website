@@ -16,14 +16,14 @@ const DeveloperCard = ({
   url,
 }: DeveloperCardProps) => {
   return (
-    <a href={url} className="border border-black dark:border-white p-4 rounded-2xl">
+    <a href={url} className="border border-black dark:border-white duration-300 p-4 rounded-2xl hover:scale-[1.03]">
       <div className="p-2 mb-4">
         <img className="mx-auto max-w-56 sm:max-w-full" src={imageUrl} alt={imageText} />
       </div>
       <div>
         <div className="flex items-center justify-between">
           <h4 className="font-marlide text-3xl">{header}</h4>
-          <GoArrowUpRight />
+          <GoArrowUpRight className="mr-2" />
         </div>
         <p className="mb-2 text-base">{description}</p>
       </div>
