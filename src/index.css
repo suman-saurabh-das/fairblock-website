@@ -22,5 +22,6 @@
 body {
   background-color: var(--background-color);
   overscroll-behavior: contain; /* Avoid scrolling bouncing effects */
+  scroll-behavior: smooth;
 }
 /* Styles for light / dark mode - END */

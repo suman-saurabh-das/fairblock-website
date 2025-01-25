@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <div className="px-6 py-12 md:py-20">
+    <div id="about" className="px-6 py-12 md:py-20">
       <div className="mx-auto max-w-screen-lg">
       <h2 className="font-marlide font-normal mb-12 text-4xl md:text-5xl text-center md:text-left">
         Unlock Credible Economies
@@ -10,7 +10,7 @@ const About = () => {
       <div className="flex flex-col gap-12 md:flex-row-reverse items-start justify-center mx-auto">
         <div className="flex flex-col gap-12 mx-auto text-xl md:w-1/2">
           <img
-            className="max-w-80 mx-auto w-full"
+            className="dark:invert max-w-80 mx-auto w-full"
             src="/src/assets/images/FairyRing.png"
             alt=""
           />
@@ -29,7 +29,7 @@ const About = () => {
             applications. This unlocks Credible and Capital-Efficient DeFi
             mechanisms and AI models.
           </p>
-          <button className="border border-black dark:border-white bg-lime-300 font-medium px-6 py-2 rounded-3xl text-black w-fit min-w-48">
+          <button className="border border-black dark:border-white bg-orange-300 font-medium px-6 py-2 rounded-3xl text-black w-fit min-w-48">
             <Link to={"/how-it-works"}>Try FairyRing</Link>
           </button>
         </div>
