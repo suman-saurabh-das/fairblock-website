@@ -1,5 +1,6 @@
 import { MasterSvg } from "../assets/svg/MasterSvg";
 import { TfiAngleDoubleDown } from "react-icons/tfi";
+import ScrambleText from "./ScrambleText";
 
 const Hero = () => {
   return (
@@ -9,7 +10,7 @@ const Hero = () => {
       </div>
       <div className="mt-6 lg:mt-12">
         <h1 className="font-marlide font-normal tracking-wider text-center text-3xl lg:text-4xl max-w-72 sm:max-w-fit">
-          Build Farther with Web 3's Confidentiality Station
+        <ScrambleText text="Build Farther with Web 3's Confidentiality Station" speed={50} scrambleOnLoad={true} />
         </h1>
       </div>
       <div className="mt-8">

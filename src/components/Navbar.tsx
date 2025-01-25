@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-// import { GiSuperMushroom } from "react-icons/gi";
 import { GiSun, GiMoon } from "react-icons/gi";
 import { IoMenu, IoCloseCircleOutline } from "react-icons/io5";
 import { LogoSvg } from "../assets/svg/LogoSvg";
+import ScrambleText from "./ScrambleText";
 
 type HeaderProps = {
   darkMode: boolean;
@@ -60,7 +60,7 @@ const Navbar = ({ darkMode, setDarkMode }: HeaderProps) => {
   }, [isNavbarOpen]);
 
   return (
-    <div className="bg-[#FEFBEA] dark:bg-[#242424] flex items-center justify-between px-4 md:px-8 lg:px-20 py-4 sticky top-0 shadow-xl z-10">
+    <div className="bg-[#FEFBEA] dark:bg-[#242424] flex items-center justify-between px-4 md:px-8 lg:px-20 py-4 sticky top-0 shadow-sm z-10">
       {/* Logo and Toggle */}
       <div className="flex items-center justify-between w-full md:w-fit">
         <Link to={"/"} className="flex gap-3 items-center">
@@ -121,7 +121,7 @@ const Navbar = ({ darkMode, setDarkMode }: HeaderProps) => {
                     key={index}
                     to={item.to ? item.to : "/"}
                   >
-                    {item.label}
+                    <ScrambleText text={item.label} speed={75} scrambleOnHover={true} />
                   </Link>
                 );
               } else if (item.type === "anchor") {
@@ -132,7 +132,7 @@ const Navbar = ({ darkMode, setDarkMode }: HeaderProps) => {
                     href={item.href}
                     rel="noopener noreferrer"
                   >
-                    {item.label}
+                    <ScrambleText text={item.label} speed={75} scrambleOnHover={true} />
                   </a>
                 );
               }
