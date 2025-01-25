@@ -11,6 +11,7 @@ type SliderImageWithLink = {
   name: string;
   imageUrl: string;
   link: string;
+  isBlack?: boolean;
 };
 
 type SliderProps = {
@@ -77,7 +78,7 @@ const Slider: React.FC<SliderProps> = ({
                 <img
                   src={item.imageUrl}
                   alt={item.name}
-                  className="aspect-square object-contain p-4 w-full"
+                  className={`${item.isBlack && "dark:invert"} aspect-square object-contain p-4 w-full`}
                 />
                 <p className="text-center">{item.name}</p>
               </a>

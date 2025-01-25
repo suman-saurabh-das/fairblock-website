@@ -34,7 +34,7 @@ const Backers = () => {
           {backersImageArray.map((item, index) => (
             <img
               key={index}
-              className="invert max-w-36 w-full"
+              className="invert dark:invert-0 max-w-36 w-full"
               src={`/src/assets/images/backers/${item}.png`}
               alt=""
             />

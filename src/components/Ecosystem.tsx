@@ -20,11 +20,13 @@ const ecosystemsArray = [
     name: "Polymer",
     imageUrl: "src/assets/images/ecosystem/polymer.png",
     link: "https://www.polymerlabs.org/",
+    isBlack: true,
   },
   {
     name: "Rollkit",
     imageUrl: "src/assets/images/ecosystem/rollkit.svg",
     link: "https://rollkit.dev/",
+    isBlack: true,
   },
   {
     name: "Celestia",
@@ -43,11 +45,13 @@ const ecosystemsArray2 = [
     name: "Ritual",
     imageUrl: "src/assets/images/ecosystem/ritual.svg",
     link: "https://ritual.net/",
+    isBlack: true,
   },
   {
     name: "Cosmos Hub",
     imageUrl: "src/assets/images/ecosystem/cosmoshub.svg",
     link: "https://cosmos.network/",
+    isBlack: true,
   },
   {
     name: "Stargaze",
