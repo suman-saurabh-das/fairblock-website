@@ -1,8 +1,25 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, createContext, useContext } from "react";
 import { Outlet } from "react-router-dom";
 import "./App.css";
 import "../src/assets/fonts/fonts.css";
 import Navbar from "./components/Navbar";
+
+export type ThemeContextType = {
+  darkMode: boolean;
+  setDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+export const ThemeContext = createContext<ThemeContextType | undefined>(
+  undefined
+);
+
+export const useTheme = (): ThemeContextType => {
+  const context = useContext(ThemeContext);
+  if (!context) {
+    throw new Error("useTheme must be used within a ThemeProvider");
+  }
+  return context;
+};
 
 function App() {
   const [darkMode, setDarkMode] = useState<boolean>(false);
@@ -10,25 +27,25 @@ function App() {
   // useEffect() to set root element background color.
   useEffect(() => {
     darkMode
-      ? document.documentElement.style.setProperty("--background-color", "#222")
+      ? document.documentElement.style.setProperty("--background-color", "#111")
       : document.documentElement.style.setProperty(
           "--background-color",
-          "#FEFBEA"
+          "white"
         );
   }, [darkMode]);
 
   return (
     <div
-      className={`App-wrapper font-eb_garamond md:text-lg ${
+      className={`App-wrapper font-eb_garamond text-lg md:text-xl ${
         darkMode ? "dark" : ""
       }`}
     >
-      <div className="App text-black dark:text-white">
-        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-        <div className="">
+      <ThemeContext.Provider value={{ darkMode, setDarkMode }}>
+        <div className="App text-black dark:text-white">
+          <Navbar />
           <Outlet />
         </div>
-      </div>
+      </ThemeContext.Provider>
     </div>
   );
 }

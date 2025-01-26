@@ -1,50 +1,74 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { GiSun, GiMoon } from "react-icons/gi";
-import { IoMenu, IoCloseCircleOutline } from "react-icons/io5";
 import { LogoSvg } from "../assets/svg/LogoSvg";
+import { BsNewspaper } from "react-icons/bs";
+import { FiSun, FiMoon } from "react-icons/fi";
+import { GrWorkshop, GrArticle } from "react-icons/gr";
+import { RiTwitterXFill, RiDiscordLine } from "react-icons/ri";
+import { IoMenu, IoCloseCircleOutline } from "react-icons/io5";
+import { SlDocs } from "react-icons/sl";
+import { TbApps } from "react-icons/tb";
+import { useTheme } from "../App";
 import ScrambleText from "./ScrambleText";
 
-type HeaderProps = {
-  darkMode: boolean;
-  setDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
-};
-
-const NavbarOptions = [
+const NAV_OPTIONS = [
   {
-    type: "link",
-    label: "Applications",
-    to: "/applications",
-  },
-  {
-    type: "link",
-    label: "Articles",
-    to: "/articles",
-  },
-  {
-    type: "link",
-    label: "Careers",
-    to: "/careers",
+    type: "anchor",
+    label: "How it works",
+    logo: <GrWorkshop className="md:hidden text-2xl" />,
+    href: "https://www.fairblock.network/how-it-works",
   },
   {
     type: "anchor",
     label: "Docs",
-    href: "https://docs.fairblock.network/",
+    logo: <SlDocs className="md:hidden text-2xl" />,
+    href: "https://docs.fairblock.network/docs/welcome/welcome_to_fairblock",
   },
   {
-    type: "link",
-    label: "How it works",
-    to: "/how-it-works",
+    type: "anchor",
+    label: "Articles",
+    logo: <GrArticle className="md:hidden text-2xl" />,
+    href: "https://www.fairblock.network/articles",
+  },
+  {
+    type: "anchor",
+    label: "Demos",
+    logo: <TbApps className="md:hidden text-2xl" />,
+    href: "https://www.fairblock.network/applications",
   },
   {
     type: "anchor",
     label: "News",
+    logo: <BsNewspaper className="md:hidden text-2xl" />,
     href: "https://news.fairblock.network/",
   },
+  {
+    type: "anchor",
+    label: "Discord",
+    hideLabelDesktop: true,
+    logo: <RiDiscordLine className="text-2xl" />,
+    href: "https://discord.com/invite/jhNBCCAMPK",
+    openInNewTab: true,
+  },
+  {
+    type: "anchor",
+    label: "Twitter",
+    hideLabelDesktop: true,
+    logo: <RiTwitterXFill className="text-2xl" />,
+    href: "https://x.com/0xfairblock",
+    openInNewTab: true,
+  },
+  // {
+  //   type: "link",
+  //   label: "Careers",
+  //   logo: "",
+  //   to: "/careers",
+  // },
 ];
 
-const Navbar = ({ darkMode, setDarkMode }: HeaderProps) => {
+const Navbar = () => {
   const [isNavbarOpen, setIsNavbarOpen] = useState<boolean>(false);
+  const { darkMode, setDarkMode } = useTheme();
 
   // Disable scroll when navbar is open
   useEffect(() => {
@@ -60,16 +84,17 @@ const Navbar = ({ darkMode, setDarkMode }: HeaderProps) => {
   }, [isNavbarOpen]);
 
   return (
-    <div className="bg-[#FEFBEA] dark:bg-[#242424] flex items-center justify-between px-4 md:px-8 lg:px-20 py-4 sticky top-0 shadow-sm z-10">
-      {/* Logo and Toggle */}
+    <div className="bg-[white] dark:bg-[black] flex items-center justify-between px-4 md:px-8 lg:px-12 py-6 mx-auto max-w-screen-2xl sticky top-0 shadow-sm z-10">
+      {/* APP LOGO & HEADER */}
       <div className="flex items-center justify-between w-full md:w-fit">
         <Link to={"/"} className="flex gap-3 items-center">
           <LogoSvg className="dark:fill-white h-10 w-10 lg:h-12 lg:w-12" />
-          <h3 className="font-light font-marlide text-3xl lg:text-4xl">
+          <h3 className="font-light font-marlide text-4xl lg:text-5xl">
             Fairblock
           </h3>
         </Link>
 
+        {/* OPEN SIDE NAV - VISIBLE ONLY ON MOBILE DEVICES */}
         <div className="flex gap-2">
           <button
             aria-label="Open menu"
@@ -78,17 +103,10 @@ const Navbar = ({ darkMode, setDarkMode }: HeaderProps) => {
           >
             <IoMenu />
           </button>
-
-          <button
-            className="duration-300 md:hidden px-1 hover:scale-105 text-3xl"
-            onClick={() => setDarkMode(!darkMode)}
-          >
-            {darkMode ? <GiSun /> : <GiMoon />}
-          </button>
         </div>
       </div>
 
-      {/* Overlay */}
+      {/* OVERLAY FOR SIDE NAV */}
       {isNavbarOpen && (
         <div
           className="fixed inset-0 bg-black/50 z-10"
@@ -96,14 +114,14 @@ const Navbar = ({ darkMode, setDarkMode }: HeaderProps) => {
         ></div>
       )}
 
-      {/* Side Navbar */}
+      {/* SIDE NAV */}
       <div
-        className={`bg-[#FEFBEA] dark:bg-[#242424] fixed top-0 right-0 z-20 h-full w-3/4 md:w-auto transform transition-transform duration-300 md:static md:translate-x-0 ${
+        className={`bg-[white] dark:bg-[black] fixed top-0 right-0 z-20 h-full w-3/4 md:w-auto transform transition-transform duration-300 md:static md:translate-x-0 ${
           isNavbarOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <nav className="flex flex-col md:flex-row items-start md:items-center gap-3 p-4 md:p-0">
-          {/* Close button for small screens */}
+        <nav className="flex flex-col md:flex-row items-start md:items-center p-4 md:p-0">
+          {/* CLOSE SIDE NAV - VISIBLE ONLY ON MOBILE DEVICES */}
           <button
             aria-label="Close menu"
             className="md:hidden self-end mb-4 text-4xl"
@@ -112,39 +130,42 @@ const Navbar = ({ darkMode, setDarkMode }: HeaderProps) => {
             <IoCloseCircleOutline />
           </button>
 
-          <div className="fonts flex flex-col md:flex-row gap-6 md:gap-3 w-full text-lg">
-            {NavbarOptions.map((item, index) => {
-              if (item.type === "link") {
-                return (
-                  <Link
-                    className="bg-yellow-100 dark:bg-[#1D1D1D] md:bg-transparent dark:md:bg-transparent px-6 md:px-2 py-2 rounded-xl hover:underline underline-offset-8"
-                    key={index}
-                    to={item.to ? item.to : "/"}
-                  >
-                    <ScrambleText text={item.label} speed={75} scrambleOnHover={true} />
-                  </Link>
-                );
-              } else if (item.type === "anchor") {
-                return (
-                  <a
-                    className="bg-yellow-100 dark:bg-[#1D1D1D] md:bg-transparent dark:md:bg-transparent px-6 md:px-2 py-2 rounded-xl hover:underline underline-offset-8"
-                    key={index}
-                    href={item.href}
-                    rel="noopener noreferrer"
-                  >
-                    <ScrambleText text={item.label} speed={75} scrambleOnHover={true} />
-                  </a>
-                );
-              }
-            })}
-          </div>
+          {/* NAV LINKS */}
+          <div className="font-marlide flex flex-col md:flex-row gap-6 md:gap-1 text-xl w-full">
+            {NAV_OPTIONS.map((item, index) => (
+              <a
+                className="flex items-center gap-4 md:gap-0 px-6 md:px-2 py-2 rounded-xl"
+                key={index}
+                href={item.href}
+                target={item.openInNewTab ? "_blank" : "_self"}
+                rel="noopener noreferrer"
+              >
+                <span>{item.logo}</span>
+                <span className={`${item.hideLabelDesktop && "md:hidden"}`}>
+                  <ScrambleText
+                    text={item.label}
+                    speed={100}
+                    scrambleOnHover={true}
+                  />
+                </span>
+              </a>
+            ))}
 
-          <button
-            className="hover:animate-pulse duration-300 hidden md:block px-1 hover:scale-110 text-3xl"
-            onClick={() => setDarkMode(!darkMode)}
-          >
-            {darkMode ? <GiSun /> : <GiMoon />}
-          </button>
+            {/* DARK / LIGHT MODE */}
+            <button className="mr-2" onClick={() => setDarkMode(!darkMode)}>
+              {darkMode ? (
+                <span className="flex items-center px-6 md:px-2 py-2 hover:animate-pulse">
+                  <FiSun className="text-2xl" />
+                  <span className="block ml-4 md:hidden">Light</span>
+                </span>
+              ) : (
+                <span className="flex items-center px-6 md:px-2 py-2 hover:animate-pulse">
+                  <FiMoon className="text-2xl" />
+                  <span className="block ml-4 md:hidden">Dark</span>
+                </span>
+              )}
+            </button>
+          </div>
         </nav>
       </div>
     </div>
