@@ -13,12 +13,12 @@
   width: var(--width);
   height: var(--height);
   left: 100%;
-  animation: autoRun 30s linear infinite;
-  animation-delay: calc((30s / var(--quantity)) * (var(--position) - 1) - 30s) !important;
+  animation: autoRun 18s linear infinite;
+  animation-delay: calc((18s / var(--quantity)) * (var(--position) - 1) - 18s) !important;
 }
 
 .slider[data-reverse="true"] .item {
-  animation: reversePlay 30s linear infinite;
+  animation: reversePlay 18s linear infinite;
 }
 
 .slider:hover .item {
