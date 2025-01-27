@@ -1,4 +1,4 @@
-const backersImageArray = [
+const BACKERS_IMAGE_ARRAY = [
   "Anagram",
   "Galileo",
   "Dialectic",
@@ -10,7 +10,8 @@ const backersImageArray = [
   "Chorus One",
   "Reverie",
 ];
-const backersNameArray: string[] = [
+
+const BACKERS_NAME_ARRAY: string[] = [
   "Zaki Manian",
   "Waikit Lau",
   "Leland Lee",
@@ -25,13 +26,22 @@ const backersNameArray: string[] = [
 
 const Backers = () => {
   return (
-    <div className="flex flex-col gap-12 justify-center items-center px-6 py-12 md:py-20">
-      <div>
-        <h2 className="font-marlide font-normal mb-12 text-4xl lg:text-5xl text-center">
+    <div className="flex items-center justify-center gap-8">
+      {/* LEFT DECORATION IMAGE */}
+      <img
+        className="dark:invert hidden xl:block w-36 h-96"
+        src="/src/assets/images/BorderSideLeft.png"
+        alt="Left Decoration"
+      />
+
+      {/* BACKERS CONTAINER */}
+      <div className="flex flex-col gap-12 justify-center items-center px-6 py-12 md:py-20">
+        <h2 className="font-marlide font-normal text-4xl lg:text-5xl text-center">
           Backers
         </h2>
+        {/* BACKERS IMAGE CONTAINER */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-12 items-center justify-between">
-          {backersImageArray.map((item, index) => (
+          {BACKERS_IMAGE_ARRAY.map((item, index) => (
             <img
               key={index}
               className="invert dark:invert-0 max-w-36 w-full"
@@ -40,15 +50,12 @@ const Backers = () => {
             />
           ))}
         </div>
-      </div>
-      <div>
-        <h2 className="font-marlide font-normal mb-12 text-4xl lg:text-5xl text-center">
-          Angels
-        </h2>
+
+        {/* BACKERS IMAGE CONTAINER */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 text-center items-center justify-center">
-          {backersNameArray.map((item, index) => (
+          {BACKERS_NAME_ARRAY.map((item, index) => (
             <span
-              className="border border-black dark:border-white font-marlide font-normal px-4 py-1 rounded-xl md:text-lg"
+              className="font-marlide font-normal px-4 py-1 rounded-xl md:text-2xl"
               key={index}
             >
               {item}
@@ -56,6 +63,13 @@ const Backers = () => {
           ))}
         </div>
       </div>
+
+      {/* RIGHT DECORATION IMAGE */}
+      <img
+        className="dark:invert hidden xl:block w-36 h-96"
+        src="/src/assets/images/BorderSideRight.png"
+        alt="Right Decoration"
+      />
     </div>
   );
 };
