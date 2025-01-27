@@ -1,5 +1,5 @@
-import Hero from "./Hero";
 import About from "./About";
+import Hero from "./Hero";
 import SlidingCards from "./SlidingCards";
 import HowItWorks from "./HowItWorks";
 import Developers from "./Developers";
@@ -15,9 +15,9 @@ const Main = () => {
       <About />
       <SlidingCards />
       <HowItWorks />
-      <Developers />
-      <Ecosystem />
       <Backers />
+      <Ecosystem />
+      <Developers />
       <News />
       <Footer />
     </div>
