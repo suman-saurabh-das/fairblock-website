@@ -71,7 +71,7 @@ const NEWS_CARDS_ARRAY = [
   },
   {
     imageUrl:
-      "https://www.old.fairblock.network/_next/image?url=https%3A%2F%2Fhackmd.io%2F_uploads%2FBJo97G8pC.png&w=1920&q=75",
+      "https://website-0xfairblock.vercel.app/_next/image?url=https%3A%2F%2Fhackmd.io%2F_uploads%2FBJo97G8pC.png&w=1920&q=75",
     newsHeader: "Multimodal Cryptography Series - Accountable MPC + TEE",
     newsBody:
       "Trusted Execution Environment (TEE) is a secure area within the memory and CPU of a device (computer or server), isolated from the rest of the system through encryption.",

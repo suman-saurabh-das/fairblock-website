@@ -56,7 +56,7 @@ const FOOTER_LINKS_COLUMN_3 = {
   links: [
     {
       linkLabel: "Careers",
-      href: "https://www.old.fairblock.network/careers",
+      href: "https://website-0xfairblock.vercel.app/careers",
     },
   ],
 };

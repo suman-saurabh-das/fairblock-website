@@ -49,7 +49,7 @@ const Hero = () => {
 
           {/* HERO TEXT CONTAINER */}
           <div className="mt-6 lg:mt-12 xl:mt-20">
-            <h1 className="font-marlide font-normal tracking-wider text-center text-3xl lg:text-5xl sm:max-w-fit">
+            <h1 className="font-marlide font-normal tracking-wider text-center text-3xl lg:text-5xl w-80 md:w-auto h-10 sm:max-w-fit">
               <ScrambleText
                 text="Build Farther with Web3's Confidentiality Station"
                 speed={50}
@@ -59,7 +59,7 @@ const Hero = () => {
           </div>
 
           {/* SCROLL DOWN BUTTON */}
-          <div className="mt-8 xl:mt-12">
+          <div className="mt-20 md:mt-16">
             <button
               className="flex flex-col gap-1 items-center"
               onClick={() => scrollToSection("about")}

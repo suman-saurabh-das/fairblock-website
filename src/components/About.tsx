@@ -32,7 +32,7 @@ const About = () => {
             and AI models.
           </p>
           <button className="bg-fuchsia-300 hover:bg-fuchsia-400 border border-black/50 dark:border-white/50 font-marlide font-medium px-6 py-2 rounded-3xl text-black w-fit min-w-48">
-            <a href="https://www.old.fairblock.network/how-it-works">
+            <a href="https://website-0xfairblock.vercel.app/how-it-works">
               Try FairyRing
             </a>
           </button>

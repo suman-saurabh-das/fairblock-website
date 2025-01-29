@@ -16,7 +16,7 @@ const NAV_OPTIONS = [
     type: "anchor",
     label: "How it works",
     logo: <GrWorkshop className="md:hidden text-2xl" />,
-    href: "https://www.old.fairblock.network/how-it-works",
+    href: "https://website-0xfairblock.vercel.app/how-it-works",
   },
   {
     type: "anchor",
@@ -28,13 +28,13 @@ const NAV_OPTIONS = [
     type: "anchor",
     label: "Articles",
     logo: <GrArticle className="md:hidden text-2xl" />,
-    href: "https://www.old.fairblock.network/articles",
+    href: "https://website-0xfairblock.vercel.app/articles",
   },
   {
     type: "anchor",
     label: "Demos",
     logo: <TbApps className="md:hidden text-2xl" />,
-    href: "https://www.old.fairblock.network/applications",
+    href: "https://website-0xfairblock.vercel.app/applications",
   },
   {
     type: "anchor",
