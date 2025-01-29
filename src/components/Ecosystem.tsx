@@ -104,7 +104,7 @@ const Ecosystem = () => {
         <h2 className="font-marlide font-normal mb-4 md:mb-6 text-4xl lg:text-5xl">
           Ecosystem
         </h2>
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-4 xl:gap-8">
           <Slider
             imageWithLinks={ECOSYSTEM_ARRAY_1}
             width={110}

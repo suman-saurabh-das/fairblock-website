@@ -44,11 +44,11 @@ const Hero = () => {
         <div className="flex flex-col items-center">
           {/* HERO IMAGE CONTAINER */}
           <div>
-            <MasterSvg className="fill-black dark:fill-white h-[22rem] w-full" />
+            <MasterSvg className="fill-black dark:fill-white h-[22rem] xl:h-[55vh] w-full" />
           </div>
 
           {/* HERO TEXT CONTAINER */}
-          <div className="mt-6 lg:mt-12">
+          <div className="mt-6 lg:mt-12 xl:mt-20">
             <h1 className="font-marlide font-normal tracking-wider text-center text-3xl lg:text-5xl max-w-72 sm:max-w-fit">
               <ScrambleText
                 text="Build Farther with Web 3's Confidentiality Station"
@@ -59,12 +59,12 @@ const Hero = () => {
           </div>
 
           {/* SCROLL DOWN BUTTON */}
-          <div className="mt-8">
+          <div className="mt-8 xl:mt-12">
             <button
               className="flex flex-col gap-1 items-center"
               onClick={() => scrollToSection("about")}
             >
-              <TfiAngleDoubleDown className="animate-bounce duration-100 hover:bg-black/10 dark:hover:bg-white/30 p-2 rounded-full text-4xl" />
+              <TfiAngleDoubleDown className="animate-bounce duration-100 hover:bg-black/10 dark:hover:bg-white/30 p-2 rounded-full text-4xl xl:text-5xl" />
             </button>
           </div>
         </div>
