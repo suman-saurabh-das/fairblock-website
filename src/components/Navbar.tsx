@@ -87,11 +87,12 @@ const Navbar = () => {
     <div className="bg-[white] dark:bg-[black] flex items-center justify-between px-4 md:px-8 lg:px-12 py-6 mx-auto max-w-screen-2xl sticky top-0 shadow-sm z-10">
       {/* APP LOGO & HEADER */}
       <div className="flex items-center justify-between w-full md:w-fit">
-        <Link to={"/"} className="flex gap-3 items-center">
-          <LogoSvg className="dark:fill-white h-10 w-10 lg:h-12 lg:w-12" />
-          <h3 className="font-light font-marlide text-4xl lg:text-5xl">
+        <Link to={"/"} className="flex gap-3 items-center w-44 md:w-52">
+          {/* <LogoSvg className="dark:fill-white h-10 w-10 lg:h-12 lg:w-12" />
+          <h3 className="font-light text-4xl lg:text-5xl">
             Fairblock
-          </h3>
+          </h3> */}
+          <img className="w-full" src="https://i.imgur.com/7OvhFKV.png" alt="Fairblock logo" />
         </Link>
 
         {/* OPEN SIDE NAV - VISIBLE ONLY ON MOBILE DEVICES */}
@@ -131,7 +132,7 @@ const Navbar = () => {
           </button>
 
           {/* NAV LINKS */}
-          <div className="font-marlide flex flex-col md:flex-row gap-6 md:gap-1 text-xl w-full">
+          <div className="flex flex-col md:flex-row gap-6 md:gap-1 text-xl w-full">
             {NAV_OPTIONS.map((item, index) => (
               <a
                 className="flex items-center gap-4 md:gap-0 px-6 md:px-2 py-2 rounded-xl"
