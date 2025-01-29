@@ -49,9 +49,9 @@ const Hero = () => {
 
           {/* HERO TEXT CONTAINER */}
           <div className="mt-6 lg:mt-12 xl:mt-20">
-            <h1 className="font-marlide font-normal tracking-wider text-center text-3xl lg:text-5xl max-w-72 sm:max-w-fit">
+            <h1 className="font-marlide font-normal tracking-wider text-center text-3xl lg:text-5xl sm:max-w-fit">
               <ScrambleText
-                text="Build Farther with Web 3's Confidentiality Station"
+                text="Build Farther with Web3's Confidentiality Station"
                 speed={50}
                 scrambleOnLoad={true}
               />

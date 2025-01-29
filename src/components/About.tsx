@@ -14,7 +14,7 @@ const About = () => {
         </div>
 
         {/* ABOUT TEXT CONTAINER */}
-        <div className="w-full lg:w-3/5">
+        <div className="w-full lg:w-3/5 text-center lg:text-left">
           <h2 className="font-marlide font-normal mb-6 text-4xl md:text-5xl">
             Unlock Credible Economies
           </h2>
