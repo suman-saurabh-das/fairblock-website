@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { useTheme } from "../App";
 
 const HowItWorks = () => {
@@ -27,7 +27,7 @@ const HowItWorks = () => {
             multimodal cryptography.
           </p>
           <button className="bg-fuchsia-300 hover:bg-fuchsia-400 border border-black/50 dark:border-white/50 font-medium mt-6 px-6 py-2 rounded-3xl text-black w-fit">
-            <Link to={"/how-it-works"}>Learn How It Works</Link>
+            <a href="https://website-0xfairblock.vercel.app/how-it-works">Learn How It Works</a>
           </button>
         </div>
 
