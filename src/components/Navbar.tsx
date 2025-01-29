@@ -92,7 +92,7 @@ const Navbar = () => {
           <h3 className="font-light text-4xl lg:text-5xl">
             Fairblock
           </h3> */}
-          <img className="w-full" src="https://i.imgur.com/7OvhFKV.png" alt="Fairblock logo" />
+          <img className="dark:invert w-full" src="https://i.imgur.com/7OvhFKV.png" alt="Fairblock logo" />
         </Link>
 
         {/* OPEN SIDE NAV - VISIBLE ONLY ON MOBILE DEVICES */}
