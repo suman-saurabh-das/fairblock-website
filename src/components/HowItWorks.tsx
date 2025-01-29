@@ -1,14 +1,18 @@
 import { Link } from "react-router-dom";
+import { useTheme } from "../App";
 
 const HowItWorks = () => {
+  const { darkMode } = useTheme();
+
   return (
     // lg:bg-[url('/src/assets/images/Border1Dark.png')] lg:dark:bg-[url('/src/assets/images/Border1Light.png')] lg:bg-contain lg:bg-center lg:bg-no-repeat lg:p-16
     <div className="px-6 py-12 md:py-20">
-      <div className="relative dark:bg-neutral-800 sm:border sm:border-black/50 sm:py-8 dark:border-white/50 flex flex-col lg:flex-row items-center justify-evenly gap-12 md:gap-0 rounded-3xl sm:shadow-md sm:shadow-black/20 sm:dark:shadow-black mx-auto max-w-screen-xl">
+      <div className="relative sm:border sm:border-black/50 sm:py-8 dark:border-white/50 flex flex-col lg:flex-row items-center justify-evenly gap-12 md:gap-0 rounded-3xl sm:shadow-md sm:shadow-black/20 sm:dark:shadow-black mx-auto max-w-screen-xl">
         {/* BORDER TOP DECORATION IMAGE */}
         <img
+          loading="lazy"
           className="hidden sm:block absolute dark:invert -top-[4.5rem] left-1/2 rotate-180 -translate-x-1/2 w-52"
-          src="/src/assets/images/BorderTop.png"
+          src="https://i.imgur.com/RK6fKsH.png"
           alt="Top border decoration"
         />
 
@@ -30,7 +34,12 @@ const HowItWorks = () => {
         {/* HOW IT WORKS IMAGE CONTAINER */}
         <div className="w-full lg:w-[48%]">
           <img
-            src="/src/assets/images/How-it-works.png"
+            src={
+              darkMode
+                ? "https://i.imgur.com/1ucqeDO.png"
+                : "https://i.imgur.com/9V0Skax.png"
+            }
+            loading="lazy"
             className="h-full w-full"
           />
         </div>

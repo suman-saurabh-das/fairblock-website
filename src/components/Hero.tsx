@@ -11,6 +11,9 @@ const scrollToSection = (sectionId: string) => {
   }
 };
 
+const DARK_HERO_BG = "https://i.imgur.com/QwlqllT.mp4";
+const LIGHT_HERO_BG = "https://i.imgur.com/MH29AUb.mp4";
+
 const Hero = () => {
   const { darkMode } = useTheme();
   const [bgVideoURL, setBgVideoUrl] = useState<string>(
@@ -19,8 +22,8 @@ const Hero = () => {
 
   useEffect(() => {
     darkMode
-      ? setBgVideoUrl("/src/assets/video/Hero-bg-dark.mp4")
-      : setBgVideoUrl("/src/assets/video/Hero-bg-light.mp4");
+      ? setBgVideoUrl(DARK_HERO_BG)
+      : setBgVideoUrl(LIGHT_HERO_BG);
   }, [darkMode]);
 
   return (

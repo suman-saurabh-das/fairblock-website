@@ -2,21 +2,21 @@ import DeveloperCard from "./DeveloperCard";
 
 const DEVELOPERS_ARRAY = [
   {
-    imageUrl: "src/assets/images/characters/Character-scroll-blue.png",
+    imageUrl: "https://i.imgur.com/pkhLpkt.png",
     imageText: "Character-scroll",
     header: "Wander the Woods",
     description: "Get started with fairy ring developer docs.",
     url: "https://docs.fairblock.network/docs/welcome/quickstart/",
   },
   {
-    imageUrl: "src/assets/images/characters/Character-lock-blue.png",
+    imageUrl: "https://i.imgur.com/UVlVjfz.png",
     imageText: "Character-lock",
     header: "Build a cApp",
     description: "Build your Confidential App in 30 minutes.",
     url: "https://docs.fairblock.network/docs/welcome/quickstart/",
   },
   {
-    imageUrl: "src/assets/images/characters/Character-lantern-blue.png",
+    imageUrl: "https://i.imgur.com/Qm3CuGX.png",
     imageText: "Character-lantern",
     header: "Join our FairyRing",
     description: "Become a mushroom in the fairy ring.",

@@ -1,9 +1,11 @@
 import React from "react";
 import "./Slider.css";
+import { useTheme } from "../App";
 
 type SliderCard = {
   name: string;
-  imageUrl: string;
+  imageUrlLight: string;
+  imageUrlDark: string;
   description: string;
 };
 
@@ -32,6 +34,8 @@ const Slider: React.FC<SliderProps> = ({
   quantity,
   reverse = false,
 }) => {
+  const { darkMode } = useTheme();
+
   return (
     <div
       className="slider relative overflow-hidden w-full"
@@ -50,7 +54,7 @@ const Slider: React.FC<SliderProps> = ({
           imageWithLinks.map((item, index) => (
             <div
               key={index}
-              className="item absolute"
+              className="item absolute hover:cursor-pointer"
               style={
                 {
                   "--position": `${index + 1}`,
@@ -59,6 +63,7 @@ const Slider: React.FC<SliderProps> = ({
             >
               <a href={item.link} target="_blank">
                 <img
+                  loading="lazy"
                   src={item.imageUrl}
                   alt={item.name}
                   className={`${
@@ -75,19 +80,20 @@ const Slider: React.FC<SliderProps> = ({
           cards.map((item, index) => (
             <div
               key={index}
-              className="item absolute"
+              className="item absolute hover:cursor-pointer"
               style={
                 {
                   "--position": `${index + 1}`,
                 } as React.CSSProperties
               }
             >
-              <div className="border dark:bg-neutral-800 border-black/50 dark:border-white/50 flex flex-col gap-4 h-[99%] items-center justify-around px-6 py-4 rounded-2xl shadow-md shadow-black/20 dark:shadow-black text-center">
+              <div className="border border-black/50 dark:border-white/50 flex flex-col gap-4 h-[99%] items-center justify-around px-6 py-4 rounded-2xl shadow-md shadow-black/20 dark:shadow-black text-center">
                 <h4 className="font-marlide text-3xl sm:text-4xl">
                   {item.name}
                 </h4>
                 <img
-                  src={item.imageUrl}
+                  loading="lazy"
+                  src={darkMode ? item.imageUrlDark : item.imageUrlLight}
                   alt={`Slider ${index + 1}`}
                   className="w-full"
                 />

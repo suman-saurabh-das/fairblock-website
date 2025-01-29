@@ -3,49 +3,50 @@ import Slider from "./Slider";
 const ECOSYSTEM_ARRAY_1 = [
   {
     name: "Arbitrum",
-    imageUrl: "src/assets/images/ecosystem/arbitrum.svg",
+    imageUrl: "https://i.imgur.com/jb7vwCG.png",
     link: "https://arbitrum.io/",
   },
   {
     name: "OP Stack",
-    imageUrl: "src/assets/images/ecosystem/opstack.svg",
+    imageUrl: "https://i.imgur.com/4aA7U5T.png",
     link: "https://optimism.io/",
   },
   {
     name: "Polygon",
-    imageUrl: "src/assets/images/ecosystem/polygon.png",
+    imageUrl: "https://i.imgur.com/zRfudMJ.png",
     link: "https://polygon.technology/",
+    isBlack: true,
   },
   {
     name: "Polymer",
-    imageUrl: "src/assets/images/ecosystem/polymer.png",
+    imageUrl: "https://i.imgur.com/DjbM1pq.png",
     link: "https://www.polymerlabs.org/",
     isBlack: true,
   },
   {
     name: "Celestia",
-    imageUrl: "src/assets/images/ecosystem/celestia.png",
+    imageUrl: "https://i.imgur.com/98WjIoG.png",
     link: "https://celestia.org/",
   },
   {
     name: "Xai",
-    imageUrl: "src/assets/images/ecosystem/xai.png",
+    imageUrl: "https://i.imgur.com/ITN5zKg.png",
     link: "https://xai.games/",
   },
   {
     name: "Alt Layer",
-    imageUrl: "src/assets/images/ecosystem/alt layer.png",
+    imageUrl: "https://i.imgur.com/b34yNMQ.png",
     link: "https://www.altlayer.io/",
     isBlack: true,
   },
   {
     name: "Squid",
-    imageUrl: "src/assets/images/ecosystem/squid.png",
+    imageUrl: "https://i.imgur.com/W7heTJA.png",
     link: "https://www.squidrouter.com/",
   },
   {
     name: "Rollkit",
-    imageUrl: "src/assets/images/ecosystem/rollkit.svg",
+    imageUrl: "https://i.imgur.com/k9TvFIY.png",
     link: "https://rollkit.dev/",
     isBlack: true,
   },
@@ -54,44 +55,44 @@ const ECOSYSTEM_ARRAY_1 = [
 const ECOSYSTEM_ARRAY_2 = [
   {
     name: "Ritual",
-    imageUrl: "src/assets/images/ecosystem/ritual.svg",
+    imageUrl: "https://i.imgur.com/XYPkzVT.png",
     link: "https://ritual.net/",
     isBlack: true,
   },
   {
     name: "Cosmos Hub",
-    imageUrl: "src/assets/images/ecosystem/cosmoshub.svg",
+    imageUrl: "https://i.imgur.com/cHgwQn1.png",
     link: "https://cosmos.network/",
     isBlack: true,
   },
   {
     name: "Stargaze",
-    imageUrl: "src/assets/images/ecosystem/stargaze.png",
+    imageUrl: "https://i.imgur.com/yOTLiAC.png",
     link: "https://www.stargaze.zone/",
   },
   {
     name: "Ethereum",
-    imageUrl: "src/assets/images/ecosystem/ethereum.svg",
-    link: "",
+    imageUrl: "https://i.imgur.com/WvYnssk.png",
+    link: "https://ethereum.org/en/",
   },
   {
     name: "CoW Swap",
-    imageUrl: "src/assets/images/ecosystem/cowswap.png",
+    imageUrl: "https://i.imgur.com/iXNYEZ6.png",
     link: "https://swap.cow.fi/",
   },
   {
     name: "Monad",
-    imageUrl: "src/assets/images/ecosystem/monad.png",
+    imageUrl: "https://i.imgur.com/2j88T8x.png",
     link: "https://www.monad.xyz/",
   },
   {
     name: "Fluent",
-    imageUrl: "src/assets/images/ecosystem/fluent.png",
+    imageUrl: "https://i.imgur.com/V8pNxEN.png",
     link: "https://fluent.xyz/",
   },
   {
     name: "Anoma",
-    imageUrl: "src/assets/images/ecosystem/anoma.png",
+    imageUrl: "https://i.imgur.com/wfKomsS.png",
     link: "https://anoma.net/",
   },
 ];

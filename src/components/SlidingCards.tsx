@@ -4,27 +4,32 @@ import Slider from "./Slider";
 const SLIDING_CARDS_ARRAY = [
   {
     name: "Accessible",
-    imageUrl: "/src/assets/images/Accessible.png",
+    imageUrlLight: "https://i.imgur.com/8t7y3jh.png",
+    imageUrlDark: "https://i.imgur.com/s3VozU8.png",
     description: "Confidentiality is always one click away.",
   },
   {
     name: "Expansive",
-    imageUrl: "/src/assets/images/Compliant.png",
+    imageUrlLight: "https://i.imgur.com/ISUn2Nw.png",
+    imageUrlDark: "https://i.imgur.com/SGBBREX.png",
     description: "Unlocking impactful DeFi and Al apps.",
   },
   {
     name: "Composable",
-    imageUrl: "/src/assets/images/Composable.png",
+    imageUrlLight: "https://i.imgur.com/nH73iMM.png",
+    imageUrlDark: "https://i.imgur.com/TrFE7MP.png",
     description: "Pluggable confidential logic into any application.",
   },
   {
     name: "Dynamic",
-    imageUrl: "/src/assets/images/Expansive.png",
+    imageUrlLight: "https://i.imgur.com/hvqvl0Y.png",
+    imageUrlDark: "https://i.imgur.com/iuSNrla.png",
     description: "Fine-tuned performance and security for each application.",
   },
   {
     name: "Compliant",
-    imageUrl: "/src/assets/images/Multimodal.png",
+    imageUrlLight: "https://i.imgur.com/jwuKu2r.png",
+    imageUrlDark: "https://i.imgur.com/wdShKGI.png",
     description: "Zero compliance risks with post-transaction accountability.",
   },
 ];

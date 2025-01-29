@@ -6,8 +6,9 @@ const About = () => {
         {/* ABOUT IMAGE CONTAINER */}
         <div className="flex flex-col gap-12 p-4 text-xl mx-auto w-full md:w-1/2 lg:w-[35%]">
           <img
+            loading="lazy"
             className="dark:invert mx-auto w-full"
-            src="/src/assets/images/Fairblock.png"
+            src="https://i.imgur.com/exKqPqe.png"
             alt="Fairblock"
           />
         </div>
