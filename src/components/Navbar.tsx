@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { LogoSvg } from "../assets/svg/LogoSvg";
+// import { LogoSvg } from "../assets/svg/LogoSvg";
 import { BsNewspaper } from "react-icons/bs";
 import { FiSun, FiMoon } from "react-icons/fi";
 import { GrWorkshop, GrArticle } from "react-icons/gr";
