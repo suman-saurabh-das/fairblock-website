@@ -27,7 +27,7 @@ const Hero = () => {
   }, [darkMode]);
 
   return (
-    <div className="flex items-center justify-center min-h-[92vh] max-h-fit overflow-hidden relative mx-auto w-full max-w-screen-2xl">
+    <div className="flex items-center justify-center overflow-hidden h-[88vh] relative mx-auto w-full max-w-screen-2xl">
       {/* VIDEO BACKGROUND */}
       <video
         autoPlay
@@ -40,16 +40,16 @@ const Hero = () => {
       ></video>
 
       {/* CONTENT OVERLAY */}
-      <div className="bg-[#58BDF6]/90 dark:bg-black/60 flex flex-col items-center justify-center  p-6 relative min-h-[92vh] max-h-fit w-full z-[5]">
-        <div className="flex flex-col items-center">
+      <div className="bg-[#58BDF6]/90 dark:bg-black/60 p-6 pt-12 relative h-full w-full z-[5]">
+        <div className="flex flex-col items-center justify-around gap-4 h-full">
           {/* HERO IMAGE CONTAINER */}
           <div>
-            <MasterSvg className="fill-black dark:fill-white h-[22rem] xl:h-[55vh] w-full" />
+            <MasterSvg className="fill-black dark:fill-white h-[50vh] w-full" />
           </div>
 
           {/* HERO TEXT CONTAINER */}
-          <div className="mt-6 lg:mt-12 xl:mt-20">
-            <h1 className="font-marlide font-normal tracking-wider text-center text-3xl lg:text-5xl w-80 md:w-auto h-10 sm:max-w-fit">
+          <div className="">
+            <h1 className="font-marlide font-normal tracking-wider text-center text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl min-h-[4.5rem] w-80 md:w-auto sm:max-w-fit">
               <ScrambleText
                 text="Build Farther with Web3's Confidentiality Station"
                 speed={50}
@@ -59,7 +59,7 @@ const Hero = () => {
           </div>
 
           {/* SCROLL DOWN BUTTON */}
-          <div className="mt-20 md:mt-16">
+          <div className="">
             <button
               className="flex flex-col gap-1 items-center"
               onClick={() => scrollToSection("about")}

@@ -1,5 +1,5 @@
 /* Adding google font - EB Garamond (Body) */
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -25,3 +25,59 @@ body {
   scroll-behavior: smooth;
 }
 /* Styles for light / dark mode - END */
+
+/* Adding custom font - MarlideDisplay (Headers) - START */
+@font-face {
+  font-family: "Marlide Display";
+  src: url("/fonts/MarlideDisplay_Light.woff2") format("woff2"),
+    url("/fonts/MarlideDisplay_Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Marlide Display";
+  src: url("/fonts/MarlideDisplay_Regular.woff2") format("woff2"),
+    url("/fonts/MarlideDisplay_Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Marlide Display";
+  src: url("/fonts/MarlideDisplay_Medium.woff2") format("woff2"),
+    url("/fonts/MarlideDisplay_Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Marlide Display";
+  src: url("/fonts/MarlideDisplay_Bold.woff2") format("woff2"),
+    url("/fonts/MarlideDisplay_Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Marlide Display";
+  src: url("/fonts/MarlideDisplay_ExtraBold.woff2") format("woff2"),
+    url("/fonts/MarlideDisplay_ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Marlide Display";
+  src: url("/fonts/MarlideDisplay_Heavy.woff2") format("woff2"),
+    url("/fonts/MarlideDisplay_Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+/* Adding custom font - MarlideDisplay - END */

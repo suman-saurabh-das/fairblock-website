@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import Slider from "./Slider";
 
 const ECOSYSTEM_ARRAY_1 = [
@@ -98,6 +99,31 @@ const ECOSYSTEM_ARRAY_2 = [
 ];
 
 const Ecosystem = () => {
+  const [dimensions, setDimensions] = useState({ width: 90, height: 110 });
+
+  useEffect(() => {
+    const updateDimensions = () => {
+      if (window.innerWidth < 769) {
+        // Mobile
+        setDimensions({ width: 90, height: 110 });
+      } else {
+        // Laptop/Desktop
+        setDimensions({ width: 110, height: 140 });
+      }
+    };
+
+    // Initial setup
+    updateDimensions();
+
+    // Add event listener for window resize
+    window.addEventListener("resize", updateDimensions);
+
+    // Cleanup event listener on unmount
+    return () => {
+      window.removeEventListener("resize", updateDimensions);
+    };
+  }, []);
+
   return (
     <div className="px-6 py-12 md:py-20">
       <div className="flex flex-col gap-4 items-center justify-center overflow-x-hidden">
@@ -107,14 +133,14 @@ const Ecosystem = () => {
         <div className="flex flex-col gap-4 xl:gap-8">
           <Slider
             imageWithLinks={ECOSYSTEM_ARRAY_1}
-            width={110}
-            height={140}
+            width={dimensions.width}
+            height={dimensions.height}
             quantity={ECOSYSTEM_ARRAY_1.length}
           />
           <Slider
             imageWithLinks={ECOSYSTEM_ARRAY_2}
-            width={110}
-            height={140}
+            width={dimensions.width}
+            height={dimensions.height}
             quantity={ECOSYSTEM_ARRAY_2.length}
             reverse={true}
           />

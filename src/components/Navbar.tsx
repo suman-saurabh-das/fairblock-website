@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-// import { LogoSvg } from "../assets/svg/LogoSvg";
+import { LogoSvg } from "../assets/svg/LogoSvg";
 import { BsNewspaper } from "react-icons/bs";
 import { FiSun, FiMoon } from "react-icons/fi";
 import { GrWorkshop, GrArticle } from "react-icons/gr";
@@ -84,15 +84,15 @@ const Navbar = () => {
   }, [isNavbarOpen]);
 
   return (
-    <div className="bg-[white] dark:bg-[black] flex items-center justify-between px-4 md:px-8 lg:px-12 py-6 mx-auto max-w-screen-2xl sticky top-0 shadow-sm z-10">
+    <div className="font-marlide bg-[white] dark:bg-[black] flex items-center justify-between px-4 md:px-8 lg:px-12 mx-auto max-w-screen-2xl sticky top-0 h-[12vh] shadow-sm z-10">
       {/* APP LOGO & HEADER */}
       <div className="flex items-center justify-between w-full md:w-fit">
         <Link to={"/"} className="flex gap-3 items-center w-44 md:w-52">
-          {/* <LogoSvg className="dark:fill-white h-10 w-10 lg:h-12 lg:w-12" />
+          <LogoSvg className="dark:fill-white h-10 w-10 lg:h-12 lg:w-12" />
           <h3 className="font-light text-4xl lg:text-5xl">
             Fairblock
-          </h3> */}
-          <img className="dark:invert w-full" src="https://i.imgur.com/7OvhFKV.png" alt="Fairblock logo" />
+          </h3>
+          {/* <img className="dark:invert w-full" src="https://i.imgur.com/7OvhFKV.png" alt="Fairblock logo" /> */}
         </Link>
 
         {/* OPEN SIDE NAV - VISIBLE ONLY ON MOBILE DEVICES */}
@@ -117,11 +117,11 @@ const Navbar = () => {
 
       {/* SIDE NAV */}
       <div
-        className={`bg-[white] dark:bg-[black] fixed top-0 right-0 z-20 h-full w-3/4 md:w-auto transform transition-transform duration-300 md:static md:translate-x-0 ${
+        className={`bg-[white] dark:bg-[black] flex justify-between fixed top-0 right-0 z-20 h-full w-auto transform transition-transform duration-300 md:static md:translate-x-0 ${
           isNavbarOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <nav className="flex flex-col md:flex-row items-start md:items-center p-4 md:p-0">
+        <nav className="flex flex-col md:flex-row items-start md:items-center justify-between p-4 md:p-0">
           {/* CLOSE SIDE NAV - VISIBLE ONLY ON MOBILE DEVICES */}
           <button
             aria-label="Close menu"

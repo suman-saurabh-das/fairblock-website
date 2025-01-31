@@ -1,7 +1,6 @@
 import { useState, useEffect, createContext, useContext } from "react";
 import { Outlet } from "react-router-dom";
 import "./App.css";
-import "../src/assets/fonts/fonts.css";
 import Navbar from "./components/Navbar";
 
 export type ThemeContextType = {

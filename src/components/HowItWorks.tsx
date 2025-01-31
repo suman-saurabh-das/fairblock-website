@@ -6,7 +6,7 @@ const HowItWorks = () => {
 
   return (
     // lg:bg-[url('/src/assets/images/Border1Dark.png')] lg:dark:bg-[url('/src/assets/images/Border1Light.png')] lg:bg-contain lg:bg-center lg:bg-no-repeat lg:p-16
-    <div className="px-6 py-12 md:py-20">
+    <div className="px-6 py-12 md:py-20 md:pt-40">
       <div className="relative sm:border sm:border-black/50 sm:py-8 dark:border-white/50 flex flex-col lg:flex-row items-center justify-evenly gap-12 md:gap-0 rounded-3xl sm:shadow-md sm:shadow-black/20 sm:dark:shadow-black mx-auto max-w-screen-xl">
         {/* BORDER TOP DECORATION IMAGE */}
         <img

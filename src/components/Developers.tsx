@@ -9,14 +9,14 @@ const DEVELOPERS_ARRAY = [
     url: "https://docs.fairblock.network/docs/welcome/quickstart/",
   },
   {
-    imageUrl: "https://i.imgur.com/UVlVjfz.png",
-    imageText: "Character-lock",
+    imageUrl: "https://i.imgur.com/vF9Vch5.png",
+    imageText: "Character-key",
     header: "Build a cApp",
     description: "Build your Confidential App in 30 minutes.",
     url: "https://docs.fairblock.network/docs/welcome/quickstart/",
   },
   {
-    imageUrl: "https://i.imgur.com/Qm3CuGX.png",
+    imageUrl: "https://i.imgur.com/A2TocpT.png",
     imageText: "Character-lantern",
     header: "Join our FairyRing",
     description: "Become a mushroom in the fairy ring.",

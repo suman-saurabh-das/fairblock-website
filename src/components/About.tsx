@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div id="about" className="pt-32 md:pt-32 px-6 py-12 xl:py-20 md:py-20">
+    <div id="about" className="flex justify-between min-h-screen px-6 py-12 md:py-20">
       <div className="flex flex-col lg:flex-row-reverse gap-12 items-center justify-center mx-auto max-w-screen-xl">
 
         {/* ABOUT IMAGE CONTAINER */}

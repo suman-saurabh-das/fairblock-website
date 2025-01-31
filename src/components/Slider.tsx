@@ -68,7 +68,7 @@ const Slider: React.FC<SliderProps> = ({
                   alt={item.name}
                   className={`${
                     item.isBlack && "dark:invert"
-                  } aspect-square object-contain p-4 w-full`}
+                  } aspect-square object-contain p-2 md:p-4 w-full`}
                 />
                 <p className="text-base md:text-lg text-center">{item.name}</p>
               </a>
