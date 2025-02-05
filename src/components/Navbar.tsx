@@ -15,11 +15,17 @@ import { DOCS_LINK } from "../utils/links";
 
 const NAV_OPTIONS = [
   {
-    type: "link",
+    type: "anchor",
     label: "How it works",
     logo: <GrWorkshop className="md:hidden text-2xl" />,
-    to: "/how-it-works",
+    href: "https://website-0xfairblock.vercel.app/how-it-works",
   },
+  // {
+  //   type: "link",
+  //   label: "How it works",
+  //   logo: <GrWorkshop className="md:hidden text-2xl" />,
+  //   to: "/how-it-works",
+  // },
   {
     type: "anchor",
     label: "Docs",
@@ -152,26 +158,25 @@ const Navbar = () => {
                     </span>
                   </a>
                 );
-              } else if (item.type === "link" && item.to) {
-                return (
-                  <Link
-                    className="flex items-center gap-4 md:gap-0 px-6 md:px-2 py-2 rounded-xl"
-                    key={index}
-                    to={item.to}
-                    target={item.openInNewTab ? "_blank" : "_self"}
-                    rel="noopener noreferrer"
-                  >
-                    <span>{item.logo}</span>
-                    <span className={`${item.hideLabelDesktop && "md:hidden"}`}>
-                      <ScrambleText
-                        text={item.label}
-                        speed={100}
-                        scrambleOnHover={true}
-                      />
-                    </span>
-                  </Link>
-                );
-              }
+              } 
+              // else if (item.type === "link" && item.to) {
+              //   return (
+              //     <Link
+              //       className="flex items-center gap-4 md:gap-0 px-6 md:px-2 py-2 rounded-xl"
+              //       key={index}
+              //       to={item.to}
+              //     >
+              //       <span>{item.logo}</span>
+              //       <span className={`${item.hideLabelDesktop && "md:hidden"}`}>
+              //         <ScrambleText
+              //           text={item.label}
+              //           speed={100}
+              //           scrambleOnHover={true}
+              //         />
+              //       </span>
+              //     </Link>
+              //   );
+              // }
             })}
 
             {/* DARK / LIGHT MODE */}
