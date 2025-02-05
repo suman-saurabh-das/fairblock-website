@@ -1,8 +1,10 @@
 const About = () => {
   return (
-    <div id="about" className="flex justify-between min-h-screen px-6 py-12 md:py-20">
+    <div
+      id="about"
+      className="flex justify-between min-h-screen px-6 py-12 md:py-20"
+    >
       <div className="flex flex-col lg:flex-row-reverse gap-12 items-center justify-center mx-auto max-w-screen-xl">
-
         {/* ABOUT IMAGE CONTAINER */}
         <div className="flex flex-col gap-12 p-4 text-xl mx-auto w-full md:w-1/2 lg:w-[35%]">
           <img
@@ -27,9 +29,9 @@ const About = () => {
           </p>
           <p className="font-medium mb-6 md:mb-12 text-lg md:text-2xl">
             Fairblock leverages dynamic confidential computing to mitigate
-            centralized risks and prevent information leakage in decentralized
-            applications. This unlocks Credible and Confidential DeFi mechanisms
-            and AI models.
+            centralized risks and prevent information leakage and manipulation
+            in decentralized applications. This unlocks Credible and
+            Confidential DeFi mechanisms and AI models.
           </p>
           <button className="bg-fuchsia-300 hover:bg-fuchsia-400 border border-black/50 dark:border-white/50 font-marlide font-medium px-6 py-2 rounded-3xl text-black w-fit min-w-48">
             <a href="https://website-0xfairblock.vercel.app/applications">

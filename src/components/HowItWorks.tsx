@@ -1,5 +1,9 @@
 // import { Link } from "react-router-dom";
 import { useTheme } from "../App";
+import {
+  HOW_IT_WORKS_LIGHT_IMAGE,
+  HOW_IT_WORKS_DARK_IMAGE,
+} from "../utils/images";
 
 const HowItWorks = () => {
   const { darkMode } = useTheme();
@@ -27,18 +31,16 @@ const HowItWorks = () => {
             multimodal cryptography.
           </p>
           <button className="bg-fuchsia-300 hover:bg-fuchsia-400 border border-black/50 dark:border-white/50 font-medium mt-6 px-6 py-2 rounded-3xl text-black w-fit">
-            <a href="https://website-0xfairblock.vercel.app/how-it-works">Learn How It Works</a>
+            <a href="https://website-0xfairblock.vercel.app/how-it-works">
+              Learn How It Works
+            </a>
           </button>
         </div>
 
         {/* HOW IT WORKS IMAGE CONTAINER */}
         <div className="w-full lg:w-[48%]">
           <img
-            src={
-              darkMode
-                ? "https://i.imgur.com/1ucqeDO.png"
-                : "https://i.imgur.com/9V0Skax.png"
-            }
+            src={darkMode ? HOW_IT_WORKS_DARK_IMAGE : HOW_IT_WORKS_LIGHT_IMAGE}
             loading="lazy"
             className="h-full w-full"
           />

@@ -11,18 +11,20 @@ import { TbApps } from "react-icons/tb";
 import { useTheme } from "../App";
 import ScrambleText from "./ScrambleText";
 
+import { DOCS_LINK } from "../utils/links";
+
 const NAV_OPTIONS = [
   {
-    type: "anchor",
+    type: "link",
     label: "How it works",
     logo: <GrWorkshop className="md:hidden text-2xl" />,
-    href: "https://website-0xfairblock.vercel.app/how-it-works",
+    to: "/how-it-works",
   },
   {
     type: "anchor",
     label: "Docs",
     logo: <SlDocs className="md:hidden text-2xl" />,
-    href: "https://docs.fairblock.network/docs/welcome/welcome_to_fairblock",
+    href: DOCS_LINK,
   },
   {
     type: "anchor",
@@ -89,10 +91,7 @@ const Navbar = () => {
       <div className="flex items-center justify-between w-full md:w-fit">
         <Link to={"/"} className="flex gap-3 items-center w-44 md:w-52">
           <LogoSvg className="dark:fill-white h-10 w-10 lg:h-12 lg:w-12" />
-          <h3 className="font-light text-4xl lg:text-5xl">
-            Fairblock
-          </h3>
-          {/* <img className="dark:invert w-full" src="https://i.imgur.com/7OvhFKV.png" alt="Fairblock logo" /> */}
+          <h3 className="font-light text-4xl lg:text-5xl">Fairblock</h3>
         </Link>
 
         {/* OPEN SIDE NAV - VISIBLE ONLY ON MOBILE DEVICES */}
@@ -121,7 +120,7 @@ const Navbar = () => {
           isNavbarOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <nav className="flex flex-col md:flex-row items-start md:items-center justify-between p-4 md:p-0">
+        <nav className="flex flex-col md:flex-row items-start md:items-center md:justify-between p-4 md:p-0">
           {/* CLOSE SIDE NAV - VISIBLE ONLY ON MOBILE DEVICES */}
           <button
             aria-label="Close menu"
@@ -133,24 +132,47 @@ const Navbar = () => {
 
           {/* NAV LINKS */}
           <div className="flex flex-col md:flex-row gap-6 md:gap-1 text-xl w-full">
-            {NAV_OPTIONS.map((item, index) => (
-              <a
-                className="flex items-center gap-4 md:gap-0 px-6 md:px-2 py-2 rounded-xl"
-                key={index}
-                href={item.href}
-                target={item.openInNewTab ? "_blank" : "_self"}
-                rel="noopener noreferrer"
-              >
-                <span>{item.logo}</span>
-                <span className={`${item.hideLabelDesktop && "md:hidden"}`}>
-                  <ScrambleText
-                    text={item.label}
-                    speed={100}
-                    scrambleOnHover={true}
-                  />
-                </span>
-              </a>
-            ))}
+            {NAV_OPTIONS.map((item, index) => {
+              if (item.type === "anchor") {
+                return (
+                  <a
+                    className="flex items-center gap-4 md:gap-0 px-6 md:px-2 py-2 rounded-xl"
+                    key={index}
+                    href={item.href}
+                    target={item.openInNewTab ? "_blank" : "_self"}
+                    rel="noopener noreferrer"
+                  >
+                    <span>{item.logo}</span>
+                    <span className={`${item.hideLabelDesktop && "md:hidden"}`}>
+                      <ScrambleText
+                        text={item.label}
+                        speed={100}
+                        scrambleOnHover={true}
+                      />
+                    </span>
+                  </a>
+                );
+              } else if (item.type === "link" && item.to) {
+                return (
+                  <Link
+                    className="flex items-center gap-4 md:gap-0 px-6 md:px-2 py-2 rounded-xl"
+                    key={index}
+                    to={item.to}
+                    target={item.openInNewTab ? "_blank" : "_self"}
+                    rel="noopener noreferrer"
+                  >
+                    <span>{item.logo}</span>
+                    <span className={`${item.hideLabelDesktop && "md:hidden"}`}>
+                      <ScrambleText
+                        text={item.label}
+                        speed={100}
+                        scrambleOnHover={true}
+                      />
+                    </span>
+                  </Link>
+                );
+              }
+            })}
 
             {/* DARK / LIGHT MODE */}
             <button className="mr-2" onClick={() => setDarkMode(!darkMode)}>

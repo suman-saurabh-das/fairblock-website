@@ -1,5 +1,6 @@
 import { LogoSvg } from "../assets/svg/LogoSvg";
 import ScrambleText from "./ScrambleText";
+import { DOCS_LINK } from "../utils/links";
 
 type FooterLinks = {
   linkLabel: string;
@@ -37,7 +38,7 @@ const FOOTER_LINKS_COLUMN_2 = {
   links: [
     {
       linkLabel: "Docs",
-      href: "https://docs.fairblock.network/docs/welcome/welcome_to_fairblock",
+      href: DOCS_LINK,
     },
     {
       linkLabel: "Github",
