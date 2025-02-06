@@ -96,6 +96,43 @@ const HowThingsWorks = () => {
           alt="Blue lantern character"
         />
       </div>
+
+      {/* SECTION 3 */}
+      <div className="flex flex-col gap-4 px-4 md:px-8 lg:px-12 py-8 lg:py-12 pt-12 lg:pt-20 mx-auto text-center max-w-screen-xl">
+        <h2 className="font-marlide text-4xl lg:text-5xl mb-4">User Flow</h2>
+        <p>
+          Simplicity is the last step of art, we prioritize simplicity through
+          our multimodal and dynamic design to fine-tune performance and
+          security, introducing complexity only when essential.
+        </p>
+        <ol>
+          Fairblock leverages threshold IBE (aka witness encryption) for -
+          <li>
+            a. Applications that only require pre-execution mempool-privacy e.g.
+            sealed-bid auctions or frontrunning protection
+          </li>
+          <li>
+            b. Information access control e.g. pay-to-decrypt to achieve minimal
+            bandwidth and computation overhead.
+          </li>
+        </ol>
+        <p>
+          Other MPC schemes such as Threshold FHE (CKKS) and SPDZ are used for
+          applications that require computation over encrypted transactions or
+          data such as confidential AI inference or dark pools. MPC schemes can
+          be combined with TEEs to reduce reliance on a single TEE’s hardware
+          security and mitigate MPCs honest majority collusion risks. ZKPs are
+          necessary in some MPC applications to ensure the validity of private
+          inputs whenever multiple parties interact with each other in a shared
+          private state.
+        </p>
+        <p>
+          As advanced MPC schemes become more accessible, Fairblock will offer
+          them through FairyKit to partner protocols and native applications. We
+          are beginning by offering threshold IBE and CKKS due to their
+          immediate benefit to the blockchain design space and user experience.
+        </p>
+      </div>
     </div>
   );
 };
