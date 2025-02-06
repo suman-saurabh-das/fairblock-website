@@ -1,3 +1,5 @@
+// ******************** LANDING PAGE - START ********************
+
 export const CHARACTER_BLUE_KEY_IMAGE = "https://i.imgur.com/yQlNPuF.png";
 export const CHARACTER_BLUE_LANTERN_IMAGE = "https://i.imgur.com/nV428KM.png";
 export const CHARACTER_BLUE_LOCK_IMAGE = "https://i.imgur.com/sfTterI.png";
@@ -23,5 +25,15 @@ export const CHARACTER_PURPLE_SCROLL_IMAGE = "https://i.imgur.com/PC5jZog.png";
 export const CHARACTER_PURPLE_SHIELD_IMAGE = "https://i.imgur.com/fp1qFg7.png";
 
 export const FAIR_BLOCK_IMAGE = "https://i.imgur.com/jU7B6iq.png";
-export const HOW_IT_WORKS_LIGHT_IMAGE = "https://i.imgur.com/csDZHyR.png";
-export const HOW_IT_WORKS_DARK_IMAGE = "https://i.imgur.com/KIp160B.png";
+export const HOW_IT_WORKS_LIGHT_IMAGE = "https://i.imgur.com/bisvgb7.png";
+export const HOW_IT_WORKS_DARK_IMAGE = "https://i.imgur.com/3ZH6ybU.png";
+
+// ******************** LANDING PAGE - END ********************
+
+// ******************** HOW THINGS WORKS PAGE - START ********************
+
+export const BENEFITS_BORDER = "https://i.imgur.com/DztWbdI.png";
+export const USER_FLOW_LIGHT = "https://i.imgur.com/6eVol0S.png";
+export const USER_FLOW_DARK = "https://i.imgur.com/jhqB6WI.png";
+
+// ******************** HOW THINGS WORKS PAGE - END ********************
