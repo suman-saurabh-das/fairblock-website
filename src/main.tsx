@@ -5,6 +5,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import "./index.css";
 import App from "./App.tsx";
 import Applications from "./pages/Applications.tsx";
+import HowThingsWorks from "./pages/HowThingsWorks.tsx";
 import Articles from "./pages/Articles.tsx";
 import Main from "./components/Main.tsx";
 import Error from "./pages/Error.tsx";
@@ -16,6 +17,7 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       { path: "/", element: <Main /> },
+      { path: "how-it-works", element: <HowThingsWorks /> },
       { path: "applications", element: <Applications /> },
       { path: "articles", element: <Articles /> },
       { path: "*", element: <Error /> }, // Catch-all route

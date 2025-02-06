@@ -2,6 +2,7 @@ import { useState, useEffect, createContext, useContext } from "react";
 import { Outlet } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 export type ThemeContextType = {
   darkMode: boolean;
@@ -43,6 +44,7 @@ function App() {
         <div className="App text-black dark:text-white">
           <Navbar />
           <Outlet />
+          <Footer />
         </div>
       </ThemeContext.Provider>
     </div>

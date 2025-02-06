@@ -6,7 +6,6 @@ import Developers from "./Developers";
 import Ecosystem from "./Ecosystem";
 import Backers from "./Backers";
 import News from "./News";
-import Footer from "./Footer";
 
 const Main = () => {
   return (
@@ -19,7 +18,6 @@ const Main = () => {
       <Ecosystem />
       <Developers />
       <News />
-      <Footer />
     </div>
   );
 };
