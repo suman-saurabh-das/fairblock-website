@@ -6,6 +6,8 @@ import {
   CHARACTER_BLUE_LANTERN_IMAGE,
   USER_FLOW_LIGHT,
   USER_FLOW_DARK,
+  CHARACTER_BLUE_KEY_IMAGE,
+  BENEFITS_BORDER,
 } from "../utils/images";
 
 const HowThingsWorks = () => {
@@ -148,6 +150,48 @@ const HowThingsWorks = () => {
             src={darkMode ? USER_FLOW_DARK : USER_FLOW_LIGHT}
             alt="User flow"
           />
+        </div>
+      </div>
+
+      {/* SECTION 5 */}
+      <div className="bg-[#58BDF6] relative text-black pt-12 lg:pt-20">
+        {/* KEY CHARACTER IMAGE */}
+        <img className="hidden scale-x-[-1] xl:block absolute -top-32 right-12 w-56 xl:w-64" src={CHARACTER_BLUE_KEY_IMAGE} alt="Blue lantern character" />
+
+        <h2 className="font-marlide text-4xl lg:text-5xl text-center">Key Benefits</h2>
+        <div className="relative grid sm:grid-cols-2 gap-8 xl:block px-4 md:px-8 lg:px-12 py-8 lg:py-12 mx-auto xl:w-[75%]">
+          <img
+            loading="lazy"
+            className="hidden xl:block w-full"
+            src={BENEFITS_BORDER}
+            alt=""
+          />
+          <div className="xl:absolute top-[17%] left-[15%] border xl:border-none border-black break-words p-4 xl:p-0 rounded-xl xl:text-center xl:max-w-[32%]">
+            <h4 className="font-bold mb-4">Composable</h4>
+            <p>
+              Developers can build confidentiality features directly into the
+              chains and applications they already know and love.
+            </p>
+          </div>
+          <div className="xl:absolute top-[60%] left-[15%] border xl:border-none border-black break-words p-4 xl:p-0 rounded-xl xl:text-center xl:max-w-[32%]">
+            <h4 className="font-bold mb-4">Performant and Scalable</h4>
+            <p>
+              Linear bandwidth scaling and encryption run times in milliseconds,
+              ensuring frictionless user experience.
+            </p>
+          </div>
+          <div className="xl:absolute top-[20%] left-[55%] border xl:border-none border-black break-words p-4 xl:p-0 rounded-xl xl:text-center xl:max-w-[32%]">
+            <h4 className="font-bold mb-4">Chain Agnostic</h4>
+            <p>FairyKit is compatible with major L1s, L2s.</p>
+          </div>
+          <div className="xl:absolute top-[58%] left-[54%] border xl:border-none border-black break-words p-4 xl:p-0 rounded-xl xl:text-center xl:max-w-[32%]">
+            <h4 className="font-bold mb-4">Dynamic</h4>
+            <p>
+              There is no one-size-fits-all encryption solution. Fairblock's MPC
+              schemes can be combined and configured for any use case or level
+              of confidentiality.
+            </p>
+          </div>
         </div>
       </div>
     </div>
