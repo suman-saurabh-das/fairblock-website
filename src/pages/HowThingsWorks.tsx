@@ -1,11 +1,16 @@
+import { useTheme } from "../App";
 import { Star } from "../assets/svg/Star";
 import {
   CHARACTER_BLUE_SCROLL_IMAGE,
   FAIR_BLOCK_IMAGE,
   CHARACTER_BLUE_LANTERN_IMAGE,
+  USER_FLOW_LIGHT,
+  USER_FLOW_DARK,
 } from "../utils/images";
 
 const HowThingsWorks = () => {
+  const { darkMode } = useTheme();
+
   return (
     <div className="mx-auto max-w-screen-2xl">
       {/* SECTION 1 */}
@@ -132,6 +137,18 @@ const HowThingsWorks = () => {
           are beginning by offering threshold IBE and CKKS due to their
           immediate benefit to the blockchain design space and user experience.
         </p>
+      </div>
+
+      {/* SECTION 4 */}
+      <div className="px-4 md:px-8 lg:px-12 py-8 lg:py-12 pb-12 lg:pb-20">
+        <div className="mx-auto sm:w-4/5 lg:w-3/5 xl:w-1/2">
+          <img
+            loading="lazy"
+            className="w-full"
+            src={darkMode ? USER_FLOW_DARK : USER_FLOW_LIGHT}
+            alt="User flow"
+          />
+        </div>
       </div>
     </div>
   );
