@@ -153,6 +153,7 @@ const Navbar = () => {
                     href={item.href}
                     target={item.openInNewTab ? "_blank" : "_self"}
                     rel="noopener noreferrer"
+                    onClick={() => setIsNavbarOpen(false)}
                   >
                     <span>{item.logo}</span>
                     <span className={`${item.hideLabelDesktop && "md:hidden"}`}>
@@ -171,6 +172,7 @@ const Navbar = () => {
                     className="flex items-center gap-4 md:gap-0 px-6 md:px-2 py-2 rounded-xl"
                     key={index}
                     to={item.to}
+                    onClick={() => setIsNavbarOpen(false)}
                   >
                     <span>{item.logo}</span>
                     <span className={`${item.hideLabelDesktop && "md:hidden"}`}>
