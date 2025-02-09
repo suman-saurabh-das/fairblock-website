@@ -36,7 +36,7 @@ const HowThingsWorks = () => {
             />
           </div>
           <h2 className="font-marlide text-4xl lg:text-5xl">How Things Work</h2>
-          <p className="xl:w-[90%] mx-auto text-center">
+          <p className="xl:w-[90%] mx-auto text-justify">
             Fairblock is a decentralized cryptographic computer that runs secure
             and performant MPC-based confidential computation. Fairblock can
             host “dine-in” DeFi, AI, and gaming economies for cheap and fast
@@ -105,25 +105,18 @@ const HowThingsWorks = () => {
       </div>
 
       {/* SECTION 3 */}
-      <div className="flex flex-col gap-4 px-4 md:px-8 lg:px-12 py-8 lg:py-12 pt-12 lg:pt-20 mx-auto text-center max-w-screen-xl">
-        <h2 className="font-marlide text-4xl lg:text-5xl mb-4">User Flow</h2>
-        <p>
+      <div className="flex flex-col gap-4 px-4 md:px-8 lg:px-12 py-8 lg:py-12 pt-12 lg:pt-20 mx-auto max-w-screen-xl">
+        <h2 className="font-marlide text-4xl lg:text-5xl mb-4 text-center">
+          User Flow
+        </h2>
+        <p className="text-justify">
           Simplicity is the last step of art, we prioritize simplicity through
           our multimodal and dynamic design to fine-tune performance and
-          security, introducing complexity only when essential.
-        </p>
-        <ol>
-          Fairblock leverages threshold IBE (aka witness encryption) for -
-          <li>
-            a. Applications that only require pre-execution mempool-privacy e.g.
-            sealed-bid auctions or frontrunning protection
-          </li>
-          <li>
-            b. Information access control e.g. pay-to-decrypt to achieve minimal
-            bandwidth and computation overhead.
-          </li>
-        </ol>
-        <p>
+          security, introducing complexity only when essential. Fairblock
+          leverages threshold IBE (aka witness encryption) for: a. Applications
+          that only require pre-execution mempool-privacy e.g. sealed-bid
+          auctions or frontrunning protection b. Information access control e.g.
+          pay-to-decrypt to achieve minimal bandwidth and computation overhead.
           Other MPC schemes such as Threshold FHE (CKKS) and SPDZ are used for
           applications that require computation over encrypted transactions or
           data such as confidential AI inference or dark pools. MPC schemes can
@@ -156,9 +149,15 @@ const HowThingsWorks = () => {
       {/* SECTION 5 */}
       <div className="bg-[#58BDF6] relative text-black pt-12 lg:pt-20">
         {/* KEY CHARACTER IMAGE */}
-        <img className="hidden scale-x-[-1] xl:block absolute -top-32 right-12 w-56 xl:w-64" src={CHARACTER_BLUE_KEY_IMAGE} alt="Blue lantern character" />
+        <img
+          className="hidden scale-x-[-1] xl:block absolute -top-32 right-12 w-56 xl:w-64"
+          src={CHARACTER_BLUE_KEY_IMAGE}
+          alt="Blue lantern character"
+        />
 
-        <h2 className="font-marlide text-4xl lg:text-5xl text-center">Key Benefits</h2>
+        <h2 className="font-marlide text-4xl lg:text-5xl text-center">
+          Key Benefits
+        </h2>
         <div className="relative grid sm:grid-cols-2 gap-8 xl:block px-4 md:px-8 lg:px-12 py-8 lg:py-12 mx-auto xl:w-[75%]">
           <img
             loading="lazy"
