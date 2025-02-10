@@ -1,3 +1,4 @@
+import ScrambleText from "../components/ScrambleText";
 import { useTheme } from "../App";
 import { Star } from "../assets/svg/Star";
 import {
@@ -6,6 +7,8 @@ import {
   CHARACTER_BLUE_LANTERN_IMAGE,
   USER_FLOW_LIGHT,
   USER_FLOW_DARK,
+  EXAMPLE_USER_FLOW_LIGHT,
+  EXAMPLE_USER_FLOW_DARK,
   CHARACTER_BLUE_KEY_IMAGE,
   BENEFITS_BORDER,
 } from "../utils/images";
@@ -16,7 +19,7 @@ const HowThingsWorks = () => {
   return (
     <div className="mx-auto max-w-screen-2xl">
       {/* SECTION 1 */}
-      <div className="bg-[#58BDF6] flex gap-8 items-center justify-between px-4 md:px-8 lg:px-12 py-8 lg:py-12 lg:pt-20 text-black">
+      <div className="bg-[#abe0ff] flex gap-8 items-center justify-between px-4 md:px-8 lg:px-12 py-8 lg:py-12 lg:pb-16 text-black">
         {/* LEFT DECORATION IMAGE */}
         <img
           loading="lazy"
@@ -35,7 +38,13 @@ const HowThingsWorks = () => {
               alt="Character-blue-scroll"
             />
           </div>
-          <h2 className="font-marlide text-4xl lg:text-5xl">How Things Work</h2>
+          <h2 className="font-marlide min-h-[3.5rem] text-4xl lg:text-5xl">
+            <ScrambleText
+              text="How Things Work"
+              speed={50}
+              scrambleOnLoad={true}
+            />
+          </h2>
           <p className="xl:w-[90%] mx-auto text-justify">
             Fairblock is a decentralized cryptographic computer that runs secure
             and performant MPC-based confidential computation. Fairblock can
@@ -61,7 +70,19 @@ const HowThingsWorks = () => {
       </div>
 
       {/* SECTION 2 */}
-      <div className="relative bg-[#58BDF6] px-4 md:px-8 lg:px-12 py-8 lg:py-12 pb-12 lg:pb-20 text-black">
+      <div className="px-4 md:px-8 lg:px-12 py-12 lg:py-16">
+        <div className="mx-auto sm:w-4/5 lg:w-3/5 xl:w-1/2">
+          <img
+            loading="lazy"
+            className="w-full"
+            src={darkMode ? EXAMPLE_USER_FLOW_DARK : EXAMPLE_USER_FLOW_LIGHT}
+            alt="User flow"
+          />
+        </div>
+      </div>
+
+      {/* SECTION 3 */}
+      <div className="bg-[#abe0ff] relative px-4 md:px-8 lg:px-12 py-12 lg:py-16 text-black">
         <div className="flex flex-col md:flex-row gap-12 md:gap-0 items-start max-w-screen-lg mx-auto">
           {/* FAIRY RING & FAIRY KIT - TEXT CONTAINER */}
           <div className="flex flex-col gap-4 md:gap-8">
@@ -104,11 +125,19 @@ const HowThingsWorks = () => {
         />
       </div>
 
-      {/* SECTION 3 */}
-      <div className="flex flex-col gap-4 px-4 md:px-8 lg:px-12 py-8 lg:py-12 pt-12 lg:pt-20 mx-auto max-w-screen-xl">
+      {/* SECTION 4 */}
+      <div className="flex flex-col gap-4 px-4 md:px-8 lg:px-12 py-12 lg:py-16 lg:pb-20 mx-auto max-w-screen-xl">
         <h2 className="font-marlide text-4xl lg:text-5xl mb-4 text-center">
-          User Flow
+          Confidential Computing
         </h2>
+        <div className="mx-auto w-full xl:w-[90%] my-2 md:my-4 lg:my-8">
+          <img
+            loading="lazy"
+            className="w-full"
+            src={darkMode ? USER_FLOW_DARK : USER_FLOW_LIGHT}
+            alt="User flow"
+          />
+        </div>
         <p className="text-justify">
           Simplicity is the last step of art, we prioritize simplicity through
           our multimodal and dynamic design to fine-tune performance and
@@ -134,23 +163,11 @@ const HowThingsWorks = () => {
         </p>
       </div>
 
-      {/* SECTION 4 */}
-      <div className="px-4 md:px-8 lg:px-12 py-8 lg:py-12 pb-12 lg:pb-20">
-        <div className="mx-auto sm:w-4/5 lg:w-3/5 xl:w-1/2">
-          <img
-            loading="lazy"
-            className="w-full"
-            src={darkMode ? USER_FLOW_DARK : USER_FLOW_LIGHT}
-            alt="User flow"
-          />
-        </div>
-      </div>
-
       {/* SECTION 5 */}
-      <div className="bg-[#58BDF6] relative text-black pt-12 lg:pt-20">
+      <div className="bg-[#abe0ff] relative text-black py-12 lg:py-16">
         {/* KEY CHARACTER IMAGE */}
         <img
-          className="hidden scale-x-[-1] xl:block absolute -top-32 right-12 w-56 xl:w-64"
+          className="hidden scale-x-[-1] xl:block absolute -top-20 right-12 w-56 xl:w-64"
           src={CHARACTER_BLUE_KEY_IMAGE}
           alt="Blue lantern character"
         />
@@ -165,26 +182,26 @@ const HowThingsWorks = () => {
             src={BENEFITS_BORDER}
             alt=""
           />
-          <div className="xl:absolute top-[17%] left-[15%] border xl:border-none border-black break-words p-4 xl:p-0 rounded-xl xl:text-center xl:max-w-[32%]">
-            <h4 className="font-bold mb-4">Composable</h4>
+          <div className="xl:absolute top-[17%] left-[15%] bg-white xl:bg-transparent border xl:border-none border-black break-words p-4 xl:p-0 rounded-xl xl:text-center xl:max-w-[32%]">
+            <h4 className="font-bold mb-2">Composable</h4>
             <p>
               Developers can build confidentiality features directly into the
               chains and applications they already know and love.
             </p>
           </div>
-          <div className="xl:absolute top-[60%] left-[15%] border xl:border-none border-black break-words p-4 xl:p-0 rounded-xl xl:text-center xl:max-w-[32%]">
-            <h4 className="font-bold mb-4">Performant and Scalable</h4>
+          <div className="xl:absolute top-[60%] left-[15%] bg-white xl:bg-transparent border xl:border-none border-black break-words p-4 xl:p-0 rounded-xl xl:text-center xl:max-w-[32%]">
+            <h4 className="font-bold mb-2">Performant and Scalable</h4>
             <p>
               Linear bandwidth scaling and encryption run times in milliseconds,
               ensuring frictionless user experience.
             </p>
           </div>
-          <div className="xl:absolute top-[20%] left-[55%] border xl:border-none border-black break-words p-4 xl:p-0 rounded-xl xl:text-center xl:max-w-[32%]">
-            <h4 className="font-bold mb-4">Chain Agnostic</h4>
+          <div className="xl:absolute top-[20%] left-[55%] bg-white xl:bg-transparent border xl:border-none border-black break-words p-4 xl:p-0 rounded-xl xl:text-center xl:max-w-[32%]">
+            <h4 className="font-bold mb-2">Chain Agnostic</h4>
             <p>FairyKit is compatible with major L1s, L2s.</p>
           </div>
-          <div className="xl:absolute top-[58%] left-[54%] border xl:border-none border-black break-words p-4 xl:p-0 rounded-xl xl:text-center xl:max-w-[32%]">
-            <h4 className="font-bold mb-4">Dynamic</h4>
+          <div className="xl:absolute top-[58%] left-[54%] bg-white xl:bg-transparent border xl:border-none border-black break-words p-4 xl:p-0 rounded-xl xl:text-center xl:max-w-[32%]">
+            <h4 className="font-bold mb-2">Dynamic</h4>
             <p>
               There is no one-size-fits-all encryption solution. Fairblock's MPC
               schemes can be combined and configured for any use case or level
