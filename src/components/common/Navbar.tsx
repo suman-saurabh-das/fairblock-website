@@ -1,84 +1,13 @@
+import { useTheme } from "../../App";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { LogoSvg } from "../assets/svg/LogoSvg";
-import { BsNewspaper } from "react-icons/bs";
+
+import { LogoSvg } from "../../assets/svg/LogoSvg";
 import { FiSun, FiMoon } from "react-icons/fi";
-import { GrWorkshop, GrArticle } from "react-icons/gr";
-import { RiTwitterXFill, RiDiscordLine } from "react-icons/ri";
 import { IoMenu, IoCloseCircleOutline } from "react-icons/io5";
-import { SlDocs } from "react-icons/sl";
-import { TbApps } from "react-icons/tb";
-import { useTheme } from "../App";
-import ScrambleText from "./ScrambleText";
 
-import { DOCS_LINK } from "../utils/links";
-
-const NAV_OPTIONS = [
-  // {
-  //   type: "anchor",
-  //   label: "How it works",
-  //   logo: <GrWorkshop className="md:hidden text-2xl" />,
-  //   href: "https://website-0xfairblock.vercel.app/how-it-works",
-  // },
-  {
-    type: "link",
-    label: "How it works",
-    logo: <GrWorkshop className="md:hidden text-2xl" />,
-    to: "/how-it-works",
-  },
-  {
-    type: "anchor",
-    label: "Docs",
-    logo: <SlDocs className="md:hidden text-2xl" />,
-    href: DOCS_LINK,
-  },
-  // {
-  //   type: "anchor",
-  //   label: "Articles",
-  //   logo: <GrArticle className="md:hidden text-2xl" />,
-  //   href: "https://website-0xfairblock.vercel.app/articles",
-  // },
-  {
-    type: "link",
-    label: "Articles",
-    logo: <GrArticle className="md:hidden text-2xl" />,
-    to: "/articles",
-  },
-  {
-    type: "anchor",
-    label: "Demos",
-    logo: <TbApps className="md:hidden text-2xl" />,
-    href: "https://website-0xfairblock.vercel.app/applications",
-  },
-  {
-    type: "anchor",
-    label: "News",
-    logo: <BsNewspaper className="md:hidden text-2xl" />,
-    href: "https://news.fairblock.network/",
-  },
-  {
-    type: "anchor",
-    label: "Discord",
-    hideLabelDesktop: true,
-    logo: <RiDiscordLine className="text-2xl" />,
-    href: "https://discord.com/invite/jhNBCCAMPK",
-    openInNewTab: true,
-  },
-  {
-    type: "anchor",
-    label: "Twitter",
-    hideLabelDesktop: true,
-    logo: <RiTwitterXFill className="text-2xl" />,
-    href: "https://x.com/0xfairblock",
-    openInNewTab: true,
-  },
-  // {
-  //   type: "link",
-  //   label: "Careers",
-  //   logo: "",
-  //   to: "/careers",
-  // },
-];
+import ScrambleText from "../ScrambleText";
+import { NAV_OPTIONS } from "./NavbarConstants";
 
 const Navbar = () => {
   const [isNavbarOpen, setIsNavbarOpen] = useState<boolean>(false);
@@ -165,8 +94,7 @@ const Navbar = () => {
                     </span>
                   </a>
                 );
-              } 
-              else if (item.type === "link" && item.to) {
+              } else if (item.type === "link" && item.to) {
                 return (
                   <Link
                     className="flex items-center gap-4 md:gap-0 px-6 md:px-2 py-2 rounded-xl"

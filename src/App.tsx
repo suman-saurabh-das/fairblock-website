@@ -1,8 +1,8 @@
 import { useState, useEffect, createContext, useContext } from "react";
 import { Outlet } from "react-router-dom";
 import "./App.css";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Navbar from "./components/common/Navbar";
+import Footer from "./components/common/Footer";
 
 export type ThemeContextType = {
   darkMode: boolean;

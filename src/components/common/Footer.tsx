@@ -1,6 +1,6 @@
-import { LogoSvg } from "../assets/svg/LogoSvg";
-import ScrambleText from "./ScrambleText";
-import { DOCS_LINK } from "../utils/links";
+import { LogoSvg } from "../../assets/svg/LogoSvg";
+import ScrambleText from "../ScrambleText";
+import { FOOTER_LINKS_COLUMN_1, FOOTER_LINKS_COLUMN_2, FOOTER_LINKS_COLUMN_3 } from "../../utils/constants";
 
 type FooterLinks = {
   linkLabel: string;
@@ -11,55 +11,6 @@ type FooterLinks = {
 type FooterProps = {
   mainLabel: string;
   links: FooterLinks[];
-};
-
-const FOOTER_LINKS_COLUMN_1 = {
-  mainLabel: "Connect",
-  links: [
-    {
-      linkLabel: "Discord",
-      href: "https://discord.com/invite/jhNBCCAMPK",
-      openInNewTab: true,
-    },
-    {
-      linkLabel: "Mail",
-      href: "mailto:hello@fairblock.network",
-    },
-    {
-      linkLabel: "X (Twitter)",
-      href: "https://x.com/0xfairblock",
-      openInNewTab: true,
-    },
-  ],
-};
-
-const FOOTER_LINKS_COLUMN_2 = {
-  mainLabel: "Resources",
-  links: [
-    {
-      linkLabel: "Docs",
-      href: DOCS_LINK,
-    },
-    {
-      linkLabel: "Github",
-      href: "https://github.com/Fairblock",
-      openInNewTab: true,
-    },
-    {
-      linkLabel: "News",
-      href: "https://news.fairblock.network/",
-    },
-  ],
-};
-
-const FOOTER_LINKS_COLUMN_3 = {
-  mainLabel: "For developers",
-  links: [
-    {
-      linkLabel: "Careers",
-      href: "https://website-0xfairblock.vercel.app/careers",
-    },
-  ],
 };
 
 const FooterLinks = ({ mainLabel, links }: FooterProps) => {
@@ -86,7 +37,7 @@ const FooterLinks = ({ mainLabel, links }: FooterProps) => {
 const Footer = () => {
   return (
     <div className="">
-      <div className="bg-[#58BDF6] dark:bg-black font-marlide flex flex-col sm:flex-row gap-12 items-start justify-between px-4 md:px-8 lg:px-12 pt-6 md:pt-12 pb-10 text-xl mx-auto max-w-screen-2xl">
+      <div className="bg-[#abe0ff] dark:bg-black font-marlide flex flex-col sm:flex-row gap-12 items-start justify-between px-4 md:px-8 lg:px-12 pt-6 md:pt-12 pb-10 text-xl mx-auto max-w-screen-2xl">
         <div className="flex flex-wrap gap-8 items-start justify-between w-3/4 md:w-2/4 lg:w-1/3">
           <FooterLinks
             mainLabel={FOOTER_LINKS_COLUMN_1.mainLabel}
