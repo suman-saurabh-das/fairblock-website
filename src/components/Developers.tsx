@@ -1,29 +1,5 @@
 import DeveloperCard from "./DeveloperCard";
-import { DOCS_LINK, DOCS_C_APP_LINK } from "../utils/links";
-
-const DEVELOPERS_ARRAY = [
-  {
-    imageUrl: "https://i.imgur.com/pkhLpkt.png",
-    imageText: "Character-scroll",
-    header: "Wander the Woods",
-    description: "Get started with fairy ring developer docs.",
-    url: DOCS_LINK,
-  },
-  {
-    imageUrl: "https://i.imgur.com/vF9Vch5.png",
-    imageText: "Character-key",
-    header: "Build a cApp",
-    description: "Build your Confidential App in 30 minutes.",
-    url: DOCS_C_APP_LINK,
-  },
-  {
-    imageUrl: "https://i.imgur.com/A2TocpT.png",
-    imageText: "Character-lantern",
-    header: "Join our FairyRing",
-    description: "Become a mushroom in the fairy ring.",
-    url: "https://discord.com/invite/jhNBCCAMPK",
-  },
-];
+import { DEVELOPERS_ARRAY } from "../utils/constants";
 
 const Developers = () => {
   return (

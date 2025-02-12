@@ -40,7 +40,7 @@ const Hero = () => {
       ></video>
 
       {/* CONTENT OVERLAY */}
-      <div className="bg-[#58BDF6]/90 dark:bg-black/60 p-6 pt-12 relative h-full w-full z-[5]">
+      <div className="bg-[#abe0ff]/90 dark:bg-black/60 p-6 pt-12 relative h-full w-full z-[5]">
         <div className="flex flex-col items-center justify-around gap-4 h-full">
           {/* HERO IMAGE CONTAINER */}
           <div>
@@ -49,7 +49,7 @@ const Hero = () => {
 
           {/* HERO TEXT CONTAINER */}
           <div className="">
-            <h1 className="font-marlide font-normal tracking-wider text-center text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl min-h-[4.5rem] w-80 md:w-auto sm:max-w-fit">
+            <h1 className="font-marlide font-normal mt-8 tracking-wider text-center text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl min-h-[4.5rem] w-80 md:w-auto sm:max-w-fit">
               <ScrambleText
                 text="Build Farther with Web3's Confidentiality Station"
                 speed={50}
@@ -64,7 +64,7 @@ const Hero = () => {
               className="flex flex-col gap-1 items-center"
               onClick={() => scrollToSection("about")}
             >
-              <TfiAngleDoubleDown className="animate-bounce duration-100 hover:bg-black/10 dark:hover:bg-white/30 p-2 rounded-full text-4xl xl:text-5xl" />
+              <TfiAngleDoubleDown className="animate-bounce duration-100 hover:bg-black/10 dark:hover:bg-white/30 p-2 rounded-full text-4xl" />
             </button>
           </div>
         </div>

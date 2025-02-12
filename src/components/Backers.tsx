@@ -1,33 +1,4 @@
-type BackersImageObject = {
-  label: string;
-  imageUrl: string;
-};
-
-const BACKERS_IMAGE_ARRAY: BackersImageObject[] = [
-  { label: "Anagram", imageUrl: "https://i.imgur.com/lhTub8m.png" },
-  { label: "Galileo", imageUrl: "https://i.imgur.com/BphGtj2.png" },
-  { label: "Dialectic", imageUrl: "https://i.imgur.com/lmgOyAQ.png" },
-  { label: "Lemniscap", imageUrl: "https://i.imgur.com/H6P7VHU.png" },
-  { label: "Robot Ventures", imageUrl: "https://i.imgur.com/gYcYU25.png" },
-  { label: "Axelar", imageUrl: "https://i.imgur.com/PFl0MxE.png" },
-  { label: "Arbitrum", imageUrl: "https://i.imgur.com/uDyUWnL.png" },
-  { label: "GSR", imageUrl: "https://i.imgur.com/WP7dOmy.png" },
-  { label: "Chorus One", imageUrl: "https://i.imgur.com/lmgOyAQ.png" },
-  { label: "Reverie", imageUrl: "https://i.imgur.com/GfZ2Gnl.png" },
-];
-
-const BACKERS_NAME_ARRAY: string[] = [
-  "Zaki Manian",
-  "Waikit Lau",
-  "Leland Lee",
-  "Calvin Liu",
-  "George Lambeth",
-  "Xavier Meegan",
-  "Stefan Coolican",
-  "Richard Malone",
-  "Collin Myers",
-  "Batu",
-];
+import { BACKERS_IMAGE_ARRAY, BACKERS_NAME_ARRAY } from "../utils/constants";
 
 const Backers = () => {
   return (
