@@ -49,7 +49,7 @@ const Hero = () => {
 
           {/* HERO TEXT CONTAINER */}
           <div className="">
-            <h1 className="font-marlide font-normal mt-8 tracking-wider text-center text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl min-h-[4.5rem] w-80 md:w-auto sm:max-w-fit">
+            <h1 className="relative -top-3/4 sm:top-0 sm:static font-marlide font-normal mt-8 tracking-wider text-center text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl min-h-[4.5rem] w-80 md:w-auto sm:max-w-fit">
               <ScrambleText
                 text="Build Farther with Web3's Confidentiality Station"
                 speed={50}

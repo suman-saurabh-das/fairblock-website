@@ -19,7 +19,7 @@ const HowThingsWorks = () => {
   return (
     <div className="mx-auto max-w-screen-2xl">
       {/* SECTION 1 */}
-      <div className="bg-[#abe0ff] flex gap-8 items-center justify-between px-4 md:px-8 lg:px-12 py-8 lg:py-12 lg:pb-16 text-black">
+      <div className="bg-[#abe0ff] flex gap-8 min-h-screen items-center justify-between px-4 md:px-8 lg:px-12 py-8 lg:py-12 lg:pb-16 text-black">
         {/* LEFT DECORATION IMAGE */}
         <img
           loading="lazy"
