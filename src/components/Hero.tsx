@@ -40,7 +40,7 @@ const Hero = () => {
       ></video>
 
       {/* CONTENT OVERLAY */}
-      <div className="bg-[#abe0ff]/90 dark:bg-black/60 p-6 pt-12 relative h-full w-full z-[5]">
+      <div className="bg-[#58BDF6]/90 dark:bg-black/60 p-6 pt-12 relative h-full w-full z-[5]">
         <div className="flex flex-col items-center justify-around gap-4 h-full">
           {/* HERO IMAGE CONTAINER */}
           <div>

@@ -37,7 +37,7 @@ const FooterLinks = ({ mainLabel, links }: FooterProps) => {
 const Footer = () => {
   return (
     <div className="">
-      <div className="bg-[#abe0ff] dark:bg-black font-marlide flex flex-col sm:flex-row gap-12 items-start justify-between px-4 md:px-8 lg:px-12 pt-6 md:pt-12 pb-10 text-xl mx-auto max-w-screen-2xl">
+      <div className="bg-[#58BDF6] dark:bg-black font-marlide flex flex-col sm:flex-row gap-12 items-start justify-between px-4 md:px-8 lg:px-12 pt-6 md:pt-12 pb-10 text-xl mx-auto max-w-screen-2xl">
         <div className="flex flex-wrap gap-8 items-start justify-between w-3/4 md:w-2/4 lg:w-1/3">
           <FooterLinks
             mainLabel={FOOTER_LINKS_COLUMN_1.mainLabel}
