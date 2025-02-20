@@ -5,6 +5,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .rotateY-right {
+    transform: perspective(1000px) rotateY(10deg);
+  }
+  .rotateY-left {
+    transform: perspective(1000px) rotateY(-10deg);
+  }
+  .rotateY-0 {
+    transform: rotateY(0deg);
+  }
+}
+
 /* Styles for light / dark mode - START */
 :root {
   line-height: 1.5;

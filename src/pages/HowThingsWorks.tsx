@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import ScrambleText from "../components/ScrambleText";
 import { useTheme } from "../App";
 import { Star } from "../assets/svg/Star";
@@ -15,6 +16,10 @@ import {
 
 const HowThingsWorks = () => {
   const { darkMode } = useTheme();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [])
 
   return (
     <div className="mx-auto max-w-screen-2xl">

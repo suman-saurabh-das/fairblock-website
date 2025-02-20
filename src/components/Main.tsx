@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import About from "./About";
 import Hero from "./Hero";
 import SlidingCards from "./SlidingCards";
@@ -8,6 +9,10 @@ import Backers from "./Backers";
 import News from "./News";
 
 const Main = () => {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [])
+
   return (
     <div className="flex flex-col">
       <Hero />

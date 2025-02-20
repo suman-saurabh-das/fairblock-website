@@ -56,3 +56,16 @@ export const USER_FLOW_LIGHT = "https://i.imgur.com/MSXyx2g.png";
 export const USER_FLOW_DARK = "https://i.imgur.com/XSaGKeQ.png";
 
 // ******************** HOW THINGS WORKS PAGE - END ********************
+
+// ******************** DEMOS PAGE - START ********************
+
+// Demo video URL's
+export const FAIRY_COW_SWAP = "";
+export const LAZY_KILLER = "";
+export const TIME_CAPSULE = "";
+export const ON_CHAIN_TIME_BOMB = "";
+export const VERIFIABLE_RANDOMNESS = "";
+export const PRIVATE_GOVERNANCE = "";
+export const FAIR_EX = "";
+
+// ******************** DEMOS PAGE - END ********************
