@@ -68,4 +68,9 @@ export const VERIFIABLE_RANDOMNESS = "";
 export const PRIVATE_GOVERNANCE = "";
 export const FAIR_EX = "";
 
+export const TOP_BORDER_1 = "https://i.imgur.com/oOh9X5D.png";
+export const RIGHT_BORDER_1 = "https://i.imgur.com/13Z7lHO.png";
+export const BOTTOM_BORDER_1 = "https://i.imgur.com/zH1UMLc.png";
+export const LEFT_BORDER_1 = "https://i.imgur.com/2Gnqazw.png";
+
 // ******************** DEMOS PAGE - END ********************
