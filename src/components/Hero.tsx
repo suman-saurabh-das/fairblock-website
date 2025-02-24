@@ -11,8 +11,8 @@ const scrollToSection = (sectionId: string) => {
   }
 };
 
-const DARK_HERO_BG = "https://i.imgur.com/QwlqllT.mp4";
-const LIGHT_HERO_BG = "https://i.imgur.com/MH29AUb.mp4";
+const DARK_HERO_BG = "/videos/hero-videos/Hero-bg-dark.mp4";
+const LIGHT_HERO_BG = "/videos/hero-videos/Hero-bg-light.mp4";
 
 const Hero = () => {
   const { darkMode } = useTheme();

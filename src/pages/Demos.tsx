@@ -12,7 +12,7 @@ const DEMOS_DATA = [
     demoLink: "https://swap.fairycow.fi/#/11155111/limit/WETH?tab=open&page=1",
     demoVideoThumbnail: "/images/demo-thumbnails/fairy-cow-app-thumbnail.png",
     demoVideoUrl:
-      "https://website-0xfairblock.vercel.app/applications/cow-limit-order.mp4",
+      "/videos/demo-videos/FairyCow Swap.mp4",
   },
   {
     demoId: "murder-mystery",
@@ -22,7 +22,7 @@ const DEMOS_DATA = [
     demoLink: "https://lazykiller.fairblock.network/",
     demoVideoThumbnail: "/images/demo-thumbnails/lazy-killer-app-thumbnail.png",
     demoVideoUrl:
-      "https://website-0xfairblock.vercel.app/applications/lazykiller.mp4",
+      "/videos/demo-videos/Lazy Killer.mp4",
   },
   {
     demoId: "time-capsule",
@@ -32,7 +32,7 @@ const DEMOS_DATA = [
     demoLink: "https://capsule.fairblock.network/",
     demoVideoThumbnail: "/images/demo-thumbnails/time-capsule-app-thumbnail.png",
     demoVideoUrl:
-      "https://website-0xfairblock.vercel.app/applications/time-capsule.mp4",
+      "/videos/demo-videos/Time Capsule.mp4",
   },
   {
     demoId: "time-bomb",
@@ -42,7 +42,7 @@ const DEMOS_DATA = [
     demoLink: "https://bomb.fairblock.network/",
     demoVideoThumbnail: "/images/demo-thumbnails/onchain-time-bomb-app-thumbnail.png",
     demoVideoUrl:
-      "https://website-0xfairblock.vercel.app/applications/bomb-transfer.mp4",
+      "/videos/demo-videos/Onchain Time Bomb.mp4",
   },
   {
     demoId: "randomness",
@@ -52,7 +52,7 @@ const DEMOS_DATA = [
     demoLink: "https://website-0xfairblock.vercel.app/applications/randomness",
     demoVideoThumbnail: "/images/demo-thumbnails/verifiable-randomness-app-thumbnail.png",
     demoVideoUrl:
-      "https://website-0xfairblock.vercel.app/applications/random-graphics.mp4",
+      "/videos/demo-videos/Verifiable Randomness.mp4",
   },
   {
     demoId: "private-gov",
@@ -62,7 +62,7 @@ const DEMOS_DATA = [
     demoLink: "https://governance.fairblock.network/",
     demoVideoThumbnail: "/images/demo-thumbnails/private-governance-app-thumbnail.png",
     demoVideoUrl:
-      "https://website-0xfairblock.vercel.app/applications/Private_Governance.mp4",
+      "/videos/demo-videos/Private Governance.mp4",
   },
   {
     demoId: "FairEx",
@@ -72,7 +72,7 @@ const DEMOS_DATA = [
     demoLink: "https://dex.fairblock.network/swap",
     demoVideoThumbnail: "/images/demo-thumbnails/fairex-app-thumbnail.png",
     demoVideoUrl:
-      "https://website-0xfairblock.vercel.app/applications/uniswap-dex-v2.mp4",
+      "/videos/demo-videos/FairEx.mp4",
   },
 ];
 

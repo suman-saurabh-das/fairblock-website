@@ -32,7 +32,7 @@ const DemosContent = ({
         <div
           className={`duration-500 ${
             index % 2 === 0 ? "md:rotateY-left" : "md:rotateY-right"
-          } md:hover:rotateY-0 md:w-3/5`}
+          } md:hover:rotateY-0 md:w-3/5 rounded-lg`}
         >
           <video className="rounded-lg" poster={demoVideoThumbnail} preload="auto" controls src={demoVideoUrl}></video> {}
         </div>
