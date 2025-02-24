@@ -77,7 +77,7 @@ const Demos = () => {
   return (
     <>
       {/* SECTION 1 */}
-      <div className="bg-[#CEEDFF] mx-auto max-w-screen-2xl px-4 md:px-8 lg:px-12 py-8 lg:py-12">
+      <div className="bg-[#CEEDFF] mx-auto max-w-screen-2xl px-4 md:px-8 lg:px-12 py-8 lg:py-12 text-black">
         <div className="mx-auto lg:max-w-screen-lg">
           <h2 className="font-marlide min-h-[3.5rem] md-5 xl:mb-10 text-4xl lg:text-5xl">
             Our Applications
@@ -89,12 +89,11 @@ const Demos = () => {
               decentralized applications.
             </p>
             <p>
-              {" "}
               Our long-term goal is to develop a robust ecosystem centered
               around Credible DeFi, Confidential AI, and hidden-information
               GameFi. We are particularly excited to collaborate with partners
               and focus internally on our flagship confidential apps (cApps)
-              such as:{" "}
+              such as:
             </p>
 
             {/* Bullet points container */}
@@ -105,35 +104,35 @@ const Demos = () => {
                 alt="top-border"
               />
               <div className="border-l border-r border-black p-4 xl:p-8 mx-auto sm:w-2/3 xl:w-1/2">
-                <h2 className="font-marlide min-h-[3.5rem] mb-10 text-4xl lg:text-5xl text-center">
+                <h2 className="font-marlide min-h-[3.5rem] mb-5 xl:mb-10 text-4xl lg:text-5xl text-center">
                   cApps
                 </h2>
                 <ul className="flex flex-col gap-8">
                   <li>
-                    <Star className="dark:fill-white inline mr-3 w-4" />
+                    <Star className="inline mr-3 w-4" />
                     Fairblock's leaderless and rapid auctions for fair and
                     dynamic price discovery in generalized intents, simple token
                     launches, lending markets, and RWA/NFT sales
                   </li>
                   <li>
-                    <Star className="dark:fill-white inline mr-3 w-4" />
+                    <Star className="inline mr-3 w-4" />
                     Unstoppable and unruggable AI models through MPC and TEEs
                   </li>
                   <li>
-                    <Star className="dark:fill-white inline mr-3 w-4" />
+                    <Star className="inline mr-3 w-4" />
                     Confidential but fully compliant transfers through MPC and
                     ZK
                   </li>
                   <li>
-                    <Star className="dark:fill-white inline mr-3 w-4" />
+                    <Star className="inline mr-3 w-4" />
                     Private data monetization for AI models through MPC
                   </li>
                   <li>
-                    <Star className="dark:fill-white inline mr-3 w-4" />
+                    <Star className="inline mr-3 w-4" />
                     Confidential lending and clearing markets
                   </li>
                   <li>
-                    <Star className="dark:fill-white inline mr-3 w-4" />
+                    <Star className="inline mr-3 w-4" />
                     Hidden-information GameFi such as mystery boxes, parimutuel
                     predictions, prize pools
                   </li>

@@ -52,7 +52,7 @@ export const NAV_OPTIONS:NavOption[] = [
     label: "Discord",
     hideLabelDesktop: true,
     logo: <RiDiscordLine className="text-2xl" />,
-    href: "https://discord.com/invite/jhNBCCAMPK",
+    href: "https://discord.com/invite/fairblock",
     openInNewTab: true,
   },
   {

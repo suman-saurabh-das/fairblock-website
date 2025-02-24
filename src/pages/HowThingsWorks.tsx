@@ -24,7 +24,7 @@ const HowThingsWorks = () => {
   return (
     <div className="mx-auto max-w-screen-2xl">
       {/* SECTION 1 */}
-      <div className="bg-[#abe0ff] flex gap-8 min-h-screen items-center justify-between px-4 md:px-8 lg:px-12 py-8 lg:py-12 lg:pb-16 text-black">
+      <div className="bg-[#CEEDFF] flex gap-8 min-h-screen items-center justify-between px-4 md:px-8 lg:px-12 py-8 lg:py-12 lg:pb-16 text-black">
         {/* LEFT DECORATION IMAGE */}
         <img
           loading="lazy"
@@ -87,7 +87,7 @@ const HowThingsWorks = () => {
       </div>
 
       {/* SECTION 3 */}
-      <div className="bg-[#abe0ff] relative px-4 md:px-8 lg:px-12 py-12 lg:py-16 text-black">
+      <div className="bg-[#CEEDFF] relative px-4 md:px-8 lg:px-12 py-12 lg:py-16 text-black">
         <div className="flex flex-col md:flex-row gap-12 md:gap-0 items-start max-w-screen-lg mx-auto">
           {/* FAIRY RING & FAIRY KIT - TEXT CONTAINER */}
           <div className="flex flex-col gap-4 md:gap-8">
@@ -169,7 +169,7 @@ const HowThingsWorks = () => {
       </div>
 
       {/* SECTION 5 */}
-      <div className="bg-[#abe0ff] relative text-black py-12 lg:py-16">
+      <div className="bg-[#CEEDFF] relative text-black py-12 lg:py-16">
         {/* KEY CHARACTER IMAGE */}
         <img
           className="hidden scale-x-[-1] xl:block absolute -top-20 right-12 w-56 xl:w-64"

@@ -170,7 +170,7 @@ export const DEVELOPERS_ARRAY = [
     imageText: "Character-lantern",
     header: "Join our FairyRing",
     description: "Become a mushroom in the fairy ring.",
-    url: "https://discord.com/invite/jhNBCCAMPK",
+    url: "https://discord.com/invite/fairblock",
   },
 ];
 
@@ -183,7 +183,7 @@ export const FOOTER_LINKS_COLUMN_1 = {
   links: [
     {
       linkLabel: "Discord",
-      href: "https://discord.com/invite/jhNBCCAMPK",
+      href: "https://discord.com/invite/fairblock",
       openInNewTab: true,
     },
     {
