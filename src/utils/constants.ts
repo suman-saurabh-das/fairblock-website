@@ -9,8 +9,75 @@ import {
   GSR,
   CHORUS_ONE,
   REVERIE,
+  FAIRY_COW_SWAP_IMG,
+  FAIRY_COW_SWAP_VIDEO_URL,
+  LAZY_KILLER_IMG,
+  LAZY_KILLER_VIDEO_URL,
+  TIME_CAPSULE_IMG,
+  TIME_CAPSULE_VIDEO_URL,
+  ON_CHAIN_TIME_BOMB_IMG,
+  ON_CHAIN_TIME_BOMB_VIDEO_URL,
+  VERIFIABLE_RANDOMNESS_IMG,
+  VERIFIABLE_RANDOMNESS_VIDEO_URL,
+  PRIVATE_GOVERNANCE_IMG,
+  PRIVATE_GOVERNANCE_VIDEO_URL,
+  FAIR_EX_IMG,
+  FAIR_EX_VIDEO_URL,
 } from "./images";
-import { DOCS_LINK, DOCS_C_APP_LINK } from "./links";
+import { DOCS_LINK, DOCS_C_APP_LINK, FAIRY_COW_SWAP_LINK, LAZY_KILLER_LINK, TIME_CAPSULE_LINK, ON_CHAIN_TIME_BOMB_LINK, VERIFIABLE_RANDOMNESS_LINK, PRIVATE_GOVERNANCE_LINK, FAIR_EX_LINK } from "./links";
+
+// *************** APP CONSTANTS - FOOTER - START ***************
+
+export const FOOTER_LINKS_COLUMN_1 = {
+  mainLabel: "Connect",
+  links: [
+    {
+      linkLabel: "Discord",
+      href: "https://discord.com/invite/fairblock",
+      openInNewTab: true,
+    },
+    {
+      linkLabel: "Mail",
+      href: "mailto:hello@fairblock.network",
+    },
+    {
+      linkLabel: "X (Twitter)",
+      href: "https://x.com/0xfairblock",
+      openInNewTab: true,
+    },
+  ],
+};
+
+export const FOOTER_LINKS_COLUMN_2 = {
+  mainLabel: "Resources",
+  links: [
+    {
+      linkLabel: "Docs",
+      href: DOCS_LINK,
+    },
+    {
+      linkLabel: "Github",
+      href: "https://github.com/Fairblock",
+      openInNewTab: true,
+    },
+    {
+      linkLabel: "News",
+      href: "https://news.fairblock.network/",
+    },
+  ],
+};
+
+export const FOOTER_LINKS_COLUMN_3 = {
+  mainLabel: "For developers",
+  links: [
+    {
+      linkLabel: "Careers",
+      href: "https://website-0xfairblock.vercel.app/careers",
+    },
+  ],
+};
+
+// *************** APP CONSTANTS - FOOTER - END ***************
 
 // *************** LANDING PAGE - SECTION 05 - BACKERS - START ***************
 
@@ -176,55 +243,72 @@ export const DEVELOPERS_ARRAY = [
 
 // *************** LANDING PAGE - SECTION 07 - DEVELOPERS - END ***************
 
-// *************** APP CONSTANTS - FOOTER - START ***************
+// *************** DEMOS PAGE - DEMO APPS - START ***************
 
-export const FOOTER_LINKS_COLUMN_1 = {
-  mainLabel: "Connect",
-  links: [
-    {
-      linkLabel: "Discord",
-      href: "https://discord.com/invite/fairblock",
-      openInNewTab: true,
-    },
-    {
-      linkLabel: "Mail",
-      href: "mailto:hello@fairblock.network",
-    },
-    {
-      linkLabel: "X (Twitter)",
-      href: "https://x.com/0xfairblock",
-      openInNewTab: true,
-    },
-  ],
-};
+export const DEMOS_ARRAY = [
+  {
+    demoId: "cow-limit-order",
+    demoName: "FairyCoW Swap",
+    demoDescription:
+      "FairyCoW Swap showcases how programmable encryption can be used within CoWSwap limit orders. Available on Sepolia testnet.",
+    demoLink: FAIRY_COW_SWAP_LINK,
+    demoVideoThumbnail: FAIRY_COW_SWAP_IMG,
+    demoVideoUrl: FAIRY_COW_SWAP_VIDEO_URL,
+  },
+  {
+    demoId: "murder-mystery",
+    demoName: "Lazy Killer",
+    demoDescription:
+      "Lazy Killer is a multi-player murder mystery game that utilizes encryption to conceal the murderer until a certain block height is met.",
+    demoLink: LAZY_KILLER_LINK,
+    demoVideoThumbnail: LAZY_KILLER_IMG,
+    demoVideoUrl: LAZY_KILLER_VIDEO_URL,
+  },
+  {
+    demoId: "time-capsule",
+    demoName: "Time Capsule",
+    demoDescription:
+      "Our Time Capsule allows users to grasp the power of encryption tangibly.",
+    demoLink: TIME_CAPSULE_LINK,
+    demoVideoThumbnail: TIME_CAPSULE_IMG,
+    demoVideoUrl: TIME_CAPSULE_VIDEO_URL,
+  },
+  {
+    demoId: "time-bomb",
+    demoName: "Onchain Time Bomb",
+    demoDescription:
+      "Our Time Bomb game allows users to grasp the power of encryption tangibly. Over 10,000 bombs have exploded since our testnet launch.",
+    demoLink: ON_CHAIN_TIME_BOMB_LINK,
+    demoVideoThumbnail: ON_CHAIN_TIME_BOMB_IMG,
+    demoVideoUrl: ON_CHAIN_TIME_BOMB_VIDEO_URL,
+  },
+  {
+    demoId: "randomness",
+    demoName: "Verifiable Randomness",
+    demoDescription:
+      "Verifiable randomness is generated with FairyRing and unlocks a new generation of gaming, defi, distribution, and auction-based apps across chains.",
+    demoLink: VERIFIABLE_RANDOMNESS_LINK,
+    demoVideoThumbnail: VERIFIABLE_RANDOMNESS_IMG,
+    demoVideoUrl: VERIFIABLE_RANDOMNESS_VIDEO_URL,
+  },
+  {
+    demoId: "private-gov",
+    demoName: "Private Governance",
+    demoDescription:
+      "Our private governance module allows EVM and Cosmos users to encrypt their votes in any onchain poll to produce credibly neutral results.",
+    demoLink: PRIVATE_GOVERNANCE_LINK,
+    demoVideoThumbnail: PRIVATE_GOVERNANCE_IMG,
+    demoVideoUrl: PRIVATE_GOVERNANCE_VIDEO_URL,
+  },
+  {
+    demoId: "FairEx",
+    demoName: "FairEx",
+    demoDescription:
+      "FairEx allows Arbitrum users to encrypt swaps and protect the contents of their orders from being leaked prior to execution.",
+    demoLink: FAIR_EX_LINK,
+    demoVideoThumbnail: FAIR_EX_IMG,
+    demoVideoUrl: FAIR_EX_VIDEO_URL,
+  },
+];
 
-export const FOOTER_LINKS_COLUMN_2 = {
-  mainLabel: "Resources",
-  links: [
-    {
-      linkLabel: "Docs",
-      href: DOCS_LINK,
-    },
-    {
-      linkLabel: "Github",
-      href: "https://github.com/Fairblock",
-      openInNewTab: true,
-    },
-    {
-      linkLabel: "News",
-      href: "https://news.fairblock.network/",
-    },
-  ],
-};
-
-export const FOOTER_LINKS_COLUMN_3 = {
-  mainLabel: "For developers",
-  links: [
-    {
-      linkLabel: "Careers",
-      href: "https://website-0xfairblock.vercel.app/careers",
-    },
-  ],
-};
-
-// *************** APP CONSTANTS - FOOTER - END ***************
+// *************** DEMOS PAGE - DEMO APPS - END ***************

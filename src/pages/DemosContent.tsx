@@ -6,7 +6,7 @@ type DemosContentProps = {
   demoName: string;
   demoDescription: string;
   demoLink: string;
-  demoVideoThumbnail: string,
+  demoVideoThumbnail: string;
   demoVideoUrl: string;
 };
 
@@ -25,16 +25,23 @@ const DemosContent = ({
         {demoName}
       </h2>
       <div
-        className={`flex ${
+        className={`flex flex-col gap-8 md:gap-16 items-center justify-between ${
           index % 2 === 0 ? "md:flex-row-reverse" : "md:flex-row"
-        } flex-col gap-8 md:gap-16 items-center justify-between`}
+        }`}
       >
         <div
-          className={`duration-500 ${
+          className={`border border-white dark:border-black duration-500 md:hover:rotateY-0 md:w-3/5 rounded-lg ${
             index % 2 === 0 ? "md:rotateY-left" : "md:rotateY-right"
-          } md:hover:rotateY-0 md:w-3/5 rounded-lg`}
+          }`}
         >
-          <video className="rounded-lg" poster={demoVideoThumbnail} preload="auto" controls src={demoVideoUrl}></video> {}
+          <video
+            className="rounded-lg"
+            poster={demoVideoThumbnail}
+            preload="auto"
+            controls
+            src={demoVideoUrl}
+          ></video>{" "}
+          {}
         </div>
         <div className="md:w-2/5">
           <p className="mb-4">{demoDescription}</p>

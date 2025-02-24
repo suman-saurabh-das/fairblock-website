@@ -7,7 +7,7 @@ import App from "./App.tsx";
 import Demos from "./pages/Demos.tsx";
 import HowThingsWorks from "./pages/HowThingsWorks.tsx";
 import Articles from "./pages/Articles.tsx";
-import Main from "./components/Main.tsx";
+import Main from "./pages/Main.tsx";
 import Error from "./pages/Error.tsx";
 
 // Defining routes.

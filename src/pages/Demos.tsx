@@ -1,80 +1,8 @@
 import { useEffect } from "react";
 import DemosContent from "./DemosContent";
-import { TOP_BORDER_1, BOTTOM_BORDER_1 } from "../utils/images";
 import { Star } from "../assets/svg/Star";
-
-const DEMOS_DATA = [
-  {
-    demoId: "cow-limit-order",
-    demoName: "FairyCoW Swap",
-    demoDescription:
-      "FairyCoW Swap showcases how programmable encryption can be used within CoWSwap limit orders. Available on Sepolia testnet.",
-    demoLink: "https://swap.fairycow.fi/#/11155111/limit/WETH?tab=open&page=1",
-    demoVideoThumbnail: "/images/demo-thumbnails/fairy-cow-app-thumbnail.png",
-    demoVideoUrl:
-      "/videos/demo-videos/FairyCow Swap.mp4",
-  },
-  {
-    demoId: "murder-mystery",
-    demoName: "Lazy Killer",
-    demoDescription:
-      "Lazy Killer is a multi-player murder mystery game that utilizes encryption to conceal the murderer until a certain block height is met.",
-    demoLink: "https://lazykiller.fairblock.network/",
-    demoVideoThumbnail: "/images/demo-thumbnails/lazy-killer-app-thumbnail.png",
-    demoVideoUrl:
-      "/videos/demo-videos/Lazy Killer.mp4",
-  },
-  {
-    demoId: "time-capsule",
-    demoName: "Time Capsule",
-    demoDescription:
-      "Our Time Capsule allows users to grasp the power of encryption tangibly.",
-    demoLink: "https://capsule.fairblock.network/",
-    demoVideoThumbnail: "/images/demo-thumbnails/time-capsule-app-thumbnail.png",
-    demoVideoUrl:
-      "/videos/demo-videos/Time Capsule.mp4",
-  },
-  {
-    demoId: "time-bomb",
-    demoName: "Onchain Time Bomb",
-    demoDescription:
-      "Our Time Bomb game allows users to grasp the power of encryption tangibly. Over 10,000 bombs have exploded since our testnet launch.",
-    demoLink: "https://bomb.fairblock.network/",
-    demoVideoThumbnail: "/images/demo-thumbnails/onchain-time-bomb-app-thumbnail.png",
-    demoVideoUrl:
-      "/videos/demo-videos/Onchain Time Bomb.mp4",
-  },
-  {
-    demoId: "randomness",
-    demoName: "Verifiable Randomness",
-    demoDescription:
-      "Verifiable randomness is generated with FairyRing and unlocks a new generation of gaming, defi, distribution, and auction-based apps across chains.",
-    demoLink: "https://website-0xfairblock.vercel.app/applications/randomness",
-    demoVideoThumbnail: "/images/demo-thumbnails/verifiable-randomness-app-thumbnail.png",
-    demoVideoUrl:
-      "/videos/demo-videos/Verifiable Randomness.mp4",
-  },
-  {
-    demoId: "private-gov",
-    demoName: "Private Governance",
-    demoDescription:
-      "Our private governance module allows EVM and Cosmos users to encrypt their votes in any onchain poll to produce credibly neutral results.",
-    demoLink: "https://governance.fairblock.network/",
-    demoVideoThumbnail: "/images/demo-thumbnails/private-governance-app-thumbnail.png",
-    demoVideoUrl:
-      "/videos/demo-videos/Private Governance.mp4",
-  },
-  {
-    demoId: "FairEx",
-    demoName: "FairEx",
-    demoDescription:
-      "FairEx allows Arbitrum users to encrypt swaps and protect the contents of their orders from being leaked prior to execution.",
-    demoLink: "https://dex.fairblock.network/swap",
-    demoVideoThumbnail: "/images/demo-thumbnails/fairex-app-thumbnail.png",
-    demoVideoUrl:
-      "/videos/demo-videos/FairEx.mp4",
-  },
-];
+import { DEMOS_ARRAY } from "../utils/constants";
+import { TOP_BORDER_1, BOTTOM_BORDER_1 } from "../utils/images";
 
 const Demos = () => {
   useEffect(() => {
@@ -114,7 +42,7 @@ const Demos = () => {
                 <h2 className="font-marlide min-h-[3.5rem] mb-5 xl:mb-10 text-4xl lg:text-5xl text-center">
                   cApps
                 </h2>
-                <ul className="flex flex-col gap-8">
+                <ul className="flex flex-col gap-8 mb-5">
                   <li>
                     <Star className="inline mr-3 w-4" />
                     Fairblock's leaderless and rapid auctions for fair and
@@ -173,7 +101,7 @@ const Demos = () => {
       {/* SECTION 2 */}
       <div className="mx-auto max-w-screen-2xl px-4 md:px-8 lg:px-12 py-8 lg:py-12">
         <div className="mx-auto lg:max-w-screen-lg">
-          {DEMOS_DATA.map((item, index) => (
+          {DEMOS_ARRAY.map((item, index) => (
             <DemosContent
               index={index}
               demoId={item.demoId}

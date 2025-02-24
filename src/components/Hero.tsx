@@ -11,19 +11,15 @@ const scrollToSection = (sectionId: string) => {
   }
 };
 
-const DARK_HERO_BG = "/videos/hero-videos/Hero-bg-dark.mp4";
-const LIGHT_HERO_BG = "/videos/hero-videos/Hero-bg-light.mp4";
+const DARK_HERO_BG = "/videos/landing-page/Hero-bg-dark.mp4";
+const LIGHT_HERO_BG = "/videos/landing-page/Hero-bg-light.mp4";
 
 const Hero = () => {
   const { darkMode } = useTheme();
-  const [bgVideoURL, setBgVideoUrl] = useState<string>(
-    "/src/assets/video/Hero-bg-light.mp4"
-  );
+  const [bgVideoURL, setBgVideoUrl] = useState<string>(LIGHT_HERO_BG);
 
   useEffect(() => {
-    darkMode
-      ? setBgVideoUrl(DARK_HERO_BG)
-      : setBgVideoUrl(LIGHT_HERO_BG);
+    darkMode ? setBgVideoUrl(DARK_HERO_BG) : setBgVideoUrl(LIGHT_HERO_BG);
   }, [darkMode]);
 
   return (
