@@ -10,6 +10,7 @@ const DEMOS_DATA = [
     demoDescription:
       "FairyCoW Swap showcases how programmable encryption can be used within CoWSwap limit orders. Available on Sepolia testnet.",
     demoLink: "https://swap.fairycow.fi/#/11155111/limit/WETH?tab=open&page=1",
+    demoVideoThumbnail: "/images/demo-thumbnails/fairy-cow-app-thumbnail.png",
     demoVideoUrl:
       "https://website-0xfairblock.vercel.app/applications/cow-limit-order.mp4",
   },
@@ -19,6 +20,7 @@ const DEMOS_DATA = [
     demoDescription:
       "Lazy Killer is a multi-player murder mystery game that utilizes encryption to conceal the murderer until a certain block height is met.",
     demoLink: "https://lazykiller.fairblock.network/",
+    demoVideoThumbnail: "/images/demo-thumbnails/lazy-killer-app-thumbnail.png",
     demoVideoUrl:
       "https://website-0xfairblock.vercel.app/applications/lazykiller.mp4",
   },
@@ -28,6 +30,7 @@ const DEMOS_DATA = [
     demoDescription:
       "Our Time Capsule allows users to grasp the power of encryption tangibly.",
     demoLink: "https://capsule.fairblock.network/",
+    demoVideoThumbnail: "/images/demo-thumbnails/time-capsule-app-thumbnail.png",
     demoVideoUrl:
       "https://website-0xfairblock.vercel.app/applications/time-capsule.mp4",
   },
@@ -37,6 +40,7 @@ const DEMOS_DATA = [
     demoDescription:
       "Our Time Bomb game allows users to grasp the power of encryption tangibly. Over 10,000 bombs have exploded since our testnet launch.",
     demoLink: "https://bomb.fairblock.network/",
+    demoVideoThumbnail: "/images/demo-thumbnails/onchain-time-bomb-app-thumbnail.png",
     demoVideoUrl:
       "https://website-0xfairblock.vercel.app/applications/bomb-transfer.mp4",
   },
@@ -46,6 +50,7 @@ const DEMOS_DATA = [
     demoDescription:
       "Verifiable randomness is generated with FairyRing and unlocks a new generation of gaming, defi, distribution, and auction-based apps across chains.",
     demoLink: "https://website-0xfairblock.vercel.app/applications/randomness",
+    demoVideoThumbnail: "/images/demo-thumbnails/verifiable-randomness-app-thumbnail.png",
     demoVideoUrl:
       "https://website-0xfairblock.vercel.app/applications/random-graphics.mp4",
   },
@@ -55,6 +60,7 @@ const DEMOS_DATA = [
     demoDescription:
       "Our private governance module allows EVM and Cosmos users to encrypt their votes in any onchain poll to produce credibly neutral results.",
     demoLink: "https://governance.fairblock.network/",
+    demoVideoThumbnail: "/images/demo-thumbnails/private-governance-app-thumbnail.png",
     demoVideoUrl:
       "https://website-0xfairblock.vercel.app/applications/Private_Governance.mp4",
   },
@@ -64,6 +70,7 @@ const DEMOS_DATA = [
     demoDescription:
       "FairEx allows Arbitrum users to encrypt swaps and protect the contents of their orders from being leaked prior to execution.",
     demoLink: "https://dex.fairblock.network/swap",
+    demoVideoThumbnail: "/images/demo-thumbnails/fairex-app-thumbnail.png",
     demoVideoUrl:
       "https://website-0xfairblock.vercel.app/applications/uniswap-dex-v2.mp4",
   },
@@ -173,6 +180,7 @@ const Demos = () => {
               demoName={item.demoName}
               demoDescription={item.demoDescription}
               demoLink={item.demoLink}
+              demoVideoThumbnail={item.demoVideoThumbnail}
               demoVideoUrl={item.demoVideoUrl}
             />
           ))}

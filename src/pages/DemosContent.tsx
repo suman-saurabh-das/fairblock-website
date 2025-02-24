@@ -5,8 +5,9 @@ type DemosContentProps = {
   demoId: string;
   demoName: string;
   demoDescription: string;
-  demoVideoUrl: string;
   demoLink: string;
+  demoVideoThumbnail: string,
+  demoVideoUrl: string;
 };
 
 const DemosContent = ({
@@ -14,8 +15,9 @@ const DemosContent = ({
   demoId,
   demoName,
   demoDescription,
-  demoVideoUrl,
   demoLink,
+  demoVideoThumbnail,
+  demoVideoUrl,
 }: DemosContentProps) => {
   return (
     <div className="my-4 md:my-28" id={demoId}>
@@ -32,7 +34,7 @@ const DemosContent = ({
             index % 2 === 0 ? "md:rotateY-left" : "md:rotateY-right"
           } md:hover:rotateY-0 md:w-3/5`}
         >
-          <video className="rounded-lg" preload="auto" controls src={demoVideoUrl}></video> {}
+          <video className="rounded-lg" poster={demoVideoThumbnail} preload="auto" controls src={demoVideoUrl}></video> {}
         </div>
         <div className="md:w-2/5">
           <p className="mb-4">{demoDescription}</p>
