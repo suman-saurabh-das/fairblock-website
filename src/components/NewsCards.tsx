@@ -17,7 +17,7 @@ const NewsCard = ({
   site,
 }: NewsCardProps) => {
   return (
-    <div className="border border-black/50 dark:border-white/50 duration-300 p-4 rounded-2xl hover:scale-[1.03] shadow-md shadow-black/20 dark:shadow-black">
+    <div className="border border-black/50 dark:border-white/50 bg-white dark:bg-transparent duration-300 p-4 rounded-2xl hover:scale-[1.03] shadow-md shadow-black/20 dark:shadow-black">
       <a href={newsLink} target="_blank">
         <div className="mb-4">
           <img

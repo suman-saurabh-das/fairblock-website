@@ -234,6 +234,17 @@ const ARTICLE_CARDS_ARRAY = [
     site: "medium.com",
     type: "articles",
   },
+  {
+    imageUrl:
+      "/images/article-page/ibe-ibe-img.png",
+    newsHeader: "Intent-Based Execution through Identity-Based Encryption and Auctions",
+    newsBody:
+      "Fairblock is unlocking rapid and leaderless auctions for dynamic and fair price discovery in intent matching, lending markets, token launches, and RWA/NFT sales.",
+    newsLink:
+      "https://eprint.iacr.org/2025/241.pdf",
+    site: "eprint.iacr.org",
+    type: "articles",
+  },
 ];
 
 const NEWS_CARDS_ARRAY = [
@@ -285,177 +296,206 @@ const NEWS_CARDS_ARRAY = [
   },
 ];
 
-// const TWEETS_ARRAY = [
-//   <blockquote className="twitter-tweet" data-theme="dark">
-//     <p lang="en" dir="ltr">
-//       Announcing FairyCoW Swap, an auxiliary application for{" "}
-//       <a href="https://twitter.com/CoWSwap?ref_src=twsrc%5Etfw">@CoWSwap</a>{" "}
-//       that improves onchain trading experiences by protecting against
-//       pre-execution order leakage and increasing capital efficiency without
-//       reliance on centralized parties🔐
-//       <a href="https://t.co/y1ILqoQjWD">https://t.co/y1ILqoQjWD</a>
-//     </p>
-//     &mdash; Fairblock (@0xfairblock){" "}
-//     <a href="https://twitter.com/0xfairblock/status/1787486066498257208?ref_src=twsrc%5Etfw">
-//       May 6, 2024
-//     </a>
-//   </blockquote>,
-//   <blockquote className="twitter-tweet" data-theme="dark">
-//     <p lang="en" dir="ltr">
-//       We’re excited to share our recent ETH Research article with{" "}
-//       <a href="https://twitter.com/Polymer_Labs?ref_src=twsrc%5Etfw">
-//         @Polymer_Labs
-//       </a>
-//       : <br />
-//       <br />
-//       Accessible Encryption for Ethereum Rollups with Fairomon.
-//       <br />
-//       <br />
-//       Link: <a href="https://t.co/js4ZjZKk4V">https://t.co/js4ZjZKk4V</a>
-//       <br />
-//       <br />
-//       With Fairomon, developers can easily deploy Ethereum rollups with built-in
-//       encryption.{" "}
-//       <a href="https://t.co/k5V9NKE4yC">pic.twitter.com/k5V9NKE4yC</a>
-//     </p>
-//     &mdash; Fairblock (@0xfairblock){" "}
-//     <a href="https://twitter.com/0xfairblock/status/1828829131892543818?ref_src=twsrc%5Etfw">
-//       August 28, 2024
-//     </a>
-//   </blockquote>,
-//   <blockquote className="twitter-tweet" data-theme="dark">
-//     <p lang="en" dir="ltr">
-//       MPCs are getting harder, better, faster, stronger.
-//       <br />
-//       <br />
-//       In this research article, we explore MPC and secret sharing. What do
-//       parties know? Do they know things? Let&#39;s find out.
-//       <a href="https://t.co/f7u0FVv3kJ">https://t.co/f7u0FVv3kJ</a>{" "}
-//       <a href="https://t.co/r52MND45yw">pic.twitter.com/r52MND45yw</a>
-//     </p>
-//     &mdash; Fairblock (@0xfairblock){" "}
-//     <a href="https://twitter.com/0xfairblock/status/1834230746674037011?ref_src=twsrc%5Etfw">
-//       September 12, 2024
-//     </a>
-//   </blockquote>,
-//   <blockquote className="twitter-tweet" data-theme="dark">
-//     <p lang="en" dir="ltr">
-//       Space: Dark Pools &amp; Their Role in the Future of Blockchains
-//       <br />
-//       <br />
-//       We&#39;re hosting{" "}
-//       <a href="https://twitter.com/yusufxzy?ref_src=twsrc%5Etfw">
-//         @yusufxzy
-//       </a>{" "}
-//       from{" "}
-//       <a href="https://twitter.com/Delphi_Digital?ref_src=twsrc%5Etfw">
-//         @Delphi_Digital
-//       </a>{" "}
-//       tomorrow at 12pm EST to discuss dark pools, various architectures, and
-//       their role in blockchain adoption.
-//       <br />
-//       <br />
-//       Set your reminders⏰ Sept. 10 @ 12pm EST:{" "}
-//       <a href="https://t.co/1AAQhXnuqJ">https://t.co/1AAQhXnuqJ</a>{" "}
-//       <a href="https://t.co/fZNjssy6g1">pic.twitter.com/fZNjssy6g1</a>
-//     </p>
-//     &mdash; Fairblock (@0xfairblock){" "}
-//     <a href="https://twitter.com/0xfairblock/status/1833194214655492514?ref_src=twsrc%5Etfw">
-//       September 9, 2024
-//     </a>
-//   </blockquote>,
-//   <blockquote className="twitter-tweet" data-theme="dark">
-//     <p lang="en" dir="ltr">
-//       Great chatting with{" "}
-//       <a href="https://twitter.com/GuyZys?ref_src=twsrc%5Etfw">@GuyZys</a> from{" "}
-//       <a href="https://twitter.com/FhenixIO?ref_src=twsrc%5Etfw">@FhenixIO</a>,{" "}
-//       <a href="https://twitter.com/ravitals?ref_src=twsrc%5Etfw">@ravitals</a>{" "}
-//       from{" "}
-//       <a href="https://twitter.com/SunscreenTech?ref_src=twsrc%5Etfw">
-//         @SunscreenTech
-//       </a>
-//       , and{" "}
-//       <a href="https://twitter.com/0xbyyou?ref_src=twsrc%5Etfw">@0xbyyou</a>{" "}
-//       from @Fair_Block today about the State of Privacy in the Transaction
-//       Supply Chain. <br />
-//       <br />
-//       Guy and Ravital both betting on 1-2 years for FHE to be reliably available
-//       on-chain. Ambitious - I love it.{" "}
-//       <a href="https://t.co/PyCTu2yr29">https://t.co/PyCTu2yr29</a>
-//     </p>
-//     &mdash; Liam McDonald (@maccanomics){" "}
-//     <a href="https://twitter.com/maccanomics/status/1763690741040021634?ref_src=twsrc%5Etfw">
-//       March 1, 2024
-//     </a>
-//   </blockquote>,
-//   <blockquote className="twitter-tweet" data-theme="dark">
-//     <p lang="en" dir="ltr">
-//       🔁 ICYMI:{" "}
-//       <a href="https://twitter.com/Pememoni?ref_src=twsrc%5Etfw">@Pememoni</a>{" "}
-//       of @Fair_Block explores the vital role of privacy in decentralized
-//       systems. From enhancing security to aligning with user incentives,
-//       it&#39;s a crucial topic in the crypto space. Missed it? Dive in now! 🚀{" "}
-//       <a href="https://twitter.com/hashtag/smarteconomypodcast?src=hash&amp;ref_src=twsrc%5Etfw">
-//         #smarteconomypodcast
-//       </a>
-//       <a href="https://t.co/dxnQdbvgnB">https://t.co/dxnQdbvgnB</a>{" "}
-//       <a href="https://t.co/xJr9dShUOY">pic.twitter.com/xJr9dShUOY</a>
-//     </p>
-//     &mdash; Smart Economy Podcast (@SmartEconomyPod){" "}
-//     <a href="https://twitter.com/SmartEconomyPod/status/1763248008928301274?ref_src=twsrc%5Etfw">
-//       February 29, 2024
-//     </a>
-//   </blockquote>,
-// ];
+const TWEETS_ARRAY = [
+  <blockquote className="twitter-tweet" data-theme="dark">
+    <p lang="en" dir="ltr">
+      Announcing FairyCoW Swap, an auxiliary application for{" "}
+      <a href="https://twitter.com/CoWSwap?ref_src=twsrc%5Etfw">@CoWSwap</a>{" "}
+      that improves onchain trading experiences by protecting against
+      pre-execution order leakage and increasing capital efficiency without
+      reliance on centralized parties🔐
+      <a href="https://t.co/y1ILqoQjWD">https://t.co/y1ILqoQjWD</a>
+    </p>
+    &mdash; Fairblock (@0xfairblock){" "}
+    <a href="https://twitter.com/0xfairblock/status/1787486066498257208?ref_src=twsrc%5Etfw">
+      May 6, 2024
+    </a>
+  </blockquote>,
+  <blockquote className="twitter-tweet" data-theme="dark">
+    <p lang="en" dir="ltr">
+      We’re excited to share our recent ETH Research article with{" "}
+      <a href="https://twitter.com/Polymer_Labs?ref_src=twsrc%5Etfw">
+        @Polymer_Labs
+      </a>
+      : <br />
+      <br />
+      Accessible Encryption for Ethereum Rollups with Fairomon.
+      <br />
+      <br />
+      Link: <a href="https://t.co/js4ZjZKk4V">https://t.co/js4ZjZKk4V</a>
+      <br />
+      <br />
+      With Fairomon, developers can easily deploy Ethereum rollups with built-in
+      encryption.{" "}
+      <a href="https://t.co/k5V9NKE4yC">pic.twitter.com/k5V9NKE4yC</a>
+    </p>
+    &mdash; Fairblock (@0xfairblock){" "}
+    <a href="https://twitter.com/0xfairblock/status/1828829131892543818?ref_src=twsrc%5Etfw">
+      August 28, 2024
+    </a>
+  </blockquote>,
+  <blockquote className="twitter-tweet" data-theme="dark">
+    <p lang="en" dir="ltr">
+      MPCs are getting harder, better, faster, stronger.
+      <br />
+      <br />
+      In this research article, we explore MPC and secret sharing. What do
+      parties know? Do they know things? Let&#39;s find out.
+      <a href="https://t.co/f7u0FVv3kJ">https://t.co/f7u0FVv3kJ</a>{" "}
+      <a href="https://t.co/r52MND45yw">pic.twitter.com/r52MND45yw</a>
+    </p>
+    &mdash; Fairblock (@0xfairblock){" "}
+    <a href="https://twitter.com/0xfairblock/status/1834230746674037011?ref_src=twsrc%5Etfw">
+      September 12, 2024
+    </a>
+  </blockquote>,
+  <blockquote className="twitter-tweet" data-theme="dark">
+    <p lang="en" dir="ltr">
+      Space: Dark Pools &amp; Their Role in the Future of Blockchains
+      <br />
+      <br />
+      We&#39;re hosting{" "}
+      <a href="https://twitter.com/yusufxzy?ref_src=twsrc%5Etfw">
+        @yusufxzy
+      </a>{" "}
+      from{" "}
+      <a href="https://twitter.com/Delphi_Digital?ref_src=twsrc%5Etfw">
+        @Delphi_Digital
+      </a>{" "}
+      tomorrow at 12pm EST to discuss dark pools, various architectures, and
+      their role in blockchain adoption.
+      <br />
+      <br />
+      Set your reminders⏰ Sept. 10 @ 12pm EST:{" "}
+      <a href="https://t.co/1AAQhXnuqJ">https://t.co/1AAQhXnuqJ</a>{" "}
+      <a href="https://t.co/fZNjssy6g1">pic.twitter.com/fZNjssy6g1</a>
+    </p>
+    &mdash; Fairblock (@0xfairblock){" "}
+    <a href="https://twitter.com/0xfairblock/status/1833194214655492514?ref_src=twsrc%5Etfw">
+      September 9, 2024
+    </a>
+  </blockquote>,
+  <blockquote className="twitter-tweet" data-theme="dark">
+    <p lang="en" dir="ltr">
+      Great chatting with{" "}
+      <a href="https://twitter.com/GuyZys?ref_src=twsrc%5Etfw">@GuyZys</a> from{" "}
+      <a href="https://twitter.com/FhenixIO?ref_src=twsrc%5Etfw">@FhenixIO</a>,{" "}
+      <a href="https://twitter.com/ravitals?ref_src=twsrc%5Etfw">@ravitals</a>{" "}
+      from{" "}
+      <a href="https://twitter.com/SunscreenTech?ref_src=twsrc%5Etfw">
+        @SunscreenTech
+      </a>
+      , and{" "}
+      <a href="https://twitter.com/0xbyyou?ref_src=twsrc%5Etfw">@0xbyyou</a>{" "}
+      from @Fair_Block today about the State of Privacy in the Transaction
+      Supply Chain. <br />
+      <br />
+      Guy and Ravital both betting on 1-2 years for FHE to be reliably available
+      on-chain. Ambitious - I love it.{" "}
+      <a href="https://t.co/PyCTu2yr29">https://t.co/PyCTu2yr29</a>
+    </p>
+    &mdash; Liam McDonald (@maccanomics){" "}
+    <a href="https://twitter.com/maccanomics/status/1763690741040021634?ref_src=twsrc%5Etfw">
+      March 1, 2024
+    </a>
+  </blockquote>,
+  <blockquote className="twitter-tweet" data-theme="dark">
+    <p lang="en" dir="ltr">
+      🔁 ICYMI:{" "}
+      <a href="https://twitter.com/Pememoni?ref_src=twsrc%5Etfw">@Pememoni</a>{" "}
+      of @Fair_Block explores the vital role of privacy in decentralized
+      systems. From enhancing security to aligning with user incentives,
+      it&#39;s a crucial topic in the crypto space. Missed it? Dive in now! 🚀{" "}
+      <a href="https://twitter.com/hashtag/smarteconomypodcast?src=hash&amp;ref_src=twsrc%5Etfw">
+        #smarteconomypodcast
+      </a>
+      <a href="https://t.co/dxnQdbvgnB">https://t.co/dxnQdbvgnB</a>{" "}
+      <a href="https://t.co/xJr9dShUOY">pic.twitter.com/xJr9dShUOY</a>
+    </p>
+    &mdash; Smart Economy Podcast (@SmartEconomyPod){" "}
+    <a href="https://twitter.com/SmartEconomyPod/status/1763248008928301274?ref_src=twsrc%5Etfw">
+      February 29, 2024
+    </a>
+  </blockquote>,
+];
+
+// Code for twitter widgets to load
+declare global {
+  interface Window {
+    twttr?: {
+      widgets: {
+        load: () => void;
+      };
+    };
+  }
+}
 
 const Articles = () => {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
-  return (
-    <div className="max-w-screen-xl mx-auto px-4 md:px-8 py-8 lg:py-12">
-      <h2 className="font-marlide text-4xl lg:text-5xl text-center mb-8 xl:mb-12">
-        Articles & Research
-      </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-        {ARTICLE_CARDS_ARRAY.map((item, index) => (
-          <NewsCard
-            key={index}
-            imageUrl={item.imageUrl}
-            newsHeader={item.newsHeader}
-            newsBody={item.newsBody}
-            newsLink={item.newsLink}
-            site={item.site}
-          />
-        ))}
-      </div>
-      <h2 className="font-marlide text-4xl lg:text-5xl text-center my-8 xl:my-12">
-        News
-      </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-        {NEWS_CARDS_ARRAY.map((item, index) => (
-          <NewsCard
-            key={index}
-            imageUrl={item.imageUrl}
-            newsHeader={item.newsHeader}
-            newsBody={item.newsBody}
-            newsLink={item.newsLink}
-            site={item.site}
-          />
-        ))}
-      </div>
+  // Code for twitter widgets to load
+  useEffect(() => {
+    // Ensure Twitter script is loaded
+    const script = document.createElement("script");
+    script.src = "https://platform.twitter.com/widgets.js";
+    script.async = true;
+    document.body.appendChild(script);
 
-      {/* <div>
+    // Apply Twitter styles after script loads
+    script.onload = () => {
+      if (window.twttr && window.twttr.widgets) {
+        window.twttr.widgets.load();
+      }
+    };
+  }, []);
+
+  return (
+    <div className="bg-[#CEEDFF] dark:bg-transparent">
+      <div className="max-w-screen-xl mx-auto px-4 md:px-8 py-8 lg:py-12">
+        <h2 className="font-marlide text-4xl lg:text-5xl text-center mb-8 xl:mb-12">
+          Articles & Research
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          {ARTICLE_CARDS_ARRAY.map((item, index) => (
+            <NewsCard
+              key={index}
+              imageUrl={item.imageUrl}
+              newsHeader={item.newsHeader}
+              newsBody={item.newsBody}
+              newsLink={item.newsLink}
+              site={item.site}
+            />
+          ))}
+        </div>
+        <h2 className="font-marlide text-4xl lg:text-5xl text-center my-8 xl:my-12">
+          News
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          {NEWS_CARDS_ARRAY.map((item, index) => (
+            <NewsCard
+              key={index}
+              imageUrl={item.imageUrl}
+              newsHeader={item.newsHeader}
+              newsBody={item.newsBody}
+              newsLink={item.newsLink}
+              site={item.site}
+            />
+          ))}
+        </div>
+
+        <div>
         <h2 className="font-marlide text-4xl lg:text-5xl text-center my-8 xl:my-12">
           Tweets
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 grid-auto-flow-dense [grid-template-rows: masonry]">
           {TWEETS_ARRAY.map((item) => (
             <div>{item}</div>
           ))}
         </div>
-      </div> */}
+      </div>
+      </div>
     </div>
   );
 };
