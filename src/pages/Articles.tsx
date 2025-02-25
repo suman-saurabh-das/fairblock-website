@@ -489,7 +489,7 @@ const Articles = () => {
         <h2 className="font-marlide text-4xl lg:text-5xl text-center my-8 xl:my-12">
           Tweets
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 grid-auto-flow-dense [grid-template-rows: masonry]">
+        <div className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4">
           {TWEETS_ARRAY.map((item) => (
             <div>{item}</div>
           ))}
