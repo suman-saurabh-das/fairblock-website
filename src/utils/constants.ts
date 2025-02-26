@@ -72,7 +72,11 @@ export const FOOTER_LINKS_COLUMN_3 = {
   links: [
     {
       linkLabel: "Careers",
-      href: "https://website-0xfairblock.vercel.app/careers",
+      to: "/careers",
+    },
+    {
+      linkLabel: "Builders Program",
+      href: "https://fairblock.notion.site/Fairblock-Builders-Program-RFP-List-69cd0c7747904e89bd27257a359a80f1",
     },
   ],
 };

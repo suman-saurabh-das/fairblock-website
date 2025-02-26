@@ -1,10 +1,16 @@
 import { LogoSvg } from "../../assets/svg/LogoSvg";
+import { Link } from "react-router-dom";
 import ScrambleText from "../ScrambleText";
-import { FOOTER_LINKS_COLUMN_1, FOOTER_LINKS_COLUMN_2, FOOTER_LINKS_COLUMN_3 } from "../../utils/constants";
+import {
+  FOOTER_LINKS_COLUMN_1,
+  FOOTER_LINKS_COLUMN_2,
+  FOOTER_LINKS_COLUMN_3,
+} from "../../utils/constants";
 
 type FooterLinks = {
   linkLabel: string;
-  href: string;
+  href?: string;
+  to?: string;
   openInNewTab?: boolean;
 };
 
@@ -15,21 +21,39 @@ type FooterProps = {
 
 const FooterLinks = ({ mainLabel, links }: FooterProps) => {
   return (
-    <div className="flex flex-col overflow-clip w-28">
+    <div className="flex flex-col overflow-clip w-32">
       <span className="font-medium">{mainLabel}</span>
-      {links.map((item, index) => (
-        <a
-          key={index}
-          href={item.href}
-          target={item.openInNewTab ? "_blank" : "_self"}
-        >
-          <ScrambleText
-            text={item.linkLabel}
-            speed={75}
-            scrambleOnHover={true}
-          />
-        </a>
-      ))}
+      {links.map((item, index) => {
+        if (item.to) {
+          return (
+            <Link
+              key={index}
+              to={item.to}
+              target={item.openInNewTab ? "_blank" : "_self"}
+            >
+              <ScrambleText
+                text={item.linkLabel}
+                speed={75}
+                scrambleOnHover={true}
+              />
+            </Link>
+          );
+        } else {
+          return (
+            <a
+              key={index}
+              href={item.href}
+              target={item.openInNewTab ? "_blank" : "_self"}
+            >
+              <ScrambleText
+                text={item.linkLabel}
+                speed={75}
+                scrambleOnHover={true}
+              />
+            </a>
+          );
+        }
+      })}
     </div>
   );
 };

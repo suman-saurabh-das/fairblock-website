@@ -8,6 +8,7 @@ import Demos from "./pages/Demos.tsx";
 import HowThingsWorks from "./pages/HowThingsWorks.tsx";
 import Articles from "./pages/Articles.tsx";
 import Main from "./pages/Main.tsx";
+import Careers from "./pages/Careers.tsx";
 import Error from "./pages/Error.tsx";
 
 // Defining routes.
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
       { path: "how-it-works", element: <HowThingsWorks /> },
       { path: "demos", element: <Demos /> },
       { path: "articles", element: <Articles /> },
+      { path: "careers", element: <Careers /> },
       { path: "*", element: <Error /> }, // Catch-all route
     ],
   },
