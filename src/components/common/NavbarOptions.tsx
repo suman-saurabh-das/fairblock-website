@@ -1,10 +1,9 @@
 import { ReactNode } from "react";
 import { SlDocs } from "react-icons/sl";
 import { TbApps } from "react-icons/tb";
-// import { BsNewspaper } from "react-icons/bs";
 import { GrWorkshop, GrArticle } from "react-icons/gr";
 import { RiTwitterXFill, RiDiscordLine } from "react-icons/ri";
-import { DOCS_LINK } from "../../utils/links";
+import { DOCS_LINK, DISCORD_LINK, TWITTER_LINK } from "../../utils/links";
 
 type NavOption = {
   type: "link" | "anchor";
@@ -41,18 +40,12 @@ export const NAV_OPTIONS:NavOption[] = [
     logo: <TbApps className="md:hidden text-2xl" />,
     to: "/demos",
   },
-  // {
-  //   type: "anchor",
-  //   label: "News",
-  //   logo: <BsNewspaper className="md:hidden text-2xl" />,
-  //   href: "https://news.fairblock.network/",
-  // },
   {
     type: "anchor",
     label: "Discord",
     hideLabelDesktop: true,
     logo: <RiDiscordLine className="text-2xl" />,
-    href: "https://discord.com/invite/fairblock",
+    href: DISCORD_LINK,
     openInNewTab: true,
   },
   {
@@ -60,13 +53,7 @@ export const NAV_OPTIONS:NavOption[] = [
     label: "Twitter",
     hideLabelDesktop: true,
     logo: <RiTwitterXFill className="text-2xl" />,
-    href: "https://x.com/0xfairblock",
+    href: TWITTER_LINK,
     openInNewTab: true,
   },
-  // {
-  //   type: "link",
-  //   label: "Careers",
-  //   logo: "",
-  //   to: "/careers",
-  // },
 ];

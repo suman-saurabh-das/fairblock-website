@@ -24,7 +24,21 @@ import {
   FAIR_EX_IMG,
   FAIR_EX_VIDEO_URL,
 } from "./images";
-import { DOCS_LINK, DOCS_C_APP_LINK, FAIRY_COW_SWAP_LINK, LAZY_KILLER_LINK, TIME_CAPSULE_LINK, ON_CHAIN_TIME_BOMB_LINK, VERIFIABLE_RANDOMNESS_LINK, PRIVATE_GOVERNANCE_LINK, FAIR_EX_LINK } from "./links";
+
+import {
+  DISCORD_LINK,
+  TWITTER_LINK,
+  FAIR_BLOCK_MAIL,
+  DOCS_LINK,
+  DOCS_C_APP_LINK,
+  FAIRY_COW_SWAP_LINK,
+  LAZY_KILLER_LINK,
+  TIME_CAPSULE_LINK,
+  ON_CHAIN_TIME_BOMB_LINK,
+  VERIFIABLE_RANDOMNESS_LINK,
+  PRIVATE_GOVERNANCE_LINK,
+  FAIR_EX_LINK,
+} from "./links";
 
 // *************** APP CONSTANTS - FOOTER - START ***************
 
@@ -33,16 +47,16 @@ export const FOOTER_LINKS_COLUMN_1 = {
   links: [
     {
       linkLabel: "Discord",
-      href: "https://discord.com/invite/fairblock",
+      href: DISCORD_LINK,
       openInNewTab: true,
     },
     {
       linkLabel: "Mail",
-      href: "mailto:hello@fairblock.network",
+      href: FAIR_BLOCK_MAIL,
     },
     {
       linkLabel: "X (Twitter)",
-      href: "https://x.com/0xfairblock",
+      href: TWITTER_LINK,
       openInNewTab: true,
     },
   ],
@@ -123,50 +137,50 @@ export const BACKERS_NAME_ARRAY: string[] = [
 export const ECOSYSTEM_ARRAY_1 = [
   {
     name: "Arbitrum",
-    imageUrl: "https://i.imgur.com/jb7vwCG.png",
+    imageUrl: "/images/landing-page/ecosystem/arbitrum.png",
     link: "https://arbitrum.io/",
   },
   {
     name: "OP Stack",
-    imageUrl: "https://i.imgur.com/4aA7U5T.png",
+    imageUrl: "/images/landing-page/ecosystem/opstack.png",
     link: "https://optimism.io/",
   },
   {
     name: "Polygon",
-    imageUrl: "https://i.imgur.com/zRfudMJ.png",
+    imageUrl: "/images/landing-page/ecosystem/polygon.png",
     link: "https://polygon.technology/",
     isBlack: true,
   },
   {
     name: "Polymer",
-    imageUrl: "https://i.imgur.com/DjbM1pq.png",
+    imageUrl: "/images/landing-page/ecosystem/polymer.png",
     link: "https://www.polymerlabs.org/",
     isBlack: true,
   },
   {
     name: "Celestia",
-    imageUrl: "https://i.imgur.com/98WjIoG.png",
+    imageUrl: "/images/landing-page/ecosystem/celestia.png",
     link: "https://celestia.org/",
   },
   {
     name: "Xai",
-    imageUrl: "https://i.imgur.com/ITN5zKg.png",
+    imageUrl: "/images/landing-page/ecosystem/xai.png",
     link: "https://xai.games/",
   },
   {
     name: "Alt Layer",
-    imageUrl: "https://i.imgur.com/b34yNMQ.png",
+    imageUrl: "/images/landing-page/ecosystem/alt layer.png",
     link: "https://www.altlayer.io/",
     isBlack: true,
   },
   {
     name: "Squid",
-    imageUrl: "https://i.imgur.com/W7heTJA.png",
+    imageUrl: "/images/landing-page/ecosystem/squid.png",
     link: "https://www.squidrouter.com/",
   },
   {
     name: "Rollkit",
-    imageUrl: "https://i.imgur.com/k9TvFIY.png",
+    imageUrl: "/images/landing-page/ecosystem/rollkit.png",
     link: "https://rollkit.dev/",
     isBlack: true,
   },
@@ -175,44 +189,44 @@ export const ECOSYSTEM_ARRAY_1 = [
 export const ECOSYSTEM_ARRAY_2 = [
   {
     name: "Ritual",
-    imageUrl: "https://i.imgur.com/XYPkzVT.png",
+    imageUrl: "/images/landing-page/ecosystem/ritual.png",
     link: "https://ritual.net/",
     isBlack: true,
   },
   {
     name: "Cosmos Hub",
-    imageUrl: "https://i.imgur.com/cHgwQn1.png",
+    imageUrl: "/images/landing-page/ecosystem/cosmoshub.png",
     link: "https://cosmos.network/",
     isBlack: true,
   },
   {
     name: "Stargaze",
-    imageUrl: "https://i.imgur.com/yOTLiAC.png",
+    imageUrl: "/images/landing-page/ecosystem/stargaze.png",
     link: "https://www.stargaze.zone/",
   },
   {
     name: "Ethereum",
-    imageUrl: "https://i.imgur.com/WvYnssk.png",
+    imageUrl: "/images/landing-page/ecosystem/ethereum.png",
     link: "https://ethereum.org/en/",
   },
   {
     name: "CoW Swap",
-    imageUrl: "https://i.imgur.com/iXNYEZ6.png",
+    imageUrl: "/images/landing-page/ecosystem/cowswap.png",
     link: "https://swap.cow.fi/",
   },
   {
     name: "Monad",
-    imageUrl: "https://i.imgur.com/2j88T8x.png",
+    imageUrl: "/images/landing-page/ecosystem/monad.png",
     link: "https://www.monad.xyz/",
   },
   {
     name: "Fluent",
-    imageUrl: "https://i.imgur.com/V8pNxEN.png",
+    imageUrl: "/images/landing-page/ecosystem/fluent.png",
     link: "https://fluent.xyz/",
   },
   {
     name: "Anoma",
-    imageUrl: "https://i.imgur.com/wfKomsS.png",
+    imageUrl: "/images/landing-page/ecosystem/anoma.png",
     link: "https://anoma.net/",
   },
 ];
@@ -223,21 +237,21 @@ export const ECOSYSTEM_ARRAY_2 = [
 
 export const DEVELOPERS_ARRAY = [
   {
-    imageUrl: "https://i.imgur.com/pkhLpkt.png",
+    imageUrl: "/images/characters/scroll-blue.png",
     imageText: "Character-scroll",
     header: "Wander the Woods",
     description: "Get started with fairy ring developer docs.",
     url: DOCS_LINK,
   },
   {
-    imageUrl: "https://i.imgur.com/vF9Vch5.png",
+    imageUrl: "/images/characters/key-green.png",
     imageText: "Character-key",
     header: "Build a cApp",
     description: "Build your Confidential App in 30 minutes.",
     url: DOCS_C_APP_LINK,
   },
   {
-    imageUrl: "https://i.imgur.com/A2TocpT.png",
+    imageUrl: "/images/characters/lantern-purple.png",
     imageText: "Character-lantern",
     header: "Join our FairyRing",
     description: "Become a mushroom in the fairy ring.",

@@ -7,7 +7,7 @@ import { FiSun, FiMoon } from "react-icons/fi";
 import { IoMenu, IoCloseCircleOutline } from "react-icons/io5";
 
 import ScrambleText from "../ScrambleText";
-import { NAV_OPTIONS } from "./NavbarConstants";
+import { NAV_OPTIONS } from "./NavbarOptions";
 
 const Navbar = () => {
   const [isNavbarOpen, setIsNavbarOpen] = useState<boolean>(false);
