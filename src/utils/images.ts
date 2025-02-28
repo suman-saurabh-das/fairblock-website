@@ -1,47 +1,41 @@
-// ******************** LANDING PAGE - START ********************
+// ******************** COMMON IMAGES - START ********************
+
+// BORDERS
+
+export const TOP_BORDER_1 = "/images/landing-page/borders/border-top-1.png";
+export const RIGHT_BORDER_1 = "/images/landing-page/borders/border-right-1.png";
+export const BOTTOM_BORDER_1 = "/images/landing-page/borders/border-bottom-1.png";
+export const LEFT_BORDER_1 = "/images/landing-page/borders/border-left-1.png";
 
 // CHARACTERS
 
-export const CHARACTER_BLUE_KEY_IMAGE = "https://i.imgur.com/yQlNPuF.png";
-export const CHARACTER_BLUE_LANTERN_IMAGE = "https://i.imgur.com/nV428KM.png";
-export const CHARACTER_BLUE_LOCK_IMAGE = "https://i.imgur.com/sfTterI.png";
-export const CHARACTER_BLUE_SCROLL_IMAGE = "https://i.imgur.com/LvnaZ0b.png";
-export const CHARACTER_BLUE_SHIELD_IMAGE = "https://i.imgur.com/zSGZ6EG.png";
+export const CHARACTER_BLUE_SCROLL_IMAGE = "/images/characters/scroll-blue.png";
+export const CHARACTER_BLUE_KEY_IMAGE = "/images/characters/key-blue.png";
+export const CHARACTER_BLUE_LANTERN_IMAGE = "/images/characters/lantern-blue.png"
 
-export const CHARACTER_GREEN_KEY_IMAGE = "https://i.imgur.com/20Vc0RG.png";
-export const CHARACTER_GREEN_LANTERN_IMAGE = "https://i.imgur.com/hYaxN60.png";
-export const CHARACTER_GREEN_LOCK_IMAGE = "https://i.imgur.com/arZLEe4.png";
-export const CHARACTER_GREEN_SCROLL_IMAGE = "https://i.imgur.com/yJQb68O.png";
-export const CHARACTER_GREEN_SHIELD_IMAGE = "https://i.imgur.com/EY3BzFi.png";
+export const FAIR_BLOCK_IMAGE = "/images/landing-page/fairblock.png";
 
-export const CHARACTER_ORANGE_KEY_IMAGE = "https://i.imgur.com/L5NuZGR.png";
-export const CHARACTER_ORANGE_LANTERN_IMAGE = "https://i.imgur.com/EWoFOnj.png";
-export const CHARACTER_ORANGE_LOCK_IMAGE = "https://i.imgur.com/r3JWQCY.png";
-export const CHARACTER_ORANGE_SCROLL_IMAGE = "https://i.imgur.com/6g9tKBK.png";
-export const CHARACTER_ORANGE_SHIELD_IMAGE = "https://i.imgur.com/LlEfJNy.png";
+// ******************** COMMON IMAGES - END ********************
 
-export const CHARACTER_PURPLE_KEY_IMAGE = "https://i.imgur.com/SxPnOI2.png";
-export const CHARACTER_PURPLE_LANTERN_IMAGE = "https://i.imgur.com/j0cCLCN.png";
-export const CHARACTER_PURPLE_LOCK_IMAGE = "https://i.imgur.com/PpGFvkS.png";
-export const CHARACTER_PURPLE_SCROLL_IMAGE = "https://i.imgur.com/PC5jZog.png";
-export const CHARACTER_PURPLE_SHIELD_IMAGE = "https://i.imgur.com/fp1qFg7.png";
+// ******************** LANDING PAGE - START ********************
 
-export const FAIR_BLOCK_IMAGE = "https://i.imgur.com/jU7B6iq.png";
-export const HOW_IT_WORKS_LIGHT_IMAGE = "https://i.imgur.com/bisvgb7.png";
-export const HOW_IT_WORKS_DARK_IMAGE = "https://i.imgur.com/3ZH6ybU.png";
+// HOW IT WORKS
+
+export const HOW_IT_WORKS_LIGHT_IMAGE = "/images/landing-page/how-it-works-light.png";
+export const HOW_IT_WORKS_DARK_IMAGE = "/images/landing-page/how-it-works-dark.png";
 
 // BACKERS
 
-export const ANAGRAM = "https://i.imgur.com/lhTub8m.png";
-export const GALILEO = "https://i.imgur.com/BphGtj2.png";
-export const DIALECTIC = "https://i.imgur.com/FaLBcKU.png";
-export const LEMNISCAP = "https://i.imgur.com/H6P7VHU.png";
-export const ROBOT_VENTURES = "https://i.imgur.com/gYcYU25.png";
-export const AXELAR = "https://i.imgur.com/PFl0MxE.png";
-export const ARBITRUM = "https://i.imgur.com/uDyUWnL.png";
-export const GSR = "https://i.imgur.com/WP7dOmy.png";
-export const CHORUS_ONE = "https://i.imgur.com/lmgOyAQ.png";
-export const REVERIE = "https://i.imgur.com/GfZ2Gnl.png";
+export const ANAGRAM = "/images/landing-page/backers/anagram.png";
+export const GALILEO = "/images/landing-page/backers/galileo.png";
+export const DIALECTIC = "/images/landing-page/backers/dialectic.png";
+export const LEMNISCAP = "/images/landing-page/backers/lemniscap.png";
+export const ROBOT_VENTURES = "/images/landing-page/backers/robot-ventures.png";
+export const AXELAR = "/images/landing-page/backers/axelar.png";
+export const ARBITRUM = "/images/landing-page/backers/arbitrum.png";
+export const GSR = "/images/landing-page/backers/gsr.png";
+export const CHORUS_ONE = "/images/landing-page/backers/chorus-one.png";
+export const REVERIE = "/images/landing-page/backers/reverie.png";
 
 // ******************** LANDING PAGE - END ********************
 
@@ -76,10 +70,5 @@ export const ON_CHAIN_TIME_BOMB_IMG = "/images/demo-page/onchain-time-bomb-img.p
 export const VERIFIABLE_RANDOMNESS_IMG = "/images/demo-page/verifiable-randomness-img.png";
 export const PRIVATE_GOVERNANCE_IMG = "/images/demo-page/private-governance-img.png";
 export const FAIR_EX_IMG = "/images/demo-page/fair-ex-img.png";
-
-export const TOP_BORDER_1 = "https://i.imgur.com/oOh9X5D.png";
-export const RIGHT_BORDER_1 = "https://i.imgur.com/13Z7lHO.png";
-export const BOTTOM_BORDER_1 = "https://i.imgur.com/zH1UMLc.png";
-export const LEFT_BORDER_1 = "https://i.imgur.com/2Gnqazw.png";
 
 // ******************** DEMOS PAGE - END ********************

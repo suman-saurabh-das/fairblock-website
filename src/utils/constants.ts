@@ -97,6 +97,43 @@ export const FOOTER_LINKS_COLUMN_3 = {
 
 // *************** APP CONSTANTS - FOOTER - END ***************
 
+// *************** LANDING PAGE - SECTION 03 - CARDS - START ***************
+
+export const SLIDING_CARDS_ARRAY = [
+  {
+    name: "Accessible",
+    imageUrlLight: "/images/landing-page/cards/accessible.png",
+    imageUrlDark: "/images/landing-page/cards/accessible-dark.png",
+    description: "Confidentiality is always one click away.",
+  },
+  {
+    name: "Expansive",
+    imageUrlLight: "/images/landing-page/cards/expansive.png",
+    imageUrlDark: "/images/landing-page/cards/expansive-dark.png",
+    description: "Unlocking impactful DeFi and Al apps.",
+  },
+  {
+    name: "Composable",
+    imageUrlLight: "/images/landing-page/cards/composable.png",
+    imageUrlDark: "/images/landing-page/cards/composable-dark.png",
+    description: "Pluggable confidential logic into any application.",
+  },
+  {
+    name: "Dynamic",
+    imageUrlLight: "/images/landing-page/cards/dynamic.png",
+    imageUrlDark: "/images/landing-page/cards/dynamic-dark.png",
+    description: "Fine-tuned performance and security for each application.",
+  },
+  {
+    name: "Compliant",
+    imageUrlLight: "/images/landing-page/cards/compliant.png",
+    imageUrlDark: "/images/landing-page/cards/compliant-dark.png",
+    description: "Zero compliance risks with post-transaction accountability.",
+  },
+];
+
+// *************** LANDING PAGE - SECTION 03 - CARDS - END ***************
+
 // *************** LANDING PAGE - SECTION 05 - BACKERS - START ***************
 
 type BackersImageObject = {
@@ -255,7 +292,7 @@ export const DEVELOPERS_ARRAY = [
     imageText: "Character-lantern",
     header: "Join our FairyRing",
     description: "Become a mushroom in the fairy ring.",
-    url: "https://discord.com/invite/fairblock",
+    url: DISCORD_LINK,
   },
 ];
 

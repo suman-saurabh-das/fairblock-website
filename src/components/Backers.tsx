@@ -1,3 +1,4 @@
+import { LEFT_BORDER_1, RIGHT_BORDER_1 } from "../utils/images"
 import { BACKERS_IMAGE_ARRAY, BACKERS_NAME_ARRAY } from "../utils/constants";
 
 const Backers = () => {
@@ -7,7 +8,7 @@ const Backers = () => {
       <img
         loading="lazy"
         className="dark:invert hidden xl:block w-36 h-96"
-        src="https://i.imgur.com/sP9sDFd.png"
+        src={LEFT_BORDER_1}
         alt="Left Decoration"
       />
 
@@ -46,7 +47,7 @@ const Backers = () => {
       <img
         loading="lazy"
         className="dark:invert hidden xl:block w-36 h-96"
-        src="https://i.imgur.com/KTuIIhK.png"
+        src={RIGHT_BORDER_1}
         alt="Right Decoration"
       />
     </div>

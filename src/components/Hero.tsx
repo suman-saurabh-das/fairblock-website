@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useTheme } from "../App";
-import { MasterSvg } from "../assets/svg/MasterSvg";
+import { HeroSvg } from "../assets/svg/HeroSvg";
 import { TfiAngleDoubleDown } from "react-icons/tfi";
 import ScrambleText from "./ScrambleText";
 
@@ -40,7 +40,7 @@ const Hero = () => {
         <div className="flex flex-col items-center justify-around gap-4 h-full">
           {/* HERO IMAGE CONTAINER */}
           <div>
-            <MasterSvg className="fill-black dark:fill-white h-[50vh] w-full" />
+            <HeroSvg className="fill-black dark:fill-white h-[50vh] w-full" />
           </div>
 
           {/* HERO TEXT CONTAINER */}

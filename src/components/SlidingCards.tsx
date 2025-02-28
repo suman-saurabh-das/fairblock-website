@@ -1,38 +1,6 @@
 import { useState, useEffect } from "react";
 import Slider from "./Slider";
-
-const SLIDING_CARDS_ARRAY = [
-  {
-    name: "Accessible",
-    imageUrlLight: "https://i.imgur.com/8t7y3jh.png",
-    imageUrlDark: "https://i.imgur.com/s3VozU8.png",
-    description: "Confidentiality is always one click away.",
-  },
-  {
-    name: "Expansive",
-    imageUrlLight: "https://i.imgur.com/ISUn2Nw.png",
-    imageUrlDark: "https://i.imgur.com/SGBBREX.png",
-    description: "Unlocking impactful DeFi and Al apps.",
-  },
-  {
-    name: "Composable",
-    imageUrlLight: "https://i.imgur.com/nH73iMM.png",
-    imageUrlDark: "https://i.imgur.com/TrFE7MP.png",
-    description: "Pluggable confidential logic into any application.",
-  },
-  {
-    name: "Dynamic",
-    imageUrlLight: "https://i.imgur.com/hvqvl0Y.png",
-    imageUrlDark: "https://i.imgur.com/iuSNrla.png",
-    description: "Fine-tuned performance and security for each application.",
-  },
-  {
-    name: "Compliant",
-    imageUrlLight: "https://i.imgur.com/jwuKu2r.png",
-    imageUrlDark: "https://i.imgur.com/wdShKGI.png",
-    description: "Zero compliance risks with post-transaction accountability.",
-  },
-];
+import { SLIDING_CARDS_ARRAY } from "../utils/constants";
 
 const SlidingCards = () => {
   const [dimensions, setDimensions] = useState({ width: 300, height: 410 });

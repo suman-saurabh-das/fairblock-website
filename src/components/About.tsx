@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const About = () => {
   return (
     <div
@@ -10,7 +12,7 @@ const About = () => {
           <img
             loading="lazy"
             className="dark:invert mx-auto w-full"
-            src="https://i.imgur.com/exKqPqe.png"
+            src="/images/landing-page/fairblock.png"
             alt="Fairblock"
           />
         </div>
@@ -33,11 +35,12 @@ const About = () => {
             in decentralized applications. This unlocks Credible and
             Confidential DeFi mechanisms and AI models.
           </p>
-          <button className="bg-fuchsia-300 hover:bg-fuchsia-400 border border-black/50 dark:border-white/50 font-marlide font-medium px-6 py-2 rounded-3xl text-black w-fit min-w-48">
-            <a href="https://website-0xfairblock.vercel.app/applications">
-              Try FairyRing
-            </a>
-          </button>
+          <Link
+            to="/demos"
+            className="bg-fuchsia-300 hover:bg-fuchsia-400 border border-black/50 dark:border-white/50 font-marlide font-medium px-6 py-2 rounded-3xl text-black w-fit min-w-48"
+          >
+            Try FairyRing
+          </Link>
         </div>
       </div>
     </div>

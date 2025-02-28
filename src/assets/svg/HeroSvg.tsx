@@ -1,8 +1,8 @@
-type MasterSvgProps = {
+type HeroSvgProps = {
   className?: string;
 };
 
-export const MasterSvg = ({ className = "fill-black" }: MasterSvgProps) => {
+export const HeroSvg = ({ className = "fill-black" }: HeroSvgProps) => {
   return (
     <svg
       className={className}
