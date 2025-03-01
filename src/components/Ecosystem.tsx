@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import Slider from "./Slider";
 import { ECOSYSTEM_ARRAY_1, ECOSYSTEM_ARRAY_2 } from "../utils/constants";
+import Slider from "./Slider";
 
 const Ecosystem = () => {
   const [dimensions, setDimensions] = useState({ width: 90, height: 110 });
@@ -31,16 +31,20 @@ const Ecosystem = () => {
   return (
     <div className="px-6 py-12 md:py-20">
       <div className="flex flex-col gap-4 items-center justify-center overflow-x-hidden">
+        {/* ECOSYSTEM HEADER */}
         <h2 className="font-marlide font-normal mb-4 md:mb-6 text-4xl lg:text-5xl">
           Ecosystem
         </h2>
+        
         <div className="flex flex-col gap-4 xl:gap-8">
+          {/* ECOSYSTEM SLIDER 1 - RIGHT TO LEFT */}
           <Slider
             imageWithLinks={ECOSYSTEM_ARRAY_1}
             width={dimensions.width}
             height={dimensions.height}
             quantity={ECOSYSTEM_ARRAY_1.length}
           />
+          {/* ECOSYSTEM SLIDER 2 - LEFT TO RIGHT */}
           <Slider
             imageWithLinks={ECOSYSTEM_ARRAY_2}
             width={dimensions.width}

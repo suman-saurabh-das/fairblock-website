@@ -1,11 +1,14 @@
-// Landing page
+// LANDING PAGE
 export const DISCORD_LINK = "https://discord.com/invite/fairblock"
 export const TWITTER_LINK = "https://x.com/0xfairblock";
 export const FAIR_BLOCK_MAIL = "mailto:hello@fairblock.network"
 export const DOCS_LINK = "https://docs.fairblock.network/docs/welcome/Vision";
 export const DOCS_C_APP_LINK = "https://docs.fairblock.network/docs/start-a-capp-in-5-minutes/";
 
-// Demo app links
+// DEMO PAGE
+export const FAIR_BLOCK_RFP_LIST = "http://fairblock.notion.site/Fairblock-Builders-Program-RFP-List-69cd0c7747904e89bd27257a359a80f1"
+
+// DEMO PAGE - APPS
 export const FAIRY_COW_SWAP_LINK = "https://swap.fairycow.fi/#/11155111/limit/WETH?tab=open&page=1";
 export const LAZY_KILLER_LINK = "https://lazykiller.fairblock.network/";
 export const TIME_CAPSULE_LINK = "https://capsule.fairblock.network/";

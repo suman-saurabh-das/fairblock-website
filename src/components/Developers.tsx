@@ -5,9 +5,12 @@ const Developers = () => {
   return (
     <div className="px-6 py-12 md:py-20">
       <div className="mx-auto md:max-w-screen-lg">
+        {/* DEVELOPERS HEADER */}
         <h2 className="font-marlide font-normal mb-8 md:mb-12 text-4xl md:text-5xl">
           Start Building
         </h2>
+        
+        {/* DEVELOPERS CARDS CONTAINER */}
         <div className="flex flex-col sm:flex-row gap-8">
           {DEVELOPERS_ARRAY.map((item, index) => (
             <DeveloperCard

@@ -1,5 +1,7 @@
 // ******************** COMMON IMAGES - START ********************
 
+export const FAIR_BLOCK_IMAGE = "/images/landing-page/fairblock.png";
+
 // BORDERS
 
 export const TOP_BORDER_1 = "/images/landing-page/borders/border-top-1.png";
@@ -11,9 +13,9 @@ export const LEFT_BORDER_1 = "/images/landing-page/borders/border-left-1.png";
 
 export const CHARACTER_BLUE_SCROLL_IMAGE = "/images/characters/scroll-blue.png";
 export const CHARACTER_BLUE_KEY_IMAGE = "/images/characters/key-blue.png";
-export const CHARACTER_BLUE_LANTERN_IMAGE = "/images/characters/lantern-blue.png"
-
-export const FAIR_BLOCK_IMAGE = "/images/landing-page/fairblock.png";
+export const CHARACTER_GREEN_KEY_IMAGE = "/images/characters/key-green.png";
+export const CHARACTER_BLUE_LANTERN_IMAGE = "/images/characters/lantern-blue.png";
+export const CHARACTER_PURPLE_LANTERN_IMAGE = "/images/characters/lantern-purple.png";
 
 // ******************** COMMON IMAGES - END ********************
 
@@ -41,13 +43,13 @@ export const REVERIE = "/images/landing-page/backers/reverie.png";
 
 // ******************** HOW THINGS WORKS PAGE - START ********************
 
-export const BENEFITS_BORDER = "https://i.imgur.com/3hfhsxt.png";
+export const BENEFITS_BORDER = "/images/how-it-works-page/benefits-border.png";
 
-export const EXAMPLE_USER_FLOW_LIGHT = "https://i.imgur.com/6eVol0S.png";
-export const EXAMPLE_USER_FLOW_DARK = "https://i.imgur.com/jhqB6WI.png";
+export const EXAMPLE_USER_FLOW_LIGHT = "/images/how-it-works-page/example-user-flow-light.png";
+export const EXAMPLE_USER_FLOW_DARK = "/images/how-it-works-page/example-user-flow-dark.png";
 
-export const USER_FLOW_LIGHT = "https://i.imgur.com/MSXyx2g.png";
-export const USER_FLOW_DARK = "https://i.imgur.com/XSaGKeQ.png";
+export const CC_FLOW_LIGHT = "/images/how-it-works-page/cc-flow-light.png";
+export const CC_FLOW_DARK = "/images/how-it-works-page/cc-flow-dark.png";
 
 // ******************** HOW THINGS WORKS PAGE - END ********************
 
