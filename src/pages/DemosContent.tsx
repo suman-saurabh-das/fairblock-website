@@ -45,7 +45,7 @@ const DemosContent = ({
         </div>
         <div className="md:w-2/5">
           <p className="mb-4">{demoDescription}</p>
-          <a className="flex items-center gap-2" href={demoLink}>
+          <a className="flex items-center gap-2 text-neutral-600 dark:text-neutral-300 font-bold" href={demoLink}>
             Visit App <GoLinkExternal />
           </a>
         </div>

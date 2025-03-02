@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import DemosContent from "./DemosContent";
 import { Star } from "../assets/svg/Star";
 import { DEMOS_ARRAY } from "../utils/constants";
+import { FAIR_BLOCK_RFP_LIST } from "../utils/links";
 import { TOP_BORDER_1, BOTTOM_BORDER_1 } from "../utils/images";
 
 const Demos = () => {
@@ -14,9 +15,12 @@ const Demos = () => {
       {/* SECTION 1 */}
       <div className="bg-[#CEEDFF] mx-auto max-w-screen-2xl px-4 md:px-8 lg:px-12 py-8 lg:py-12 text-black">
         <div className="mx-auto lg:max-w-screen-lg">
+          {/* DEMO - HEADER */}
           <h2 className="font-marlide min-h-[3.5rem] md-5 xl:mb-10 text-4xl lg:text-5xl">
             Our Applications
           </h2>
+
+          {/* DEMO - PARAGRAPH & BULLET POINTS CONTAINER */}
           <div>
             <p>
               Fairblock’s Dynamic Confidential Computing unlocks a new wave of
@@ -31,7 +35,7 @@ const Demos = () => {
               such as:
             </p>
 
-            {/* Bullet points container */}
+            {/* BULLET POINTS CONTAINER */}
             <div className="my-12">
               <img
                 className="mx-auto sm:w-2/3 xl:w-1/2"
@@ -87,7 +91,8 @@ const Demos = () => {
             <p>
               For a full list of ideas and instructions check out our{" "}
               <a
-                href="http://fairblock.notion.site/Fairblock-Builders-Program-RFP-List-69cd0c7747904e89bd27257a359a80f1"
+                className="text-blue-500 font-bold"
+                href={FAIR_BLOCK_RFP_LIST}
                 target="_blank"
                 rel="noopener noreferrer"
               >

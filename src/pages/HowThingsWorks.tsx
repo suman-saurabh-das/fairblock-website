@@ -3,14 +3,16 @@ import ScrambleText from "../components/ScrambleText";
 import { useTheme } from "../App";
 import { Star } from "../assets/svg/Star";
 import {
-  CHARACTER_BLUE_SCROLL_IMAGE,
   FAIR_BLOCK_IMAGE,
+  LEFT_BORDER_1,
+  RIGHT_BORDER_1,
+  CHARACTER_BLUE_SCROLL_IMAGE,
   CHARACTER_BLUE_LANTERN_IMAGE,
-  USER_FLOW_LIGHT,
-  USER_FLOW_DARK,
+  CHARACTER_BLUE_KEY_IMAGE,
+  CC_FLOW_LIGHT,
+  CC_FLOW_DARK,
   EXAMPLE_USER_FLOW_LIGHT,
   EXAMPLE_USER_FLOW_DARK,
-  CHARACTER_BLUE_KEY_IMAGE,
   BENEFITS_BORDER,
 } from "../utils/images";
 
@@ -29,7 +31,7 @@ const HowThingsWorks = () => {
         <img
           loading="lazy"
           className="hidden xl:block w-36 h-96"
-          src="https://i.imgur.com/sP9sDFd.png"
+          src={LEFT_BORDER_1}
           alt="Left Decoration"
         />
 
@@ -69,7 +71,7 @@ const HowThingsWorks = () => {
         <img
           loading="lazy"
           className="hidden xl:block w-36 h-96"
-          src="https://i.imgur.com/KTuIIhK.png"
+          src={RIGHT_BORDER_1}
           alt="Right Decoration"
         />
       </div>
@@ -139,7 +141,7 @@ const HowThingsWorks = () => {
           <img
             loading="lazy"
             className="w-full"
-            src={darkMode ? USER_FLOW_DARK : USER_FLOW_LIGHT}
+            src={darkMode ? CC_FLOW_DARK : CC_FLOW_LIGHT}
             alt="User flow"
           />
         </div>

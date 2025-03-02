@@ -1,12 +1,17 @@
+import { CHARACTER_BLUE_SCROLL_IMAGE, CHARACTER_BLUE_LANTERN_IMAGE } from "../utils/images";
+
 const Careers = () => {
   return (
     <div className="bg-[#CEEDFF] min-h-[100vh] px-4 md:px-8 lg:px-12 py-8 lg:py-12 text-black text-center mx-auto max-w-screen-2xl flex items-center justify-around">
       <div className="relative">
+        {/* LEFT DECORATION IMAGE */}
         <img
           className="hidden xl:block absolute -top-[100%] right-[110%] w-56 xl:w-64"
-          src="/images/characters/scroll-blue.png"
+          src={CHARACTER_BLUE_SCROLL_IMAGE}
           alt="Character with blue lantern"
         />
+
+        {/* CAREERS HEADER & PARAGRAPH */}
         <h2 className="font-marlide min-h-[3.5rem] md-5 xl:mb-10 text-4xl lg:text-5xl">
           Careers
         </h2>
@@ -26,9 +31,11 @@ const Careers = () => {
           A short paragraph about your technical background and your interests
           helps a lot.
         </p>
+
+        {/* RIGHT DECORATION IMAGE */}
         <img
           className="hidden scale-x-[-1] xl:block absolute top-[50%] left-[110%] w-56 xl:w-64"
-          src="/images/characters/lantern-blue.png"
+          src={CHARACTER_BLUE_LANTERN_IMAGE}
           alt="Character with blue scroll"
         />
       </div>
