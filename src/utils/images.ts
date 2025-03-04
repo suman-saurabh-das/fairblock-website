@@ -28,16 +28,27 @@ export const HOW_IT_WORKS_DARK_IMAGE = "/images/landing-page/how-it-works-dark.p
 
 // BACKERS
 
-export const ANAGRAM = "/images/landing-page/backers/anagram.png";
-export const GALILEO = "/images/landing-page/backers/galileo.png";
-export const DIALECTIC = "/images/landing-page/backers/dialectic.png";
-export const LEMNISCAP = "/images/landing-page/backers/lemniscap.png";
-export const ROBOT_VENTURES = "/images/landing-page/backers/robot-ventures.png";
-export const AXELAR = "/images/landing-page/backers/axelar.png";
-export const ARBITRUM = "/images/landing-page/backers/arbitrum.png";
-export const GSR = "/images/landing-page/backers/gsr.png";
-export const CHORUS_ONE = "/images/landing-page/backers/chorus-one.png";
-export const REVERIE = "/images/landing-page/backers/reverie.png";
+// export const ANAGRAM = "/images/landing-page/backers/anagram.png";
+// export const GALILEO = "/images/landing-page/backers/galileo.png";
+// export const DIALECTIC = "/images/landing-page/backers/dialectic.png";
+// export const LEMNISCAP = "/images/landing-page/backers/lemniscap.png";
+// export const ROBOT_VENTURES = "/images/landing-page/backers/robot-ventures.png";
+// export const AXELAR = "/images/landing-page/backers/axelar.png";
+// export const ARBITRUM = "/images/landing-page/backers/arbitrum.png";
+// export const GSR = "/images/landing-page/backers/gsr.png";
+// export const CHORUS_ONE = "/images/landing-page/backers/chorus-one.png";
+// export const REVERIE = "/images/landing-page/backers/reverie.png";
+
+export const ANAGRAM = "https://i.imgur.com/lhTub8m.png";
+export const GALILEO = "https://i.imgur.com/BphGtj2.png";
+export const DIALECTIC = "https://i.imgur.com/FaLBcKU.png";
+export const LEMNISCAP = "https://i.imgur.com/H6P7VHU.png";
+export const ROBOT_VENTURES = "https://i.imgur.com/gYcYU25.png";
+export const AXELAR = "https://i.imgur.com/PFl0MxE.png";
+export const ARBITRUM = "https://i.imgur.com/uDyUWnL.png";
+export const GSR = "https://i.imgur.com/WP7dOmy.png";
+export const CHORUS_ONE = "https://i.imgur.com/lmgOyAQ.png";
+export const REVERIE = "https://i.imgur.com/GfZ2Gnl.png";
 
 // ******************** LANDING PAGE - END ********************
 
