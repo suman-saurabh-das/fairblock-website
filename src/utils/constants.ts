@@ -81,6 +81,10 @@ export const FOOTER_LINKS_COLUMN_2 = {
       linkLabel: "News",
       href: "https://news.fairblock.network/",
     },
+    {
+      linkLabel: "Brand Kit",
+      href: "https://ballistic-sail-a4e.notion.site/Fairblock-Brand-Kit-4602243ba91c44b385dfdc9fccc426dc",
+    }
   ],
 };
 
