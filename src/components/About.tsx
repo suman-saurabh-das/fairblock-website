@@ -20,20 +20,21 @@ const About = () => {
         {/* ABOUT TEXT CONTAINER */}
         <div className="w-full lg:w-3/5 text-center lg:text-left">
           <h2 className="font-marlide font-normal mb-6 text-4xl md:text-5xl">
-            Unlock Credible Economies
+            Powering incorruptible interactions.
           </h2>
           <p className="mb-6 md:text-xl">
-            Most Web3 applications still depend on centralized intermediaries,
-            making protocols less secure and vulnerable to manipulation.
-            However, fully public onchain interactions create new risks exposing
-            end users, solvers, AI agents, market makers, and other participants
-            to exploitative tactics that degrade execution quality.
+            Most Web2 and Web3 applications still depend on centralized
+            intermediaries, making them less secure and vulnerable to
+            manipulation. However, fully public interactions create new
+            risks—exposing solvers, market makers, trading firms, adtech, and AI
+            models to exploitative tactics that degrade execution quality and
+            trust assumptions.
           </p>
           <p className="font-medium mb-6 md:mb-12 text-lg md:text-2xl">
-            Fairblock leverages dynamic confidential computing to mitigate
-            centralized risks and prevent information leakage and manipulation
-            in decentralized applications. This unlocks Credible and
-            Confidential DeFi mechanisms and AI models.
+            Fairblock leverages <b>dynamic confidential computing</b> to
+            mitigate centralized risks and prevent information leakage and
+            manipulation in decentralized applications. This unlocks{" "}
+            <b>incorruptible economies for markets and machines</b>.
           </p>
           <Link
             to="/demos"
