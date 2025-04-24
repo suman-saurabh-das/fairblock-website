@@ -428,14 +428,13 @@ export const ARTICLE_CARDS_ARRAY = [
   },
   {
     imageUrl:
-      "https://miro.medium.com/v2/resize:fit:828/format:webp/0*7TfdDRazLdM0eumI",
-    newsHeader:
-      "Native Encryption for the OP Superchain with Camp and Fairblock",
+      "/images/article-page/ibe-ibe-img.png",
+    newsHeader: "Intent-Based Execution through Identity-Based Encryption and Auctions",
     newsBody:
-      "Fairblock and Camp Network are collaborating to bring confidential computing to Optimism Superchain and Camp Ecosystem of Al and consumer applications.",
+      "Fairblock is unlocking rapid and leaderless auctions for dynamic and fair price discovery in intent matching, lending markets, token launches, and RWA/NFT sales.",
     newsLink:
-      "https://medium.com/@0xfairblock/native-encryption-for-the-op-superchain-with-camp-and-fairblock-e003dc62c648",
-    site: "medium.com",
+      "https://eprint.iacr.org/2025/241",
+    site: "eprint.iacr.org",
     type: "articles",
   },
   {
@@ -446,6 +445,18 @@ export const ARTICLE_CARDS_ARRAY = [
       "Bringing Dynamic Confidentiality to Rollup Developers with AltLayer.",
     newsLink:
       "https://medium.com/@0xfairblock/encrypting-every-rollup-ae95cfcad848",
+    site: "medium.com",
+    type: "articles",
+  },
+  {
+    imageUrl:
+      "https://miro.medium.com/v2/resize:fit:828/format:webp/0*7TfdDRazLdM0eumI",
+    newsHeader:
+      "Native Encryption for the OP Superchain with Camp and Fairblock",
+    newsBody:
+      "Fairblock and Camp Network are collaborating to bring confidential computing to Optimism Superchain and Camp Ecosystem of Al and consumer applications.",
+    newsLink:
+      "https://medium.com/@0xfairblock/native-encryption-for-the-op-superchain-with-camp-and-fairblock-e003dc62c648",
     site: "medium.com",
     type: "articles",
   },
@@ -633,17 +644,6 @@ export const ARTICLE_CARDS_ARRAY = [
     newsLink:
       "https://medium.com/@0xfairblock/fast-fairy-series-fairyring-architecture-i-d5293e0ce665",
     site: "medium.com",
-    type: "articles",
-  },
-  {
-    imageUrl:
-      "/images/article-page/ibe-ibe-img.png",
-    newsHeader: "Intent-Based Execution through Identity-Based Encryption and Auctions",
-    newsBody:
-      "Fairblock is unlocking rapid and leaderless auctions for dynamic and fair price discovery in intent matching, lending markets, token launches, and RWA/NFT sales.",
-    newsLink:
-      "https://eprint.iacr.org/2025/241.pdf",
-    site: "eprint.iacr.org",
     type: "articles",
   },
 ];
