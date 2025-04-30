@@ -9,20 +9,24 @@ import {
   GSR,
   CHORUS_ONE,
   REVERIE,
+  FAIRATES_IMG,
   FAIRY_COW_SWAP_IMG,
-  FAIRY_COW_SWAP_VIDEO_URL,
-  LAZY_KILLER_IMG,
-  LAZY_KILLER_VIDEO_URL,
-  TIME_CAPSULE_IMG,
-  TIME_CAPSULE_VIDEO_URL,
-  ON_CHAIN_TIME_BOMB_IMG,
-  ON_CHAIN_TIME_BOMB_VIDEO_URL,
-  VERIFIABLE_RANDOMNESS_IMG,
-  VERIFIABLE_RANDOMNESS_VIDEO_URL,
-  PRIVATE_GOVERNANCE_IMG,
-  PRIVATE_GOVERNANCE_VIDEO_URL,
   FAIR_EX_IMG,
+  UNRUGGABLE_AI_IMG,
+  LAZY_KILLER_IMG,
+  VERIFIABLE_RANDOMNESS_IMG,
+  ON_CHAIN_TIME_BOMB_IMG,
+  TIME_CAPSULE_IMG,
+  PRIVATE_GOVERNANCE_IMG,
+  FAIRATES_VIDEO_URL,
+  FAIRY_COW_SWAP_VIDEO_URL,
   FAIR_EX_VIDEO_URL,
+  UNRUGGABLE_AI_VIDEO_URL,
+  LAZY_KILLER_VIDEO_URL,
+  VERIFIABLE_RANDOMNESS_VIDEO_URL,
+  ON_CHAIN_TIME_BOMB_VIDEO_URL,
+  TIME_CAPSULE_VIDEO_URL,
+  PRIVATE_GOVERNANCE_VIDEO_URL,
   CHARACTER_BLUE_SCROLL_IMAGE,
   CHARACTER_GREEN_KEY_IMAGE,
   CHARACTER_PURPLE_LANTERN_IMAGE
@@ -34,13 +38,15 @@ import {
   FAIR_BLOCK_MAIL,
   DOCS_LINK,
   DOCS_C_APP_LINK,
+  FAIRATES_LINK,
   FAIRY_COW_SWAP_LINK,
-  LAZY_KILLER_LINK,
-  TIME_CAPSULE_LINK,
-  ON_CHAIN_TIME_BOMB_LINK,
-  VERIFIABLE_RANDOMNESS_LINK,
-  PRIVATE_GOVERNANCE_LINK,
   FAIR_EX_LINK,
+  UNRUGGABLE_AI_LINK,
+  LAZY_KILLER_LINK,
+  VERIFIABLE_RANDOMNESS_LINK,
+  ON_CHAIN_TIME_BOMB_LINK,
+  TIME_CAPSULE_LINK,
+  PRIVATE_GOVERNANCE_LINK,
 } from "./links";
 
 // *************** APP CONSTANTS - FOOTER - START ***************
@@ -701,6 +707,15 @@ export const NEWS_CARDS_ARRAY_2 = [
 
 export const DEMOS_ARRAY = [
   {
+    demoId: "fairates",
+    demoName: "Fairates",
+    demoDescription:
+      "One rate: Fixed-rate for all lenders and borrowers through sealed-bid auctions. Zero game: Fair price discovery. No centralized auctioneers or blackbox mechanisms powered by confidential computing",
+    demoLink: FAIRATES_LINK,
+    demoVideoThumbnail: FAIRATES_IMG,
+    demoVideoUrl: FAIRATES_VIDEO_URL,
+  },
+  {
     demoId: "cow-limit-order",
     demoName: "FairyCoW Swap",
     demoDescription:
@@ -708,6 +723,24 @@ export const DEMOS_ARRAY = [
     demoLink: FAIRY_COW_SWAP_LINK,
     demoVideoThumbnail: FAIRY_COW_SWAP_IMG,
     demoVideoUrl: FAIRY_COW_SWAP_VIDEO_URL,
+  },
+  {
+    demoId: "FairEx",
+    demoName: "FairEx",
+    demoDescription:
+      "FairEx allows Arbitrum users to encrypt swaps and protect the contents of their orders from being leaked prior to execution.",
+    demoLink: FAIR_EX_LINK,
+    demoVideoThumbnail: FAIR_EX_IMG,
+    demoVideoUrl: FAIR_EX_VIDEO_URL,
+  },
+  {
+    demoId: "unruggable-ai",
+    demoName: "Unruggable AI",
+    demoDescription:
+      "TEEs face a critical challenge: keys stored in volatile enclave memory are lost during hardware failures or restarts. Traditional backups introduce centralization risks, while manual recovery processes are error-prone. Unruggable AI addresses this by integrating TEEs, Fairblock’s MPC network, and a conditional private decryption protocol to ensure keys are securely backed up and recoverable.",
+    demoLink: UNRUGGABLE_AI_LINK,
+    demoVideoThumbnail: UNRUGGABLE_AI_IMG,
+    demoVideoUrl: UNRUGGABLE_AI_VIDEO_URL,
   },
   {
     demoId: "murder-mystery",
@@ -719,13 +752,13 @@ export const DEMOS_ARRAY = [
     demoVideoUrl: LAZY_KILLER_VIDEO_URL,
   },
   {
-    demoId: "time-capsule",
-    demoName: "Time Capsule",
+    demoId: "randomness",
+    demoName: "Verifiable Randomness",
     demoDescription:
-      "Our Time Capsule allows users to grasp the power of encryption tangibly.",
-    demoLink: TIME_CAPSULE_LINK,
-    demoVideoThumbnail: TIME_CAPSULE_IMG,
-    demoVideoUrl: TIME_CAPSULE_VIDEO_URL,
+      "Verifiable randomness is generated with FairyRing and unlocks a new generation of gaming, defi, distribution, and auction-based apps across chains.",
+    demoLink: VERIFIABLE_RANDOMNESS_LINK,
+    demoVideoThumbnail: VERIFIABLE_RANDOMNESS_IMG,
+    demoVideoUrl: VERIFIABLE_RANDOMNESS_VIDEO_URL,
   },
   {
     demoId: "time-bomb",
@@ -737,13 +770,13 @@ export const DEMOS_ARRAY = [
     demoVideoUrl: ON_CHAIN_TIME_BOMB_VIDEO_URL,
   },
   {
-    demoId: "randomness",
-    demoName: "Verifiable Randomness",
+    demoId: "time-capsule",
+    demoName: "Time Capsule",
     demoDescription:
-      "Verifiable randomness is generated with FairyRing and unlocks a new generation of gaming, defi, distribution, and auction-based apps across chains.",
-    demoLink: VERIFIABLE_RANDOMNESS_LINK,
-    demoVideoThumbnail: VERIFIABLE_RANDOMNESS_IMG,
-    demoVideoUrl: VERIFIABLE_RANDOMNESS_VIDEO_URL,
+      "Our Time Capsule allows users to grasp the power of encryption tangibly.",
+    demoLink: TIME_CAPSULE_LINK,
+    demoVideoThumbnail: TIME_CAPSULE_IMG,
+    demoVideoUrl: TIME_CAPSULE_VIDEO_URL,
   },
   {
     demoId: "private-gov",
@@ -753,15 +786,6 @@ export const DEMOS_ARRAY = [
     demoLink: PRIVATE_GOVERNANCE_LINK,
     demoVideoThumbnail: PRIVATE_GOVERNANCE_IMG,
     demoVideoUrl: PRIVATE_GOVERNANCE_VIDEO_URL,
-  },
-  {
-    demoId: "FairEx",
-    demoName: "FairEx",
-    demoDescription:
-      "FairEx allows Arbitrum users to encrypt swaps and protect the contents of their orders from being leaked prior to execution.",
-    demoLink: FAIR_EX_LINK,
-    demoVideoThumbnail: FAIR_EX_IMG,
-    demoVideoUrl: FAIR_EX_VIDEO_URL,
   },
 ];
 
