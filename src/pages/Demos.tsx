@@ -24,13 +24,11 @@ const Demos = () => {
           <div>
             <p>
               Fairblock’s Dynamic Confidential Computing unlocks a new wave of
-              blockchain applications by bringing credibility and efficiency to
-              decentralized applications.
+              blockchain applications by unlocking incorruptible and efficient markets.
             </p>
             <p>
-              Our long-term goal is to develop a robust ecosystem centered
-              around Credible DeFi, Confidential AI, and hidden-information
-              GameFi. We are particularly excited to collaborate with partners
+              Our long-term goal is to develop a trustworthy ecosystem centred
+              around manipulation-free intent and lending mechanisms, confidential and compliant stablecoin rails, and Confidential AI. We are particularly excited to collaborate with partners
               and focus internally on our flagship confidential apps (cApps)
               such as:
             </p>
