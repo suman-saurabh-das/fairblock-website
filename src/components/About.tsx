@@ -33,7 +33,7 @@ const About = () => {
             Fairblock leverages <b>dynamic confidential computing</b> to
             mitigate centralized risks and prevent information leakage and
             manipulation in decentralized applications. This unlocks{" "}
-            <b>incorruptible economies for markets and machines</b>.
+            <b>incorruptible markets and machines</b>.
           </p>
           <Link
             to="/demos"
