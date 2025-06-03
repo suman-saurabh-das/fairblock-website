@@ -25,16 +25,15 @@ const About = () => {
           <p className="mb-6 md:text-xl">
             Most Web2 and Web3 applications still depend on centralized
             intermediaries, making them less secure and vulnerable to
-            manipulation. However, fully public interactions create new
-            risks—exposing solvers, market makers, trading firms, adtech, and AI
-            models to exploitative tactics that degrade execution quality and
+            manipulation. However, fully public onchain interactions create new
+            manipulation and confidentiality risks—exposing trading intents, stablecoin transfer amounts, liquidation triggers, solver bids, and AI agents' inputs to exploitative tactics that degrade execution quality and
             trust assumptions.
           </p>
           <p className="font-medium mb-6 md:mb-12 text-lg md:text-2xl">
             Fairblock leverages <b>dynamic confidential computing</b> to
             mitigate centralized risks and prevent information leakage and
             manipulation in decentralized applications. This unlocks{" "}
-            <b>incorruptible economies for markets and machines</b>.
+            <b>incorruptible markets and machines</b>.
           </p>
           <Link
             to="/demos"
