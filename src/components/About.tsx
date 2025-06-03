@@ -20,7 +20,7 @@ const About = () => {
         {/* ABOUT TEXT CONTAINER */}
         <div className="w-full lg:w-3/5 text-center lg:text-left">
           <h2 className="font-marlide font-normal mb-6 text-4xl md:text-5xl">
-            Powering incorruptible interactions.
+            Onchain doesn’t have to mean on display
           </h2>
           <p className="mb-6 md:text-xl">
             Most Web2 and Web3 applications still depend on centralized
