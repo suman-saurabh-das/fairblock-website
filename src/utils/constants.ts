@@ -29,7 +29,7 @@ import {
   PRIVATE_GOVERNANCE_VIDEO_URL,
   CHARACTER_BLUE_SCROLL_IMAGE,
   CHARACTER_GREEN_KEY_IMAGE,
-  CHARACTER_PURPLE_LANTERN_IMAGE
+  CHARACTER_PURPLE_LANTERN_IMAGE,
 } from "./images";
 
 import {
@@ -90,7 +90,7 @@ export const FOOTER_LINKS_COLUMN_2 = {
     {
       linkLabel: "Brand Kit",
       href: "https://ballistic-sail-a4e.notion.site/Fairblock-Brand-Kit-4602243ba91c44b385dfdc9fccc426dc",
-    }
+    },
   ],
 };
 
@@ -407,8 +407,23 @@ export const NEWS_CARDS_ARRAY = [
 
 // *************** LANDING PAGE - SECTION 08 - NEWS - END ***************
 
-
 export const ARTICLE_CARDS_ARRAY = [
+  {
+    imageUrl: "https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7c4c4d7b-2ff3-41d1-b204-68de7f5fea13_1600x1066.png",
+    newsHeader: "Fairblock: Incorruptible Markets and Confidential Stablecoin Rails",
+    newsBody: "Fairblock is building the Incorruptible world computer that unlocks secure, trust-minimized applications crucial for the next generation of institutional-grade DeFi systems.",
+    newsLink: "https://www.shoal.gg/p/fairblock-incorruptible-markets-and",
+    site: "shoal.gg",
+    type: "articles",
+  },
+  {
+    imageUrl: "https://academy-public.coinmarketcap.com/srd-optimized-uploads/ed43ef9b80ce489fb99f48e863bc99de.jpg",
+    newsHeader: "Fairblock Q2 2025 Overview",
+    newsBody: "Fairblock is building the Incorruptible Computer. It delivers fair and credible decentralized markets and autonomous machines through institutional-grade confidentiality. The outcome is provably fair trades, transfers, bids, and AI decisions that preserve trust and credibility.",
+    newsLink: "https://coinmarketcap.com/community/articles/682cb2cff9996f5939813d6d/",
+    site: "coinmarketcap.com",
+    type: "articles",
+  },
   {
     imageUrl:
       "https://miro.medium.com/v2/resize:fit:828/format:webp/1*nqeeFwC-zmdEylSXtIMGQg.png",
@@ -433,13 +448,12 @@ export const ARTICLE_CARDS_ARRAY = [
     type: "articles",
   },
   {
-    imageUrl:
-      "/images/article-page/ibe-ibe-img.png",
-    newsHeader: "Intent-Based Execution through Identity-Based Encryption and Auctions",
+    imageUrl: "/images/article-page/ibe-ibe-img.png",
+    newsHeader:
+      "Intent-Based Execution through Identity-Based Encryption and Auctions",
     newsBody:
       "Fairblock is unlocking rapid and leaderless auctions for dynamic and fair price discovery in intent matching, lending markets, token launches, and RWA/NFT sales.",
-    newsLink:
-      "https://eprint.iacr.org/2025/241",
+    newsLink: "https://eprint.iacr.org/2025/241",
     site: "eprint.iacr.org",
     type: "articles",
   },
