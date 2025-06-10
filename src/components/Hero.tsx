@@ -47,7 +47,7 @@ const Hero = () => {
           <div className="">
             <h1 className="font-marlide font-normal tracking-wider text-center text-3xl xl:text-5xl min-h-[4.5rem] md:w-auto sm:max-w-fit">
               <ScrambleText
-                text="Powering incorruptible interactions for markets and machines."
+                text="Powering incorruptible markets and machines."
                 speed={50}
                 scrambleOnLoad={true}
               />
