@@ -20,7 +20,7 @@ const About = () => {
         {/* ABOUT TEXT CONTAINER */}
         <div className="w-full lg:w-3/5 text-center lg:text-left">
           <h2 className="font-marlide font-normal mb-6 text-4xl md:text-5xl">
-            Powering incorruptible interactions.
+            Onchain information leakage breeds manipulation
           </h2>
           <p className="mb-6 md:text-xl">
             Most Web2 and Web3 applications still depend on centralized
@@ -31,8 +31,8 @@ const About = () => {
           </p>
           <p className="font-medium mb-6 md:mb-12 text-lg md:text-2xl">
             Fairblock leverages <b>dynamic confidential computing</b> to
-            mitigate centralized risks and prevent information leakage and
-            manipulation in decentralized applications. This unlocks{" "}
+            mitigate both centralized risks and prevent onchain information leakage and
+            manipulation. This unlocks{" "}
             <b>incorruptible markets and machines</b>.
           </p>
           <Link
