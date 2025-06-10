@@ -20,20 +20,17 @@ const About = () => {
         {/* ABOUT TEXT CONTAINER */}
         <div className="w-full lg:w-3/5 text-center lg:text-left">
           <h2 className="font-marlide font-normal mb-6 text-4xl md:text-5xl">
-            Powering incorruptible interactions.
+            Trustworthy Rails for Open Finance.
           </h2>
           <p className="mb-6 md:text-xl">
-            Most Web2 and Web3 applications still depend on centralized
+            Most Web2 and even Web3 applications still depend on centralized
             intermediaries, making them less secure and vulnerable to
-            manipulation. However, fully public onchain interactions create new
-            manipulation and confidentiality risks—exposing trading intents, stablecoin transfer amounts, liquidation triggers, solver bids, and AI agents' inputs to exploitative tactics that degrade execution quality and
-            trust assumptions.
+            silent manipulation. However, fully public onchain interactions create new
+            manipulation and confidentiality risks—exposing trading intents, stablecoin transfer amounts, liquidation triggers, solver bids, and AI agents' inputs to exploitative tactics that degrade price discovery and
+            execution quality.
           </p>
           <p className="font-medium mb-6 md:mb-12 text-lg md:text-2xl">
-            Fairblock leverages <b>dynamic confidential computing</b> to
-            mitigate centralized risks and prevent information leakage and
-            manipulation in decentralized applications. This unlocks{" "}
-            <b>incorruptible markets and machines</b>.
+            Fairblock leverages dynamic confidential computing to eliminate security risks, information leakage, and onchain manipulation—enabling new financial primitives, better pricing, and unlocking trustworthy consumer applications. We power the foundation for incorruptible markets and machines.
           </p>
           <Link
             to="/demos"
