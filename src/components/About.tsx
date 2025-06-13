@@ -4,11 +4,11 @@ const About = () => {
   return (
     <div
       id="about"
-      className="flex justify-between min-h-screen px-6 py-12 md:py-20"
+      className="flex justify-between min-h-screen px-3 py-12 md:py-20"
     >
       <div className="flex flex-col lg:flex-row-reverse gap-12 items-center justify-center mx-auto max-w-screen-xl">
         {/* ABOUT IMAGE CONTAINER */}
-        <div className="flex flex-col gap-12 p-4 text-xl mx-auto w-full md:w-1/2 lg:w-[35%]">
+        <div className="flex flex-col gap-12 p-6 text-xl mx-auto w-full md:w-1/2 lg:w-[35%]">
           <img
             loading="lazy"
             className="dark:invert mx-auto w-full"
@@ -19,7 +19,7 @@ const About = () => {
 
         {/* ABOUT TEXT CONTAINER */}
         <div className="w-full lg:w-3/5 text-center lg:text-left">
-          <h2 className="font-marlide font-normal mb-6 text-4xl md:text-5xl">
+          <h2 className="font-marlide font-normal mb-6 text-3xl md:text-5xl">
             Trustworthy Rails for Open Finance.
           </h2>
           <p className="mb-6 md:text-xl">

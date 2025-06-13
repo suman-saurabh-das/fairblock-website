@@ -36,16 +36,16 @@ const Hero = () => {
       ></video>
 
       {/* CONTENT OVERLAY */}
-      <div className="bg-[#58BDF6]/90 dark:bg-black/60 p-6 pt-12 relative h-full w-full z-[5]">
+      <div className="bg-[#58BDF6]/90 dark:bg-black/60 p-3 pt-12 relative h-full w-full z-[5]">
         <div className="flex flex-col items-center justify-around gap-4 h-full">
           {/* HERO IMAGE CONTAINER */}
-          <div>
+          <div className="p-6">
             <HeroSvg className="fill-black dark:fill-white h-[50vh] w-full" />
           </div>
 
           {/* HERO TEXT CONTAINER */}
           <div className="">
-            <h1 className="font-marlide font-normal tracking-wider text-center text-3xl xl:text-5xl min-h-[4.5rem] md:w-auto sm:max-w-fit">
+            <h1 className="font-marlide font-normal tracking-wider text-center text-xl sm:text-3xl xl:text-5xl min-h-[4.5rem] md:w-auto sm:max-w-fit">
               <ScrambleText
                 text="Powering incorruptible markets and machines."
                 speed={50}
