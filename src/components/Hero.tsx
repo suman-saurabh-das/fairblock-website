@@ -45,7 +45,7 @@ const Hero = () => {
 
           {/* HERO TEXT CONTAINER */}
           <div className="">
-            <h1 className="font-marlide font-normal tracking-wider text-center text-xl sm:text-3xl xl:text-5xl min-h-[4.5rem] md:w-auto sm:max-w-fit">
+            <h1 className="font-marlide font-normal tracking-wider text-center text-xl sm:text-3xl xl:text-5xl min-h-[4.5rem] md:w-auto sm:max-w-fit whitespace-nowrap">
               <ScrambleText
                 text="Powering incorruptible markets and machines."
                 speed={50}
